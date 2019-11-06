@@ -1,0 +1,537 @@
+
+
+@media only screen and (min-width: 992px){
+  .hamburger {
+      display: none;
+  }
+}
+
+
+@media only screen and (max-width: 992px){
+    header .header_navigation {
+
+    padding: 10px 15px 10px 30px;
+  }
+
+	
+	header .header_navigation {
+		flex-direction: column-reverse;
+		align-items: flex-end;
+		    justify-content: flex-end;
+	}
+
+  .dropdown_menu {
+
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header .header_navigation li {
+    text-align: center;
+  }
+
+
+  footer {
+
+    ul{
+      display: block;
+      text-align: center;
+      padding: 10px;
+    
+      
+      li{
+        border: unset !important;
+      }
+    }
+
+  } 
+
+  .lang{
+    display: flex;
+  }
+
+  header .header_top .lang a {
+    font-size: 10px;
+    padding: 4px
+  }
+
+  .owl-nav{
+    color: #f5c745;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header .header_navigation li{
+    padding:unset;
+  }
+
+  .hamburger{
+    width: 25px;
+    height: 20px;
+  }
+
+  header .header_navigation img {
+    width: 25px;
+  }
+
+  header .header_navigation a {
+    font-size: 13px;
+    
+  }
+
+  .cart_fluid {
+    margin: unset;
+  }
+
+  .cart_fluid .cart_product .product_info button {
+    height: 30px;
+  }
+  .cart_fluid .pay_container .checkout_button button{
+    letter-spacing: 2px;
+  }
+
+  .cart_fluid .pay_container .checkout_button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+  .cart_fluid h2 {
+    font-size: 20px;
+    margin: 30px 0 0;
+}
+
+.contact_container .social_links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  margin: 20px auto;
+}
+
+.contact_container .find_us h2 {
+  padding: 15px;
+  font-size: 20px;
+   margin-top: unset;
+}
+
+
+
+.contact_container .social_links img {
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.height_calc {
+    height: unset;
+}
+.category_for_home .for_home_content {
+    margin-top:unset;
+}
+
+
+.category_for_home .for_home_content ul li a {
+  color: #3e9578;
+  line-height: 25px;
+  text-transform: capitalize;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.category_for_home .for_home_img img {
+  width: 90%;
+  height: 90%;
+}
+
+.container .product_img img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.container .product_section {
+    margin-top: 30px;
+ }
+
+ .container .product_section {
+   padding-left: 15px;
+}
+
+.container .product_section .quantity button {
+   
+    letter-spacing: unset;
+    word-spacing: unset;
+    letter-spacing: unset;
+    margin-top: unset;
+    padding: unset;
+}
+
+
+
+  .right_arrow{
+    margin-top:20px;
+
+     img{
+       width:30px;
+     }
+  }
+
+
+  .cups_container .cup_box .cup_info {
+    display:block;
+  }
+
+
+  .back_icon{
+    width:25px;
+  }
+
+  .product_container {
+    margin-bottom:50px;
+  }
+
+  .home_category_container .row .col-12 .category_box .category_title {
+    transform: translateY(-5px);
+}
+
+
+
+
+  
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 768px){
+  .user_product{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 0;
+
+    h3{
+      padding: 5px 0;
+      font-size: 15px;
+    }
+  }
+
+  .user_account{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .user_account .account_info {
+    margin-left:unset;
+  }
+
+  .user_account .account_info h2{
+    padding: 15px;
+  }
+
+
+  .user_account .account_img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .user_account .account_info h2{
+    font-size: 18px;
+    text-align: left;
+  }
+
+  footer ul{
+    padding: 5px 0;
+    font-size:14px;
+  }
+
+  footer ul li{
+    margin: 7px;
+    padding-right:unset;
+  }
+
+  .cup_box .cup_info span{
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .cup_box{
+    width:90%;
+    margin: 15px auto;
+  }
+
+  .about_container .team_members .member_img{
+    max-width: 160px;
+  }
+
+  .about_container {
+    margin: 20px auto;
+}
+
+.about_container .about_content h2 {
+   margin-top: 15px;
+}
+
+.about_container .team_content h2 {
+  margin: 15px;;
+  
+}
+
+
+footer{
+  margin-top:35px;
+}
+
+.about_container .about_content p {
+  margin-top: 10px;
+}
+
+
+.workshops_container{
+  padding-top:unset;
+
+  h3{
+    margin-top: 10px;
+  }
+
+  p{
+    padding:7px 0;
+  }
+}
+
+.past_workshops .row .past_workshops_content p{
+  padding: 10px;
+  max-height: 150px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+
+.cart_fluid .cart_product .product_info h3 {
+  font-size: 15px;
+}
+
+.cart_fluid .cart_product .product_info span {
+  font-size: 12px
+}
+
+
+.cart_fluid .cart_product .product_info input {
+  width:35%;
+}
+
+.cart_fluid .pay_container .checkout_button button{
+  padding: unset;
+  white-space: pre-wrap;
+  padding-right:5px;
+}
+
+.cart_fluid .pay_container {
+    margin: 35px 0 0;
+    padding: 20px;
+    border: 1px solid #3e9578;
+    font-size: 14px;
+}
+
+.cart_fluid .cart_product {
+    margin: 20px 0;
+}
+
+.cart_fluid .pay_container .payment {
+   margin: 5px 0;
+}
+
+.contact_container .adress {
+    margin-top: 10px;
+ 
+  letter-spacing: unset;
+}
+
+.cups_container .cups_title {
+  color: orange;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.category_for_home .for_home_img img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+
+.category_for_home .for_home_content {
+    
+    text-align: center;
+}
+
+.category_for_home .for_home_img {
+  text-align: center;
+}
+
+.category_for_home .for_home_img {
+  
+  margin-top: 20px;
+}
+
+
+.category_for_home .for_home_content ul li a {
+  line-height: 0px;
+  font-size: 17px;
+ 
+}
+
+.category_for_home .for_home_content ul li:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.category_for_home .for_home_content ul {
+  margin-top: 30px;;
+}
+
+.home_category_container {
+    height: unset;
+}
+
+
+.home_category_container .row .col-12 .category_box .category_img .background_img {
+  position: absolute;
+  top: 0;
+  /* background: red; */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.home_category_container .row .col-12 .category_box .category_img a img {
+  width:100%;
+  height: 100%;
+}
+
+.container .product_section .product_name h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.container .product_section {
+   margin-top: 20px;
+}
+
+.container .product_section .product_price {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.container .product_section .quantity {
+  width: 60%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .product_img img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.container .product_section .product_info .product_title {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #3e9578;
+  padding-top: 13px;
+  margin-top: 13px;
+}
+
+.container .product_section .product_info .product_title span {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: unset;
+}
+
+
+.container .product_section .product_info .product_title img {
+  width: 20px;
+  height: 20px;
+}
+
+.container .product_section .product_info p {
+  letter-spacing: unset;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.workshops_container .workshops_img img {
+  margin-top: 30px;
+}
+
+.workshops_container .workshops_content {
+  padding:unset;
+}
+
+
+
+.workshops_container .workshops_img {
+  margin: 0 auto;
+  height:250px;
+  width: 100%;
+}
+
+.past_workshops .past_workshops_title{
+  margin-bottom:20px;
+}
+
+.past_workshops {
+    padding-top: 15px;
+}
+
+.past_workshops .row .past_workshops_content h3 {
+  margin-top: 15px;
+}
+
+.workshops_container .past_workshops_content{
+  padding: unset;
+}
+
+.category_for_home .for_home_content ul {
+  margin-top: unset;
+}
+
+.category_for_home{
+  height:unset;
+}
+
+.back_icon {
+  margin-top:20px;
+}
+
+.pagination{
+  margin-top:20px;
+}
+
+.workshops_container .workshops_content .workshops_date {
+  text-align: center;
+  margin: 5px 0 20px;
+}
+
+.workshops_container .workshops_content p {
+    padding-bottom: 15px;
+}
+
+
+}
+
+ 

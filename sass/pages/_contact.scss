@@ -1,0 +1,81 @@
+.contact_container{
+    margin:40px 0;
+    
+    .contact_map{
+        width:100%;
+        border: 2px solid #3e9578;
+    
+        img{
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .adress{
+        text-align: center;
+        margin-top: 15px;
+        color:#3e9578;
+        letter-spacing: 1px;
+
+        .adress_link{
+            margin-top: 15px;
+
+
+            a{
+                color:#ffbc00;
+                padding: 5px;
+               
+            }
+        }
+    }
+
+
+    .find_us{
+        text-align: center;
+        
+        span{
+            color:#3e9578;
+        }
+
+        h2{ 
+            padding: 20px 0;
+            font-size: 23px;
+            color:#ffbc00;
+            text-transform: uppercase;
+            margin-top: 20px;
+    
+        }
+
+        .contact_number{
+            padding: 5px;
+        }
+
+    }
+
+    .social_links{
+        display: flex;
+        flex-wrap: wrap;
+        width: 150px;
+        margin: 35px auto;
+        justify-content: center;
+        
+        img{
+            width: 35px;
+            height: 35px;
+            margin: 20px;
+            border-radius:5px;
+        }
+
+        .share_link{
+            color: #3e9578;
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+
+
+
+}
+
+

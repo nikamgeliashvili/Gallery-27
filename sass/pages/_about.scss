@@ -1,0 +1,89 @@
+.about_container{
+    margin: 50px auto;
+    
+    .about_img img {
+        width: 100%;
+    }
+
+    
+    .about_content{
+        
+        text-align: center;
+        color:#3e9578;
+
+
+        h2{
+            text-align: center;
+            color:#3e9578;
+            font-size: 23px;
+            margin: 40px 0 5px;
+            text-transform: uppercase;
+        }
+
+        p{
+            margin-top: 15px;
+        }
+
+        
+    }
+
+
+    .team_content{
+        h2{
+            text-align: center;
+            color:#3e9578;
+            font-size: 23px;
+            margin: 60px 0 20px;
+            text-transform: uppercase;
+        }
+    }
+
+
+    .team_members{
+        color:#3e9578;
+
+        .member_img{
+            margin:0  auto;
+            max-width: 200px;
+            border-radius: 50%;
+
+            img{
+                width:100%;
+                border-radius:50%;
+                height: 100%;
+            }
+        }
+
+        .member_name{
+            text-align: center;
+            margin: 5px;
+        }
+
+        .member_info{
+            text-align: center;
+
+            img{
+                cursor: pointer;
+                width: 30px;
+                margin: 0 auto;
+            }
+        }
+
+        .text_content{
+            display: none;
+            
+            p{
+                max-width: 250px;
+                margin: 20px auto;
+                
+            }
+        }
+
+
+
+    }
+
+
+}
+
+

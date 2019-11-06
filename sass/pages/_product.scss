@@ -1,0 +1,127 @@
+.product_container{
+     max-width: 1200px;
+     min-height: calc(100vh - 181px);
+     padding-bottom:50px;
+
+
+    .product_img{
+        position: relative;
+
+        img{
+            width: 100%;
+            margin-top: 50px
+        }
+
+        .product_icon{
+            position: absolute;
+            right: 35px;
+            top: 70px;
+            
+            img{
+                margin:10px;
+                width:40px;
+            }
+        }
+    }
+    
+
+    .product_section{
+        margin-top: 50px;
+        color:#3e9578;
+        padding-left: 40px;
+       
+
+        .product_name{
+
+            h2{
+               
+                font-size: 23px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+
+            }
+
+        }
+
+        .product_price{
+            margin-top: 30px;
+        }
+
+        .quantity{
+            width: 40%;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            
+            span{
+                width:100%;
+            }
+           
+            input{
+                border: 1px solid #3e9578;
+                width:32%;
+                padding: 8px;
+                margin: 10px 0;
+            }
+
+            button{
+                padding: 15px;
+                letter-spacing: 5p;
+                word-spacing: 6px;
+                letter-spacing: 2px;
+                color: #3e9578;
+                outline: none;
+                text-transform: uppercase;
+                margin-top: 10px;
+                background: white;
+                border: 1.5px solid #3e9578;
+            }
+        }
+
+        .product_info{
+
+            .product_article{
+                display: none;
+            }
+      
+            
+            .product_title{
+                display: flex;
+                justify-content: space-between;
+                border-top: 1px solid #3e9578;
+                padding-top: 20px;
+                margin-top: 20px;
+
+                span{
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+
+    
+
+            }
+
+            p{
+                letter-spacing: 1px;
+                margin-top: 10px;  
+               
+                 
+            }
+
+        }
+
+        
+
+        
+        
+
+    }
+        
+
+}

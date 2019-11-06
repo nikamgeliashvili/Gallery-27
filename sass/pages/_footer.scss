@@ -1,0 +1,40 @@
+footer{
+
+   
+    
+    
+    background-color: #3e9578;
+
+    ul{
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+
+      span{
+        color:white;
+      } 
+
+      li{
+        margin: 15px;
+        padding-right: 30px;
+        
+      }
+
+      li:not(:last-child) {
+        border-right: 1px solid white;
+      }
+
+
+      a{
+        color: white;
+        padding:5px;
+      }
+
+      a:hover{
+        color: #f5c745;
+        transition: 1s;
+      }
+    }
+    
+  
+}

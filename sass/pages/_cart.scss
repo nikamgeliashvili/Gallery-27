@@ -1,0 +1,232 @@
+
+.cart_fluid{
+    
+    margin:50px;
+
+    h2{
+        font-size: 23px;
+        text-transform: uppercase;
+        color: #3e9578;
+        margin: 70px 0 30px;
+    }
+
+    .cart_product{
+        display: flex;
+        margin: 35px 0;
+
+        .cart_product_img{
+            max-width: 170px;
+            height:100%;
+            width:100%;
+    
+            img{
+                width:100%;
+                height: 100%;
+            }
+        }
+
+        .product_info{
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+        
+            }
+
+            h3{
+                color: #3e9578;
+                text-transform: uppercase;
+                font-size: 18px;
+            }
+
+            span{
+                letter-spacing: 2px;
+                color: #3e9578;
+
+            }
+
+            input{
+                border: 1px solid #3e9578;
+                padding: 5px;
+                width: 30%;
+                color: #3e9578;
+                outline: none;
+                height: 30px;
+                text-align: center;
+            }
+
+            button{
+                padding: 2px 10px;
+                color: #3e9578;
+                background-color: white;
+                border: 1px solid #3e9578;
+                letter-spacing: 2px;
+                outline: none;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .pay_container{
+
+        margin: 35px 0;
+        padding: 30px;
+        border: 1px solid #3e9578;
+
+        .pay_title{
+
+            span{
+                color:#3e9578;
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+        }
+
+        .payment{
+            display: flex;
+            align-items: center;
+            margin:15px 0;
+
+
+           
+
+            .cart_button {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 22px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+              }
+              
+              /* Hide the browser's default radio button */
+              .cart_button input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+              }
+              
+              /* Create a custom radio button */
+              .checkmark {
+                position: absolute;
+                top: 7px;
+                left: 0;
+                height: 22px;
+                width: 22px;
+                background-color: #eee;
+                border-radius: 50%;
+              }
+              
+              /* On mouse-over, add a grey background color */
+              .cart_button:hover input ~ .checkmark {
+                background-color: #ccc;
+              }
+              
+              /* When the radio button is checked, add a blue background */
+              .cart_button input:checked ~ .checkmark {
+            
+                    background-color: #3e9578;
+                    border: 1px solid #3e9578;
+                    padding: 2px;
+                    padding: 1px;
+                    background-clip: content-box;
+                
+              }
+              
+              /* Create the indicator (the dot/circle - hidden when not checked) */
+              .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+              }
+              
+              /* Show the indicator (dot/circle) when checked */
+              .cart_button input:checked ~ .checkmark:after {
+                display: block;
+              }
+              
+              /* Style the indicator (dot/circle) */
+            
+
+            input{
+                width: 20px;
+                height: 20px;
+                margin-right: 30px;
+
+                
+            }
+
+            img{
+                width: 50px;
+                margin-right:15px
+            }
+        }
+
+
+        .item_info{
+        
+
+            .total_item{
+                color:#3e9578;
+                letter-spacing: 2px;
+                display: flex;
+                justify-content: space-between;
+                
+    
+                span{
+                    padding: 5px 0;
+                }
+            }
+
+            .total_price{
+                color:#3e9578;
+                letter-spacing: 2px;
+                display: flex;
+                justify-content: space-between;
+                font-weight: bold;
+                border-top: 1px solid #3e9578;
+                margin-top: 20px;
+                padding-top: 15px;
+               
+            }
+        }
+
+        .checkout_button{
+            text-align: center;
+            margin-top: 40px;
+
+            button{
+
+                background-color: white;
+                color: #3e9578;
+                border: 1px solid #3e9578;
+                letter-spacing: 2px;
+                padding: 12px 10px 15px;
+                font-weight: bold;
+                text-transform: uppercase;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+}
+
+
+        
+    
+    
+
+
+
+    

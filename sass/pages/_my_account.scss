@@ -1,0 +1,61 @@
+.my_account{
+    margin:100px auto;
+    max-width: 300px;   
+    height: calc( 100vh - 381px);
+
+    h1{
+        text-align: center;
+        color: #3e9578;
+        font-size: 23px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+       
+    }
+
+    .username span{
+        margin-left: 10px;
+    }
+
+    .password span{
+        margin-left:10px;
+    }
+
+
+    input[type=text]{
+        width: 100%;
+        border: 1px solid #3e9578;
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+
+    .password{
+    span{
+                margin-left: 5px;
+            }
+        }
+
+    .username{
+        span{
+                 margin-left: 5px;
+             }
+         }
+
+    button{
+        width: 100%;
+        padding: 6px;
+        background-color: #3e9578;
+        color: white;
+        outline: none;
+        margin: 15px 0;
+    }
+
+    span{
+        color: #3e9578;
+
+        a{
+            color:#3e9578;
+        }
+    }
+
+
+}
