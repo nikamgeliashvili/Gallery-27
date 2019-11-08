@@ -1,115 +1,115 @@
-.cups_container{
-   
+.cups_container {
 
-    .cups_title{
+
+    .cups_title {
         color: orange;
         font-size: 16px;
         text-transform: uppercase;
         margin-top: 20px;
-        
+
     }
 
-      
+
     .img_box {
         width: 100%;
         height: 240px;
         position: relative;
-    
-        a{
+
+        a {
             color: white;
         }
     }
-    
-    .cup_box{
-        margin:20px auto;
-        
-        
-    
-        .img_box{
-    
-            .cup_hover{
-               
+
+    .cup_box {
+        margin: 20px auto;
+
+
+
+        .img_box {
+
+            .cup_hover {
+
                 position: absolute;
                 top: 0;
                 color: white;
                 text-transform: uppercase;
-                background-color: rgba(204,204,204,0.5);
+                background-color: rgba(204, 204, 204, 0.5);
                 width: 100%;
                 height: 100%;
                 opacity: 0;
-    
-                .see_more{
+
+                .see_more {
                     padding: 10px;
                     background-color: #FFBC00;
                     width: fit-content;
                     margin: 45% auto;
-    
-                    a{
-                        color:white;
+                    cursor: pointer;
+
+                    a {
+                        color: white;
                     }
                 }
-                
+
             }
-        
-            
+
+
             a {
-            
+
                 width: 100%;
                 height: 100%;
             }
-        
-        
-            img{
+
+
+            img {
                 width: 100%;
                 height: 100%;
-               
+
                 object-fit: cover
             }
-    
-    
+
+
         }
-    
-        .img_box:hover{
-            .cup_hover{
+
+        .img_box:hover {
+            .cup_hover {
                 opacity: 1;
                 transition: 1s;
-                
+
             }
         }
-    
-    
+
+
         .cup_info {
             display: flex;
             align-items: center;
             justify-content: space-between;
-    
-    
-            span{
+
+
+            span {
                 display: block;
                 color: #3e9578;
                 padding-right: 10px
-                
             }
-    
-            button{
+
+            button {
                 color: white;
                 background-color: #FFBC00;
                 padding: 5px;
                 outline: none;
                 cursor: pointer
             }
-    
-            button:hover{
+
+            button:hover {
                 background-color: rgb(255, 218, 116);
-                transition:1s;
+                transition: 1s;
             }
         }
     }
 
-    .pagination{
+    .pagination {
         justify-content: center;
 
-        a{
+        a {
             padding: 0 3px;
         }
     }

@@ -1,40 +1,43 @@
-.product_container{
-     max-width: 1200px;
-     min-height: calc(100vh - 181px);
-     padding-bottom:50px;
+.product_container {
+    max-width: 1200px;
+    min-height: calc(100vh - 181px);
+    padding-bottom: 50px;
 
 
-    .product_img{
+    .product_img {
         position: relative;
 
-        img{
+        img {
             width: 100%;
             margin-top: 50px
         }
 
-        .product_icon{
+        .product_icon {
             position: absolute;
             right: 35px;
             top: 70px;
-            
-            img{
-                margin:10px;
-                width:40px;
+
+            img {
+                margin: 10px;
+                width: 40px;
+                cursor: pointer;
+                background: $yellow;
+                border-radius: 12px;
             }
         }
     }
-    
 
-    .product_section{
+
+    .product_section {
         margin-top: 50px;
-        color:#3e9578;
+        color: #3e9578;
         padding-left: 40px;
-       
 
-        .product_name{
 
-            h2{
-               
+        .product_name {
+
+            h2 {
+
                 font-size: 23px;
                 text-transform: uppercase;
                 margin-bottom: 10px;
@@ -43,28 +46,28 @@
 
         }
 
-        .product_price{
+        .product_price {
             margin-top: 30px;
         }
 
-        .quantity{
+        .quantity {
             width: 40%;
             margin-top: 30px;
             display: flex;
             flex-direction: column;
-            
-            span{
-                width:100%;
+
+            span {
+                width: 100%;
             }
-           
-            input{
+
+            input {
                 border: 1px solid #3e9578;
-                width:32%;
+                width: 32%;
                 padding: 8px;
                 margin: 10px 0;
             }
 
-            button{
+            button {
                 padding: 15px;
                 letter-spacing: 5p;
                 word-spacing: 6px;
@@ -78,50 +81,50 @@
             }
         }
 
-        .product_info{
+        .product_info {
 
-            .product_article{
+            .product_article {
                 display: none;
             }
-      
-            
-            .product_title{
+
+
+            .product_title {
                 display: flex;
                 justify-content: space-between;
                 border-top: 1px solid #3e9578;
                 padding-top: 20px;
                 margin-top: 20px;
 
-                span{
+                span {
                     font-size: 20px;
                     text-transform: uppercase;
                     letter-spacing: 1px;
                 }
 
-                img{
+                img {
                     width: 30px;
                     height: 30px;
                 }
 
-    
+
 
             }
 
-            p{
+            p {
                 letter-spacing: 1px;
-                margin-top: 10px;  
-               
-                 
+                margin-top: 10px;
+
+
             }
 
         }
 
-        
 
-        
-        
+
+
+
 
     }
-        
+
 
 }

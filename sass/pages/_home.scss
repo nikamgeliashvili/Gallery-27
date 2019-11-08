@@ -1,96 +1,91 @@
-
-
-
 .home_category_container {
 
 	height: calc(100vh - 201px);
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 
-	    .row {
-	    	height: inherit;
 
-	    	.col-12 {
-	    		height: 50%;
+	.row {
+		height: inherit;
 
-	    		.category_box {
-	    			    height: 100%;
-						perspective: 200px;
-						
+		.col-12 {
+			height: 50%;
 
-						.category_title{
-							transform: translateY(-10px);
+			.category_box {
+				height: 100%;
+				perspective: 200px;
+
+
+				.category_title {
+					transform: translateY(-10px);
+				}
+
+
+				&:hover .category_title a {
+					color: #f5c745;
+
+				}
+
+				.category_img {
+					height: calc(100% - 12px);
+					transition: all .4s;
+					position: relative;
+
+
+					.background_img {
+						position: absolute;
+						top: 8px;
+						/* background: red; */
+						left: 0;
+						width: 102%;
+						height: 100%;
+						z-index: 10;
+
+						a {
+							display: unset;
 						}
-						
-
-	    			    &:hover .category_title a{
-	    						color: #f5c745;
-	    						
-	    					}
-
-	    				.category_img {
-	    					height:calc(100% - 12px);
-							transition: all .4s;
-							position: relative;
 
 
-							.background_img{
-								    position: absolute;
-								    top: 8px;
-								    /* background: red; */
-								    left: 0;
-								    width: 102%;
-								    height: 100%;
-								    z-index: 10;
+					}
 
-								    a {
-								    	display: unset;
-								    }
 
-								
-							}
-						
 
-	    				
-							
-														
-	    					a {
-	    						height: inherit;
-							    display: flex;
-							    align-items: center;
 
-	    						img {
-								height: 90%;
-								
-	    						}
-	    					}
-	    				}
-	    		}
-	    	}
-	    }
+
+					a {
+						height: inherit;
+						display: flex;
+						align-items: center;
+
+						img {
+							height: 90%;
+
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 
 
 .category_box {
-	
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 
-	 .category_img {
+	.category_img {
 
-	 	 div {
-	 	 	display: block;
-	 	 	width: 100%;
-	 	 	height: 100%;
+		div {
+			display: block;
+			width: 100%;
+			height: 100%;
 
-	 	 	 img {
-				
-	 	 	 
-	 	 	 }
-	 	 }
-	 }
+			img {}
+		}
+	}
 }
 
 .category_title {
@@ -100,86 +95,88 @@
 		color: #3e9578;
 		transition: all .4s;
 		text-transform: capitalize;
-		
+
 	}
 }
 
-.home_category_container .col-12:nth-child(1) .category_img{
+.home_category_container .col-12:nth-child(1) .category_img {
 	transform: rotateY(180deg);
 }
 
-.home_category_container .col-12:nth-child(4) .category_img{
+.home_category_container .col-12:nth-child(4) .category_img {
 	transform: rotateY(180deg);
 }
 
 
 
-.home_category_container .col-12:nth-child(2) .category_img{
-		&:hover{
-			 animation: rotateAnime 1s linear backwards;
-		}
-}
-.home_category_container .col-12:nth-child(3) .category_img{
-	&:hover{
-			 animation: rotateAnime 1s linear backwards;
-		}
+.home_category_container .col-12:nth-child(2) .category_img {
+	&:hover {
+		animation: rotateAnime 1s linear backwards;
+	}
 }
 
-.home_category_container .col-12:nth-child(1) .category_img{
-		&:hover{
-			 animation: rotateAnime2 1s linear backwards;
-		}
-}
-.home_category_container .col-12:nth-child(4) .category_img{
-	&:hover{
-			 animation: rotateAnime2 1s linear backwards;
-		}
+.home_category_container .col-12:nth-child(3) .category_img {
+	&:hover {
+		animation: rotateAnime 1s linear backwards;
+	}
 }
 
+.home_category_container .col-12:nth-child(1) .category_img {
+	&:hover {
+		animation: rotateAnime2 1s linear backwards;
+	}
+}
 
-	@keyframes rotateAnime2 {
+.home_category_container .col-12:nth-child(4) .category_img {
+	&:hover {
+		animation: rotateAnime2 1s linear backwards;
+	}
+}
 
-	0%{
 
-		transform: rotate(0) rotateY(180deg);	
+@keyframes rotateAnime2 {
+
+	0% {
+
+		transform: rotate(0) rotateY(180deg);
 	}
 
-	40%{
+	40% {
 		transform: rotate(-2.5deg) rotateY(180deg);
 	}
 
 
-	70%{
+	70% {
 
 		transform: rotate(2.5deg) rotateY(180deg);
 	}
 
-	100%{
+	100% {
 
-		transform: rotate(0) rotateY(180deg);	
+		transform: rotate(0) rotateY(180deg);
 	}
 }
 
 
-	@keyframes rotateAnime {
+@keyframes rotateAnime {
 
-	0%{
+	0% {
 
-		transform: rotate(0);	
+		transform: rotate(0);
 	}
 
-	40%{
+	40% {
 		transform: rotate(-2.5deg);
 	}
 
 
-	70%{
+	70% {
 
 		transform: rotate(2.5deg);
 	}
 
-	100%{
+	100% {
 
-		transform: rotate(0);	
+		transform: rotate(0);
 	}
 }
