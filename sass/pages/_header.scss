@@ -90,7 +90,13 @@ header {
       &:hover {
         color: $yellow;
       }
+
+      &:active {
+        color: $yellow;
+      }
     }
+
+
 
     img {
       width: 30px

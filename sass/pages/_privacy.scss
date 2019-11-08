@@ -1,5 +1,18 @@
 .privacy_container {
 
-    min-height: calc(100vh - 181px);
+    min-height: calc(100vh - 281px);
+    width: 80%;
+    margin: 50px auto;
+
+    .privacy_title {
+        text-align: center;
+        color: $main-color;
+    }
+
+    .privacy_text p {
+        color: $main-color;
+        padding: 10px;
+
+    }
 
 }

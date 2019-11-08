@@ -3,7 +3,7 @@
     padding-top: 50px;
 
     .workshops_img {
-        height: 100%;
+        width: 90%;
 
         img {
             width: 100%;
@@ -114,18 +114,18 @@
 }
 
 .past_workshops {
-    padding-top: 50px;
+    padding-top: 20px;
 
     .past_workshops_title {
         text-align: center;
         color: #ffbc00;
         font-size: 23px;
-        margin: 40px 0 60px;
+        margin: 40px 0;
         text-transform: uppercase;
     }
 
     .row {
-        margin-bottom: 80px;
+        margin-bottom: 30px;
 
 
         .past_workshops_img {
@@ -156,7 +156,6 @@
 
             p {
                 color: #3e9578;
-                padding: 20px;
                 text-align: justify;
                 color: #3e9578;
             }
@@ -164,6 +163,15 @@
 
             .right_arrow {
                 text-align: center;
+                width: 32px;
+                margin: 15px auto;
+                transition: .5s;
+            }
+
+            .right_arrow:hover {
+                background: $yellow;
+                border-radius: 50%;
+
             }
 
         }

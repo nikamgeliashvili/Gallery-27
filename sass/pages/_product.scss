@@ -21,8 +21,14 @@
                 margin: 10px;
                 width: 40px;
                 cursor: pointer;
-                background: $yellow;
+                transition: .5s;
+
+            }
+
+            img:hover {
+
                 border-radius: 12px;
+                transform: scale(1.2);
             }
         }
     }
@@ -78,6 +84,13 @@
                 margin-top: 10px;
                 background: white;
                 border: 1.5px solid #3e9578;
+                transition: .5s;
+            }
+
+            button:hover {
+                background: #f5c745;
+                transform: scale(1.05);
+
             }
         }
 
@@ -113,6 +126,7 @@
             p {
                 letter-spacing: 1px;
                 margin-top: 10px;
+                color: $main-color;
 
 
             }
