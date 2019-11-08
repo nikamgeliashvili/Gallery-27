@@ -125,22 +125,22 @@ body {
 
 .home_category_container .col-12:nth-child(2) .category_img:hover {
   -webkit-animation: rotateAnime 1s linear backwards;
-          animation: rotateAnime 1s linear backwards;
+  animation: rotateAnime 1s linear backwards;
 }
 
 .home_category_container .col-12:nth-child(3) .category_img:hover {
   -webkit-animation: rotateAnime 1s linear backwards;
-          animation: rotateAnime 1s linear backwards;
+  animation: rotateAnime 1s linear backwards;
 }
 
 .home_category_container .col-12:nth-child(1) .category_img:hover {
   -webkit-animation: rotateAnime2 1s linear backwards;
-          animation: rotateAnime2 1s linear backwards;
+  animation: rotateAnime2 1s linear backwards;
 }
 
 .home_category_container .col-12:nth-child(4) .category_img:hover {
   -webkit-animation: rotateAnime2 1s linear backwards;
-          animation: rotateAnime2 1s linear backwards;
+  animation: rotateAnime2 1s linear backwards;
 }
 
 @-webkit-keyframes rotateAnime2 {
@@ -462,7 +462,7 @@ header .header_navigation img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .category_for_home .for_home .home_background_img {
@@ -582,7 +582,7 @@ header .header_navigation img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .cups_container .cup_box .img_box:hover .cup_hover {
@@ -809,7 +809,7 @@ header .header_navigation img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .workshops_container .workshops_content {
@@ -873,7 +873,7 @@ header .header_navigation img {
 .workshops_container .workshops_content form .form_content_2 .form_textarea textarea {
   border: 1px solid #3e9578;
   resize: none;
-  width: calc( 100% - 35px );
+  width: calc(100% - 35px);
   height: 100px;
 }
 
@@ -912,7 +912,7 @@ header .header_navigation img {
 .past_workshops .row .past_workshops_img img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .past_workshops .row .past_workshops_content h3 {
@@ -953,7 +953,7 @@ header .header_navigation img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .contact_container .adress {
@@ -1031,7 +1031,7 @@ header .header_navigation img {
   border-radius: 50%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
 }
 
@@ -1124,7 +1124,7 @@ header .header_navigation img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .account_container .cup_box .img_box:hover .cup_hover {
@@ -1281,11 +1281,11 @@ header .header_navigation img {
   border-radius: 50%;
 }
 
-.cart_fluid .pay_container .payment .cart_button:hover input ~ .checkmark {
+.cart_fluid .pay_container .payment .cart_button:hover input~.checkmark {
   background-color: #ccc;
 }
 
-.cart_fluid .pay_container .payment .cart_button input:checked ~ .checkmark {
+.cart_fluid .pay_container .payment .cart_button input:checked~.checkmark {
   background-color: #3e9578;
   border: 1px solid #3e9578;
   padding: 2px;
@@ -1299,7 +1299,7 @@ header .header_navigation img {
   display: none;
 }
 
-.cart_fluid .pay_container .payment .cart_button input:checked ~ .checkmark:after {
+.cart_fluid .pay_container .payment .cart_button input:checked~.checkmark:after {
   display: block;
 }
 
@@ -1714,7 +1714,7 @@ footer ul a:hover {
     width: 80%;
     height: 80%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 
   .category_for_home .for_home_content {
@@ -1872,7 +1872,7 @@ footer ul a:hover {
 .my_account {
   margin: 100px auto;
   max-width: 300px;
-  height: calc( 100vh - 381px);
+  height: calc(100vh - 381px);
 }
 
 .my_account h1 {
@@ -2035,11 +2035,11 @@ footer ul a:hover {
   border-radius: 50%;
 }
 
-.registration_container .gender .payment .cart_button:hover input ~ .checkmark {
+.registration_container .gender .payment .cart_button:hover input~.checkmark {
   background-color: #ccc;
 }
 
-.registration_container .gender .payment .cart_button input:checked ~ .checkmark {
+.registration_container .gender .payment .cart_button input:checked~.checkmark {
   background-color: #3e9578;
   border: 1px solid #3e9578;
   padding: 2px;
@@ -2053,7 +2053,7 @@ footer ul a:hover {
   display: none;
 }
 
-.registration_container .gender .payment .cart_button input:checked ~ .checkmark:after {
+.registration_container .gender .payment .cart_button input:checked~.checkmark:after {
   display: block;
 }
 
@@ -2100,3 +2100,18 @@ footer ul a:hover {
   margin-top: 30px;
 }
 
+.privacy_container {
+  min-height: calc(100vh - 281px);
+  width: 80%;
+  margin: 50px auto;
+}
+
+.privacy_container .privacy_title {
+  margin: 10px;
+  color: #3e9578;
+}
+
+.privacy_container .privacy_text p {
+  color: #3e9578;
+  padding: 10px;
+}

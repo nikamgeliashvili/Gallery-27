@@ -120,12 +120,16 @@
         text-align: center;
         color: #ffbc00;
         font-size: 23px;
-        margin: 40px 0;
+        margin: 60px 0;
         text-transform: uppercase;
+
+        h2 {
+            font-size: 30px;
+        }
     }
 
     .row {
-        margin-bottom: 30px;
+        margin-bottom: 100px;
 
 
         .past_workshops_img {
