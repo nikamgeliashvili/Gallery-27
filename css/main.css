@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Basic Reset */
 *,
 *::before,
@@ -497,7 +498,8 @@ header {
       text-transform: uppercase; }
     .about_container .about_content p {
       margin-top: 15px;
-      color: #3e9578; }
+      color: #3e9578;
+      font-family: Conv_FiraGO-Bold; }
   .about_container .team_content h2 {
     text-align: center;
     color: #3e9578;
@@ -530,6 +532,12 @@ header {
         margin: 20px auto;
         color: #3e9578; }
 
+@font-face {
+  font-family: 'Conv_FiraGO-Bold';
+  src: url("../fonts/FiraGO-Bold.eot");
+  src: local("☺"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .workshops_container {
   padding-top: 50px; }
   .workshops_container .workshops_img {
@@ -613,7 +621,8 @@ header {
       font-size: 20px;
       text-transform: uppercase;
       font-weight: bold;
-      text-align: center; }
+      text-align: center;
+      margin: 15px; }
     .past_workshops .row .past_workshops_content .workshops_date {
       text-align: center;
       color: #3e9578;
