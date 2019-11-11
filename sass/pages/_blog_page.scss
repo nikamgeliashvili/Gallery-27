@@ -1,0 +1,22 @@
+.blog_container{
+	min-height: calc(100vh - 180px);
+	font-family: 'Conv_FiraGO-LightItalic';
+	width: 80%;
+    margin: 50px auto;
+    text-align: center;
+
+  	.blog_title{
+        text-align: center;
+        color: $main-color;
+        font-size: 23px;
+        margin-top: 40px;
+        text-transform: uppercase;
+    }
+
+    .blog_content p{
+    	  margin-top: 15px;
+            text-align: justify;
+            color: $main-color !important;
+    }
+
+}
