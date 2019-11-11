@@ -62,8 +62,8 @@ header {
     background-color: #3e9578;
 
     display: flex;
-    justify-content: space-between;
-    padding: 10px 75px 10px 30px;
+    justify-content: center;
+    padding: 10px;
 
 
 
@@ -74,6 +74,8 @@ header {
       flex-grow: 1;
       max-width: 1000px;
       width: 100%;
+      margin-right:40px;
+      font-weight:bold;
 
 
     }
@@ -87,6 +89,7 @@ header {
       text-transform: uppercase;
       color: white;
       transition: all .4s;
+      letter-spacing:1px;
 
       &:hover {
         color: $yellow;

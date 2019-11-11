@@ -1,5 +1,6 @@
 .cups_container {
 font-family: 'Conv_FiraGO-LightItalic';
+min-height: calc(100vh - 200px);
 
 
     .cups_title {
@@ -40,14 +41,17 @@ font-family: 'Conv_FiraGO-LightItalic';
                 opacity: 0;
 
                 .see_more {
-                    padding: 10px;
+                    padding: 20px;
                     background-color: #FFBC00;
                     width: fit-content;
-                    margin: 45% auto;
+                    margin: 40% auto;
                     cursor: pointer;
+                    border-radius: 4px;
+                    padding: 8px 2px;
 
                     a {
                         color: white;
+                        padding:10px;
                     }
                 }
 
