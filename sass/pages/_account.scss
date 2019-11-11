@@ -47,10 +47,12 @@
     }
 
     .user_product {
-        display: flex;
+
+        .nav-tabs{
+            border-bottom:1px solid $main-color;
+        }
+        
         padding: 25px 0;
-        border-top: 1px solid #3e9578;
-        border-bottom: 1px solid #3e9578;
         margin: 30px 0;
 
         a {
