@@ -34,7 +34,7 @@ body {
   background: red; }
 
 .home_category_container {
-  height: calc(100vh - 201px);
+  height: calc(100vh - 200px);
   margin-bottom: 20px;
   font-family: 'Conv_FiraGO-LightItalic'; }
   .home_category_container .row {
@@ -158,22 +158,25 @@ header {
   header .header_navigation {
     background-color: #3e9578;
     display: flex;
-    justify-content: space-between;
-    padding: 10px 75px 10px 30px; }
+    justify-content: center;
+    padding: 10px; }
     header .header_navigation ul {
       display: flex;
       justify-content: space-around;
       align-items: center;
       flex-grow: 1;
       max-width: 1000px;
-      width: 100%; }
+      width: 100%;
+      margin-right: 40px;
+      font-weight: bold; }
     header .header_navigation li {
       padding: 7px 15px; }
     header .header_navigation a {
       font-size: 15px;
       text-transform: uppercase;
       color: white;
-      transition: all .4s; }
+      transition: all .4s;
+      letter-spacing: 1px; }
       header .header_navigation a:hover {
         color: #f5c745; }
       header .header_navigation a:active {
@@ -340,7 +343,8 @@ header {
   width: 30px; }
 
 .cups_container {
-  font-family: 'Conv_FiraGO-LightItalic'; }
+  font-family: 'Conv_FiraGO-LightItalic';
+  min-height: calc(100vh - 200px); }
   .cups_container .cups_title {
     color: orange;
     font-size: 16px;
@@ -364,13 +368,16 @@ header {
       height: 100%;
       opacity: 0; }
       .cups_container .cup_box .img_box .cup_hover .see_more {
-        padding: 10px;
+        padding: 20px;
         background-color: #FFBC00;
         width: fit-content;
-        margin: 45% auto;
-        cursor: pointer; }
+        margin: 40% auto;
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 8px 2px; }
         .cups_container .cup_box .img_box .cup_hover .see_more a {
-          color: white; }
+          color: white;
+          padding: 10px; }
     .cups_container .cup_box .img_box a {
       width: 100%;
       height: 100%; }
@@ -523,9 +530,10 @@ header {
       max-width: 200px;
       border-radius: 50%; }
       .about_container .team_members .member_img img {
-        width: 100%;
+        width: 200px;
         border-radius: 50%;
-        height: 100%; }
+        height: 200px;
+        object-fit: contain; }
     .about_container .team_members .member_name {
       text-align: center;
       margin: 5px; }
@@ -732,10 +740,7 @@ header {
           color: #3e9578;
           padding: 10px 30px; }
   .account_container .user_product {
-    display: flex;
     padding: 25px 0;
-    border-top: 1px solid #3e9578;
-    border-bottom: 1px solid #3e9578;
     margin: 30px 0; }
     .account_container .user_product a.active {
       opacity: 0.5;
@@ -763,12 +768,14 @@ header {
       height: 100%;
       opacity: 0; }
       .account_container .cup_box .img_box .cup_hover .see_more {
-        padding: 10px;
+        padding: 8px 2px;
         background-color: #FFBC00;
         width: fit-content;
-        margin: 45% auto; }
+        margin: calc(50% - 22px) auto;
+        border-radius: 4px; }
         .account_container .cup_box .img_box .cup_hover .see_more a {
-          color: white; }
+          color: white;
+          padding: 10px; }
     .account_container .cup_box .img_box a {
       width: 100%;
       height: 100%; }
@@ -792,7 +799,8 @@ header {
         background-color: #FFBC00;
         padding: 5px;
         outline: none;
-        cursor: pointer; }
+        cursor: pointer;
+        border-radius: 4px; }
       .account_container .cup_box .cup_info button:hover {
         background-color: #ffda74;
         transition: 1s; }
@@ -952,7 +960,8 @@ footer {
     footer ul li {
       margin: 15px;
       padding-right: 30px;
-      font-weight: bold; }
+      font-weight: bold;
+      letter-spacing: 1px; }
     footer ul li:not(:last-child) {
       border-right: 1px solid white; }
     footer ul a {
