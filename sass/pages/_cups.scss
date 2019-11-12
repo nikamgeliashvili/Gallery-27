@@ -85,15 +85,29 @@ min-height: calc(100vh - 200px);
 
 
         .cup_info {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .cup_price{
+                    display:flex;
+
+                    .price{
+                        text-decoration: line-through;
+                    }
+
+                    .new_price{
+                        color:red;
+                    }
+
+                }
 
 
             span {
                 display: block;
                 color: #3e9578;
-                padding-right: 10px
+                padding-right: 10px;
+                display:flex;
             }
 
             button {

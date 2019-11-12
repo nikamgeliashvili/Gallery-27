@@ -26,6 +26,11 @@
 
   header .header_navigation li {
     text-align: center;
+    
+  }
+
+  header .header_navigation ul{
+    margin-right:unset;
   }
 
 
@@ -47,6 +52,12 @@
   .lang {
     display: flex;
   }
+
+  header .header_top{
+         padding: 8px 0px 10px 10px;
+  }
+
+
 
   header .header_top .lang a {
     font-size: 10px;
@@ -290,6 +301,10 @@
 
   .about_container .team_members .member_img {
     max-width: 160px;
+  }
+
+  .about_container .team_members .member_img img{
+    height:160px;
   }
 
   .about_container {

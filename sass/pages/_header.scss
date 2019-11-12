@@ -14,6 +14,9 @@ body {
   background-color: white;
 }
 
+
+
+
 header {
   width: 100%;
   overflow: hidden;
@@ -23,13 +26,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px 10px 40px;
+    padding: 8px 0px 10px 40px;
 
     .logo {
-      width: 100%;
+     
+      svg{
+        width: 100px;
+        height: 50px;
+        transition: .5s;
 
-      img {
-        width: 70px;
+        .st0 {
+            opacity: 1;
+            fill: $main-color !important;
+        }
+
+
+      }
+
+      svg:hover{
+        opacity: 0.5;
       }
     }
 
@@ -216,12 +231,12 @@ header {
     }
 
     &::after {
-      top: 18px;
+      top: 10px;
       transform: rotate(135deg);
     }
 
     &::before {
-      top: 18px;
+      top: 10px;
       transform: rotate(-135deg);
     }
   }

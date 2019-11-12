@@ -10,6 +10,13 @@ footer {
 
     span {
       color: white;
+      padding:10px;
+    }
+
+    span:hover{
+      color: #f5c745;
+      transition: 1s;
+
     }
 
     li {
