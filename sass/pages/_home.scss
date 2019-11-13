@@ -1,8 +1,11 @@
+
+
 .home_category_container {
 
 	height: calc(100vh - 200px);
 	margin-bottom: 20px;
 	font-family: 'Conv_FiraGO-LightItalic';
+
 
 
 	.row {
@@ -192,8 +195,11 @@
   border-radius: 10px;
 }
 
-sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+
+
+body{
+	padding-top:126px !important;
+}
+
+
+

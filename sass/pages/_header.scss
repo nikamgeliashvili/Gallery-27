@@ -5,13 +5,15 @@
 
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+    position: fixed;
+    top: -68px;
+    width: 100%;
+    z-index:3000;
+  }
 
 body {
   background-color: white;
+  padding-top: 200px;
 }
 
 
@@ -19,14 +21,20 @@ body {
 
 header {
   width: 100%;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  z-index: 5000;
+  transition: all .4s;
   overflow: hidden;
   font-family: Conv_FiraGO-LightItalic;
+  height: 126px;
 
   .header_top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 0px 10px 40px;
+    padding: 8px 30px 10px 40px;
 
     .logo {
      
@@ -57,7 +65,7 @@ header {
         background-color: #ffe9aa;
         color: white;
         font-size: 12px;
-        padding: 7px;
+        padding: 7px 15px;
         transition: all 4s;
 
 
@@ -68,6 +76,10 @@ header {
 
 
         }
+      }
+
+      a:hover{
+          opacity: 0.5 !important;
       }
     }
   }

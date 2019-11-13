@@ -8,10 +8,10 @@
 
 
 .about_container {
-    margin: 50px auto;
-    font-family: 'Conv_FiraGO-LightItalic';
-    min-height
 
+    font-family: 'Conv_FiraGO-LightItalic';
+    min-height: calc(100vh - 280px);
+    margin:50px auto;
 
     .about_img {
         max-height: 450px;

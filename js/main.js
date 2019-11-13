@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
     
 
 
@@ -59,6 +61,36 @@ $(document).ready(function(){
 
 
 
+// window.onscroll = function() {myFunction()};
+    
+// var navbar = document.getElementById("nav");
+// var sticky = navbar.offsetTop;
+
+// function myFunction() {
+// if (window.pageYOffset >= sticky) {
+// navbar.classList.add("sticky")
+// } else {
+// navbar.classList.remove("sticky");
+// }
+// }
+
+
+var $headerCont = $("header");
+  var $subHeader = $(".sub-header");
+  var prevScrollpos = window.pageYOffset;
+
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+
+    if (prevScrollpos > currentScrollPos) {
+      $headerCont.removeClass('sticky');
+    } else {
+      $headerCont.addClass('sticky');
+    }
+
+    prevScrollpos = currentScrollPos;
+  };
+
 
 
 // Get the modal
@@ -84,17 +116,5 @@ span.onclick = function() {
 
 
 
-window.onscroll = function() {myFunction()};
-    
-var navbar = document.getElementById("nav");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-if (window.pageYOffset >= sticky) {
-navbar.classList.add("sticky")
-} else {
-navbar.classList.remove("sticky");
-}
-}
 
 

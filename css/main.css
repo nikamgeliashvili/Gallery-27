@@ -127,10 +127,8 @@ body {
   background: #f5c745;
   border-radius: 10px; }
 
-sticky {
-  position: fixed;
-  top: 0;
-  width: 100%; }
+body {
+  padding-top: 126px !important; }
 
 * {
   margin: 0;
@@ -138,21 +136,29 @@ sticky {
 
 .sticky {
   position: fixed;
-  top: 0;
-  width: 100%; }
+  top: -68px;
+  width: 100%;
+  z-index: 3000; }
 
 body {
-  background-color: white; }
+  background-color: white;
+  padding-top: 200px; }
 
 header {
   width: 100%;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  z-index: 5000;
+  transition: all .4s;
   overflow: hidden;
-  font-family: Conv_FiraGO-LightItalic; }
+  font-family: Conv_FiraGO-LightItalic;
+  height: 126px; }
   header .header_top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 0px 10px 40px; }
+    padding: 8px 30px 10px 40px; }
     header .header_top .logo svg {
       width: 100px;
       height: 50px;
@@ -168,10 +174,12 @@ header {
         background-color: #ffe9aa;
         color: white;
         font-size: 12px;
-        padding: 7px;
+        padding: 7px 15px;
         transition: all 4s; }
         header .header_top .lang a.active {
           background-color: #f5c745; }
+      header .header_top .lang a:hover {
+        opacity: 0.5 !important; }
   header .header_navigation {
     background-color: #3e9578;
     display: flex;
@@ -307,7 +315,13 @@ header {
   font-family: 'Conv_FiraGO-LightItalic';
   display: flex;
   justify-content: center;
-  min-height: calc(100vh - 181px); }
+  min-height: calc(100vh - 181px);
+   /* .row {
+    margin: 0 auto;
+     max-width: 62.5rem; 
+    width: 96%;
+}
+*/ }
   .category_for_home .for_home {
     position: relative;
     height: 80%;
@@ -611,13 +625,12 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: normal;
   font-style: normal; }
 .about_container {
-  margin: 50px auto;
-  font-family: 'Conv_FiraGO-LightItalic'; }
-  .about_container min-height
-  .about_img {
+  font-family: 'Conv_FiraGO-LightItalic';
+  min-height: calc(100vh - 280px);
+  margin: 50px auto; }
+  .about_container .about_img {
     max-height: 450px; }
-    .about_container min-height
-    .about_img img {
+    .about_container .about_img img {
       width: 100%;
       height: 100%; }
   .about_container .about_content {
@@ -676,7 +689,6 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: normal;
   font-style: normal; }
 .workshops_container {
-  padding-top: 50px;
   font-family: 'Conv_FiraGO-LightItalic';
   min-height: calc(100vh - 180px); }
   .workshops_container .workshops_img {
@@ -756,7 +768,8 @@ input[type=number]::-webkit-outer-spin-button {
     .past_workshops .past_workshops_title h2 {
       font-size: 30px; }
   .past_workshops .row {
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    transition: .5s; }
     .past_workshops .row .past_workshops_img {
       width: 100%;
       height: 320px; }
@@ -832,7 +845,10 @@ input[type=number]::-webkit-outer-spin-button {
       height: 35px;
       margin: 20px;
       border-radius: 5px;
-      object-fit: contain; }
+      object-fit: contain;
+      transition: .5s; }
+    .contact_container .social_links img:hover {
+      transform: scale(1.2); }
     .contact_container .social_links .share_link {
       color: #3e9578;
       text-align: center;
@@ -870,9 +886,20 @@ input[type=number]::-webkit-outer-spin-button {
   .account_container .user_product {
     padding: 25px 0;
     margin: 30px 0; }
+    .account_container .user_product .nav-tabs {
+      border-bottom: 1px solid #3e9578; }
+    .account_container .user_product .nav-tabs .nav-link.active, .account_container .user_product .nav-tabs .nav-item.show .nav-link {
+      color: #495057;
+      background-color: #fff;
+      border-color: #3e9578 #3e9578 #fff; }
+    .account_container .user_product a {
+      text-transform: uppercase;
+      color: #3e9578;
+      opacity: .5; }
     .account_container .user_product a.active {
-      opacity: 0.5;
-      display: block; }
+      opacity: 1;
+      display: block;
+      color: #3e9578 !important; }
     .account_container .user_product h3 {
       color: #3e9578;
       text-transform: uppercase;
@@ -883,7 +910,8 @@ input[type=number]::-webkit-outer-spin-button {
     height: 240px;
     position: relative; }
     .account_container .img_box a {
-      color: white; }
+      color: white;
+      opacity: unset; }
   .account_container .cup_box {
     margin: 20px auto; }
     .account_container .cup_box .img_box .cup_hover {

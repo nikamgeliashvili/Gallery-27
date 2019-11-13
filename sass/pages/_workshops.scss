@@ -8,9 +8,9 @@
 
 .workshops_container {
 
-    padding-top: 50px;
+        
     font-family: 'Conv_FiraGO-LightItalic';
-        min-height: calc(100vh - 180px);
+    min-height: calc(100vh - 180px);
 
     .workshops_img {
        width: 100%;
@@ -148,7 +148,9 @@
 
     .row {
         margin-bottom: 100px;
+        transition:.5s;
 
+       
 
         .past_workshops_img {
             width: 100%;
@@ -205,8 +207,6 @@
 
 
     }
-
-
 
 
 
