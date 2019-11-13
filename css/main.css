@@ -120,6 +120,18 @@ body {
     transform: rotate(2.5deg); }
   100% {
     transform: rotate(0); } }
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background: #f5c745;
+  border-radius: 10px; }
+
+sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -601,9 +613,11 @@ input[type=number]::-webkit-outer-spin-button {
 .about_container {
   margin: 50px auto;
   font-family: 'Conv_FiraGO-LightItalic'; }
-  .about_container .about_img {
+  .about_container min-height
+  .about_img {
     max-height: 450px; }
-    .about_container .about_img img {
+    .about_container min-height
+    .about_img img {
       width: 100%;
       height: 100%; }
   .about_container .about_content {
@@ -625,7 +639,9 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 60px 0 20px;
     text-transform: uppercase; }
   .about_container .team_members {
-    color: #3e9578; }
+    color: #3e9578;
+    opacity: .7;
+    transition: .5s; }
     .about_container .team_members .member_img {
       margin: 0 auto;
       max-width: 200px;
@@ -650,6 +666,8 @@ input[type=number]::-webkit-outer-spin-button {
         max-width: 250px;
         margin: 20px auto;
         color: #3e9578; }
+  .about_container .team_members:hover {
+    opacity: 1; }
 
 @font-face {
   font-family: 'Conv_FiraGO-Bold';
@@ -659,7 +677,8 @@ input[type=number]::-webkit-outer-spin-button {
   font-style: normal; }
 .workshops_container {
   padding-top: 50px;
-  font-family: 'Conv_FiraGO-LightItalic'; }
+  font-family: 'Conv_FiraGO-LightItalic';
+  min-height: calc(100vh - 180px); }
   .workshops_container .workshops_img {
     width: 100%;
     max-height: 500px;
@@ -743,7 +762,7 @@ input[type=number]::-webkit-outer-spin-button {
       height: 320px; }
       .past_workshops .row .past_workshops_img img {
         width: 100%;
-        object-fit: cover; }
+        height: 100%; }
     .past_workshops .row .past_workshops_content h3 {
       color: #3e9578;
       font-size: 20px;

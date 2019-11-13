@@ -10,6 +10,7 @@
 .about_container {
     margin: 50px auto;
     font-family: 'Conv_FiraGO-LightItalic';
+    min-height
 
 
     .about_img {
@@ -61,6 +62,8 @@
 
     .team_members {
         color: #3e9578;
+         opacity: .7;
+         transition:.5s;
 
         .member_img {
             margin: 0 auto;
@@ -72,8 +75,10 @@
                 border-radius: 50%;
                 height: 200px;
                 object-fit:cover;
+               
                 
             }
+
         }
 
         .member_name {
@@ -104,6 +109,10 @@
 
 
 
+    }
+
+    .team_members:hover{
+        opacity:1;
     }
 
 
