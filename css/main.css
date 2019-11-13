@@ -175,11 +175,11 @@ header {
         color: white;
         font-size: 12px;
         padding: 7px 15px;
-        transition: all 4s; }
+        transition: all 1s; }
         header .header_top .lang a.active {
           background-color: #f5c745; }
       header .header_top .lang a:hover {
-        opacity: 0.5 !important; }
+        opacity: 0.8 !important; }
   header .header_navigation {
     background-color: #3e9578;
     display: flex;
@@ -799,7 +799,8 @@ input[type=number]::-webkit-outer-spin-button {
       transition: .5s; }
     .past_workshops .row .past_workshops_content .right_arrow:hover {
       background: #f5c745;
-      border-radius: 50%; }
+      border-radius: 100%;
+      transform: scale(1.05); }
 
 .contact_container {
   margin: 40px auto;
