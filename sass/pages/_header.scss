@@ -130,9 +130,14 @@ header {
 
 
     img {
-      width: 30px
+      width: 30px;
+      opacity: .6;
+      transition:.5s;
     }
 
+        img:hover{
+        opacity:1;
+        }
   }
 
 

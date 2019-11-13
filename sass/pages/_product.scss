@@ -14,7 +14,7 @@
         .modal {
           display: none; /* Hidden by default */
           position: fixed; /* Stay in place */
-          z-index: 1; /* Sit on top */
+          z-index: 5000; /* Sit on top */
           padding-top: 60px; /* Location of the box */
           left: 0;
           top: 0;
@@ -68,10 +68,11 @@
           position: absolute;
           top: 15px;
           right: 35px;
-          color: #f1f1f1;
-          font-size: 40px;
+          color: white;
+          font-size: 57px;
           font-weight: bold;
           transition: 0.3s;
+          opacity: 0.8;
         }
 
         .close:hover,
@@ -98,9 +99,9 @@
         .product_icon {
           transition: 1s;
           position: absolute;
-          right: 35px;
-          top: 70px;
-      
+          right: 15px;
+          top: 50px;
+            
 
 
            #Layer_1:hover .st0 {
@@ -159,9 +160,7 @@
                 text-decoration: line-through;
             }
 
-            .new_price{
-                color:red;
-            }
+          
 
 
 

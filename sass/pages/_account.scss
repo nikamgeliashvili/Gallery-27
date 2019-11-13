@@ -37,11 +37,17 @@
                 border: 1px solid #3e9578;
                 padding: 5px;
                 text-align: center;
+                transition:.5s;
 
                 a {
                     color: #3e9578;
                     padding: 10px 30px;
                 }
+            }
+
+            .user_profile:hover{
+                background: $yellow;
+                border:unset;
             }
         }
     }

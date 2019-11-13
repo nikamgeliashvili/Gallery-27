@@ -94,11 +94,10 @@ min-height: calc(100vh - 200px);
 
                     .price{
                         text-decoration: line-through;
+                        padding-left:4px;
                     }
 
-                    .new_price{
-                        color:red;
-                    }
+                    
 
                 }
 
@@ -106,7 +105,7 @@ min-height: calc(100vh - 200px);
             span {
                 display: block;
                 color: #3e9578;
-                padding-right: 10px;
+                padding-right: 4px;
                 display:flex;
             }
 

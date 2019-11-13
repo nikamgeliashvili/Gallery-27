@@ -31,6 +31,7 @@
             border: 1px solid #3e9578;
             margin: 2px 0 15px;
             padding: 8px;
+            color:$main-color;
 
         }
 
@@ -50,6 +51,7 @@
             border: 1px solid #3e9578;
             margin: 2px 0 15px;
             padding: 8px;
+            color:mainc-color;
         }
     }
 
@@ -58,6 +60,10 @@
     .registration_button {
         width: 100%;
         text-align: center;
+
+        a{
+            color:$main-color;
+        }
 
         button {
 

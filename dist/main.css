@@ -207,7 +207,11 @@ header {
       header .header_navigation a:active {
         color: #f5c745; }
     header .header_navigation img {
-      width: 30px; }
+      width: 30px;
+      opacity: .6;
+      transition: .5s; }
+    header .header_navigation img:hover {
+      opacity: 1; }
   @media only screen and (max-width: 992px) {
     header .header_navigation ul {
       flex-direction: column;
@@ -427,13 +431,12 @@ header {
       .cups_container .cup_box .cup_info .cup_price {
         display: flex; }
         .cups_container .cup_box .cup_info .cup_price .price {
-          text-decoration: line-through; }
-        .cups_container .cup_box .cup_info .cup_price .new_price {
-          color: red; }
+          text-decoration: line-through;
+          padding-left: 4px; }
       .cups_container .cup_box .cup_info span {
         display: block;
         color: #3e9578;
-        padding-right: 10px;
+        padding-right: 4px;
         display: flex; }
       .cups_container .cup_box .cup_info button {
         color: white;
@@ -447,7 +450,8 @@ header {
   .cups_container .pagination {
     justify-content: center; }
     .cups_container .pagination a {
-      padding: 0 3px; }
+      padding: 0 5px;
+      color: $mainc-color; }
 
 .product_container {
   max-width: 1200px;
@@ -468,7 +472,7 @@ header {
       /* Hidden by default */
       position: fixed;
       /* Stay in place */
-      z-index: 1;
+      z-index: 5000;
       /* Sit on top */
       padding-top: 60px;
       /* Location of the box */
@@ -516,10 +520,11 @@ header {
       position: absolute;
       top: 15px;
       right: 35px;
-      color: #f1f1f1;
-      font-size: 40px;
+      color: white;
+      font-size: 57px;
       font-weight: bold;
-      transition: 0.3s; }
+      transition: 0.3s;
+      opacity: 0.8; }
     .product_container .product_img .close:hover,
     .product_container .product_img .close:focus {
       color: #bbb;
@@ -534,8 +539,8 @@ header {
     .product_container .product_img .product_icon {
       transition: 1s;
       position: absolute;
-      right: 35px;
-      top: 70px; }
+      right: 15px;
+      top: 50px; }
       .product_container .product_img .product_icon #Layer_1:hover .st0 {
         fill: #FFBC00 !important;
         transition: 1s; }
@@ -561,8 +566,6 @@ header {
       margin-top: 30px; }
       .product_container .product_section .product_price .price {
         text-decoration: line-through; }
-      .product_container .product_section .product_price .new_price {
-        color: red; }
     .product_container .product_section .quantity {
       width: 40%;
       margin: 30px 0;
@@ -695,8 +698,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     max-height: 500px;
     height: 100%; }
-    .workshops_container .workshops_img p
-    img {
+    .workshops_container .workshops_img img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
@@ -746,7 +748,8 @@ input[type=number]::-webkit-outer-spin-button {
           border: 1px solid #3e9578;
           resize: none;
           width: calc(100% - 35px);
-          height: 100px; }
+          height: 100px;
+          padding: 7px; }
         .workshops_container .workshops_content form .form_content_2 .form_textarea button {
           width: 25px;
           height: 25px;
@@ -880,10 +883,14 @@ input[type=number]::-webkit-outer-spin-button {
       .account_container .user_account .account_info .user_profile {
         border: 1px solid #3e9578;
         padding: 5px;
-        text-align: center; }
+        text-align: center;
+        transition: .5s; }
         .account_container .user_account .account_info .user_profile a {
           color: #3e9578;
           padding: 10px 30px; }
+      .account_container .user_account .account_info .user_profile:hover {
+        background: #f5c745;
+        border: unset; }
   .account_container .user_product {
     padding: 25px 0;
     margin: 30px 0; }
@@ -1603,7 +1610,8 @@ footer {
       width: 300px;
       border: 1px solid #3e9578;
       margin: 2px 0 15px;
-      padding: 8px; }
+      padding: 8px;
+      color: #3e9578; }
   .registration_container .registration_mail {
     display: flex;
     flex-direction: column; }
@@ -1614,10 +1622,13 @@ footer {
       width: 100%;
       border: 1px solid #3e9578;
       margin: 2px 0 15px;
-      padding: 8px; }
+      padding: 8px;
+      color: mainc-color; }
   .registration_container .registration_button {
     width: 100%;
     text-align: center; }
+    .registration_container .registration_button a {
+      color: #3e9578; }
     .registration_container .registration_button button {
       width: 60%;
       padding: 6px;
