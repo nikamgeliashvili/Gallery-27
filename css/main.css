@@ -194,7 +194,7 @@ header {
       width: 100%;
       margin-right: 40px;
       font-weight: bold; }
-      header .header_navigation ul li a .active {
+      header .header_navigation ul li .active {
         color: #f5c745; }
     header .header_navigation li {
       padding: 7px 15px; }
