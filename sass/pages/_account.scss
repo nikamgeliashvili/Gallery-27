@@ -8,11 +8,12 @@
     .user_account {
         margin-top: 50px;
         display: flex;
+        align-items: center;
 
        .account_details_img {
-        margin-bottom: 40px;
-        width: 150px;
-        height: 150px;
+        
+        width: 170px;
+        height: 170px;
         overflow: hidden;
         border-radius: 50%;
         position: relative;
@@ -72,7 +73,7 @@
             h2 {
                 font-size: 25px;
                 text-transform: uppercase;
-                padding: 50px 0 20px;
+                padding: 10px 0 20px;
             }
 
             .user_profile {
@@ -89,7 +90,7 @@
 
             .user_profile:hover{
                 background: $yellow;
-                border:unset;
+               border: 1px solid transparent;
             }
         }
     }
@@ -98,6 +99,7 @@
 
         .nav-tabs {
             border-bottom: 1px solid $main-color;
+             flex-wrap: nowrap !important;
         }
 
 

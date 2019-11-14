@@ -12,10 +12,28 @@
   }
 
 
+  .account_container .user_account .account_info h2{
+      padding:10px 0 ;
+      text-align: center;
+  }
+
+
+  .account_container .user_account {
+    margin-top: 20px;
+    display: flex;
+}
+
+  header{
+    height:110px;
+  }
+
+
   header .header_navigation {
     flex-direction: column-reverse;
     align-items: flex-end;
     justify-content: flex-end;
+    position: inherit;
+    width: 100%;
   }
 
   .dropdown_menu {
@@ -244,6 +262,11 @@
     }
   }
 
+
+  .workshops_container .workshops_content p{
+    padding-right:unset;
+  }
+
   .cart_fluid .cart_product .product_info {
     padding: 6px 0;
   }
@@ -265,7 +288,9 @@
   }
 
   .user_account .account_info h2 {
-    padding: 15px;
+  
+    padding: 10px 0 20px;
+    text-align: center;
   }
 
 
@@ -350,6 +375,14 @@
     max-height: 148px;
     overflow: hidden;
     margin-bottom: 8px;
+  }
+
+  .past_workshops .row .past_workshops_img{
+    height:unset;
+  }
+
+  .workshops_container .row{
+    padding:unset;
   }
 
 
@@ -511,9 +544,7 @@
     font-size: 13px;
   }
 
-  .workshops_container .workshops_img img {
-    margin-top: 30px;
-  }
+  
 
   .workshops_container .workshops_content {
     padding: unset;

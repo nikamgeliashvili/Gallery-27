@@ -46,12 +46,12 @@ $(document).ready(function(){
           window.history.back();
     })
 
-    $('.member_info img').on('click',function(){
-      $(this).parent().next($('.text_content')).slideToggle()
+    $('.team_members').on('click',function(){
+      $(this).find($('.text_content')).slideToggle()
    })
 
-   $('.container .product_section .product_info .product_title img').on('click',function(){
-    $(this).parent().next($('.text_content')).slideToggle()
+   $('.container .product_section .product_info .product_title ').on('click',function(){
+    $(this).next($('.text_content')).slideToggle()
  })
 
 

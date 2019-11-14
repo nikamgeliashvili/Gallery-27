@@ -194,6 +194,8 @@ header {
       width: 100%;
       margin-right: 40px;
       font-weight: bold; }
+      header .header_navigation ul li a .active {
+        color: #f5c745; }
     header .header_navigation li {
       padding: 7px 15px; }
     header .header_navigation a {
@@ -203,8 +205,6 @@ header {
       transition: all .4s;
       letter-spacing: 1px; }
       header .header_navigation a:hover {
-        color: #f5c745; }
-      header .header_navigation a:active {
         color: #f5c745; }
     header .header_navigation img {
       width: 30px;
@@ -319,7 +319,7 @@ header {
   font-family: 'Conv_FiraGO-Regular';
   display: flex;
   justify-content: center;
-  min-height: calc(100vh - 181px);
+  min-height: calc(100vh - 180px);
    /* .row {
     margin: 0 auto;
      max-width: 62.5rem; 
@@ -630,8 +630,8 @@ input[type=number]::-webkit-outer-spin-button {
 */
 @font-face {
   font-family: 'Conv_FiraGO-Regular';
-  src: url("fonts/FiraGO-Regular.eot");
-  src: local("☺"), url("fonts/FiraGO-Regular.woff") format("woff"), url("fonts/FiraGO-Regular.ttf") format("truetype"), url("fonts/FiraGO-Regular.svg") format("svg");
+  src: url("../fonts/FiraGO-Regular.eot");
+  src: local("☺"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 .about_container {
@@ -731,7 +731,8 @@ input[type=number]::-webkit-outer-spin-button {
       margin-top: 15px;
       text-align: justify;
       color: #3e9578;
-      word-wrap: break-word; }
+      word-wrap: break-word;
+      padding-right: 35px; }
     .workshops_container .workshops_content form .form_content {
       display: flex;
       padding: 10px 0;
@@ -867,15 +868,15 @@ input[type=number]::-webkit-outer-spin-button {
 
 .account_container {
   padding-bottom: 40px;
-  min-height: calc(100vh - 230px);
+  min-height: calc(100vh - 180px);
   font-family: 'Conv_FiraGO-Regular'; }
   .account_container .user_account {
     margin-top: 50px;
-    display: flex; }
+    display: flex;
+    align-items: center; }
     .account_container .user_account .account_details_img {
-      margin-bottom: 40px;
-      width: 150px;
-      height: 150px;
+      width: 170px;
+      height: 170px;
       overflow: hidden;
       border-radius: 50%;
       position: relative; }
@@ -915,7 +916,7 @@ input[type=number]::-webkit-outer-spin-button {
       .account_container .user_account .account_info h2 {
         font-size: 25px;
         text-transform: uppercase;
-        padding: 50px 0 20px; }
+        padding: 10px 0 20px; }
       .account_container .user_account .account_info .user_profile {
         border: 1px solid #3e9578;
         padding: 5px;
@@ -926,12 +927,13 @@ input[type=number]::-webkit-outer-spin-button {
           padding: 10px 30px; }
       .account_container .user_account .account_info .user_profile:hover {
         background: #f5c745;
-        border: unset; }
+        border: 1px solid transparent; }
   .account_container .user_product {
     padding: 25px 0;
     margin: 30px 0; }
     .account_container .user_product .nav-tabs {
-      border-bottom: 1px solid #3e9578; }
+      border-bottom: 1px solid #3e9578;
+      flex-wrap: nowrap !important; }
     .account_container .user_product .nav-tabs .nav-link.active, .account_container .user_product .nav-tabs .nav-item.show .nav-link {
       color: #495057;
       background-color: #fff;
@@ -1184,10 +1186,23 @@ footer {
   header .header_navigation {
     padding: 10px 15px 10px 30px; }
 
+  .account_container .user_account .account_info h2 {
+    padding: 10px 0;
+    text-align: center; }
+
+  .account_container .user_account {
+    margin-top: 20px;
+    display: flex; }
+
+  header {
+    height: 110px; }
+
   header .header_navigation {
     flex-direction: column-reverse;
     align-items: flex-end;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    position: inherit;
+    width: 100%; }
 
   .dropdown_menu {
     width: 100%;
@@ -1335,6 +1350,9 @@ footer {
       padding: 5px 0;
       font-size: 15px; }
 
+  .workshops_container .workshops_content p {
+    padding-right: unset; }
+
   .cart_fluid .cart_product .product_info {
     padding: 6px 0; }
 
@@ -1352,7 +1370,8 @@ footer {
     margin-left: unset !important; }
 
   .user_account .account_info h2 {
-    padding: 15px; }
+    padding: 10px 0 20px;
+    text-align: center; }
 
   .user_account .account_img {
     width: 130px;
@@ -1410,6 +1429,12 @@ footer {
     max-height: 148px;
     overflow: hidden;
     margin-bottom: 8px; }
+
+  .past_workshops .row .past_workshops_img {
+    height: unset; }
+
+  .workshops_container .row {
+    padding: unset; }
 
   .cart_fluid .cart_product .product_info h3 {
     font-size: 15px; }
@@ -1531,9 +1556,6 @@ footer {
     margin-top: 10px;
     font-size: 13px; }
 
-  .workshops_container .workshops_img img {
-    margin-top: 30px; }
-
   .workshops_container .workshops_content {
     padding: unset; }
 
@@ -1606,6 +1628,11 @@ footer {
   .my_account .password span {
     margin-left: 10px; }
   .my_account input[type=text] {
+    width: 100%;
+    border: 1px solid #3e9578;
+    padding: 8px;
+    margin-bottom: 15px; }
+  .my_account input[type=password] {
     width: 100%;
     border: 1px solid #3e9578;
     padding: 8px;
@@ -1768,7 +1795,7 @@ footer {
   min-height: calc(100vh - 281px);
   width: 80%;
   margin: 50px auto;
-  font-family: 'Conv_FiraGO-LightItalic'; }
+  font-family: 'Conv_FiraGO-Regular'; }
   .privacy_container .privacy_title {
     margin: 10px;
     color: #3e9578; }

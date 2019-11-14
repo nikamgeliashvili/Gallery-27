@@ -104,6 +104,15 @@ header {
       margin-right:40px;
       font-weight:bold;
 
+      li{
+
+        a{
+            .active{
+              color: $yellow;
+            }
+        }
+      }
+
 
     }
 
@@ -122,9 +131,9 @@ header {
         color: $yellow;
       }
 
-      &:active {
-        color: $yellow;
-      }
+     
+
+
     }
 
 
