@@ -793,8 +793,6 @@ input[type=number]::-webkit-outer-spin-button {
     .past_workshops .row .past_workshops_content h3 {
       color: #3e9578;
       font-size: 20px;
-      text-transform: uppercase;
-      font-weight: bold;
       text-align: center;
       margin: 15px; }
     .past_workshops .row .past_workshops_content .workshops_date {
@@ -1343,7 +1341,19 @@ footer {
     margin: 40px auto;
     max-width: 300px;
     min-height: calc(100vh - 381px);
-    color: #3e9578; } }
+    color: #3e9578; }
+
+  .workshops_container .row {
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: center; }
+    .workshops_container .row .col-md-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 90%; }
+
+  .workshops_container .workshops_content {
+    margin-top: 110px; } }
 @media only screen and (max-width: 768px) {
   .user_product {
     flex-direction: column !important;
@@ -1352,6 +1362,18 @@ footer {
     .user_product h3 {
       padding: 5px 0;
       font-size: 15px; }
+
+  .my_account {
+    margin: 30px auto 60px; }
+
+  .past_workshops .row {
+    margin-bottom: 50px; }
+
+  .past_workshops .row .past_workshops_content .right_arrow {
+    margin: 0 auto; }
+
+  .workshops_container .workshops_content {
+    margin-top: unset; }
 
   .workshops_container .workshops_content p {
     padding-right: unset; }
@@ -1573,9 +1595,6 @@ footer {
   .past_workshops {
     padding-top: 15px; }
 
-  .past_workshops .row .past_workshops_content h3 {
-    margin-top: 15px; }
-
   .workshops_container .past_workshops_content {
     padding: unset; }
 
@@ -1617,7 +1636,7 @@ footer {
 .my_account {
   margin: 100px auto;
   max-width: 300px;
-  height: calc(100vh - 381px);
+  min-height: calc(100vh - 381px);
   color: #3e9578;
   font-family: 'Conv_FiraGO-Regular'; }
   .my_account h1 {
@@ -1650,11 +1669,17 @@ footer {
     background-color: #3e9578;
     color: white;
     outline: none;
-    margin: 15px 0; }
+    margin: 15px 0;
+    transition: .5s; }
   .my_account span {
     color: #3e9578; }
     .my_account span a {
-      color: #3e9578; }
+      color: #3e9578;
+      transition: .5s; }
+    .my_account span a:hover {
+      opacity: .5; }
+  .my_account button:hover {
+    background: #f5c745; }
 
 .registration_container {
   margin: 70px auto;

@@ -21,8 +21,8 @@
   .account_container .user_account {
     margin-top: 20px;
     display: flex;
-}
-
+  }
+  
   header{
     height:110px;
   }
@@ -235,6 +235,23 @@
 
 
 
+  .workshops_container .row {
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: center;
+
+        .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 90%;
+    }
+  }
+
+    .workshops_container .workshops_content {
+      margin-top: 110px;
+  }
+
+
 
 
 
@@ -261,6 +278,31 @@
       font-size: 15px;
     }
   }
+
+
+
+
+  .my_account {
+    margin: 30px auto 60px;
+   
+}
+
+
+  .past_workshops .row {
+    margin-bottom: 50px;
+   
+}
+
+
+  .past_workshops .row .past_workshops_content .right_arrow {
+    margin: 0 auto;
+}
+
+
+   .workshops_container .workshops_content {
+      margin-top: unset;
+  }
+
 
 
   .workshops_container .workshops_content p{
@@ -566,9 +608,6 @@
     padding-top: 15px;
   }
 
-  .past_workshops .row .past_workshops_content h3 {
-    margin-top: 15px;
-  }
 
   .workshops_container .past_workshops_content {
     padding: unset;
