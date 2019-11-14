@@ -1,6 +1,6 @@
 footer {
   
-  font-family: 'Conv_FiraGO-LightItalic';
+ font-family: 'Conv_FiraGO-Regular';
   background-color: #3e9578;
 
   ul {
@@ -13,11 +13,11 @@ footer {
       padding:10px;
     }
 
-    span:hover{
+   /* span:hover{
       color: #f5c745;
       transition: 1s;
 
-    }
+    }*/
 
     li {
       margin: 15px;
@@ -38,7 +38,7 @@ footer {
 
     a:hover {
       color: #f5c745;
-      transition: 1s;
+      transition: .5s;
     }
   }
 

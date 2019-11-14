@@ -93,6 +93,33 @@ var $headerCont = $("header");
 
 
 
+$(document).ready(function(){
+
+    $(".account_img_change_box span").click(function () {
+    $(".account_img_change_box input").click();
+  });
+  $(function () {
+    $(".account_img_change_box input").change(function () {
+      readURL(this);
+    });
+  });
+
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        $('#account_img').attr('src', e.target.result);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+})
+
+
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -113,6 +140,10 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 .account_container {
     padding-bottom: 40px;
     min-height: calc(100vh - 230px);
-    font-family: 'Conv_FiraGO-LightItalic';
+    font-family: 'Conv_FiraGO-Regular';
 
 
 
@@ -9,18 +9,60 @@
         margin-top: 50px;
         display: flex;
 
-        .account_img {
-            width: 230px;
-            height: 230px;
+       .account_details_img {
+        margin-bottom: 40px;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+        position: relative;
 
-            img {
-                border-radius: 50%;
+        img{
+        width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+
+        .account_img_change_box {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            background-color: $main-color;
+            width: 100%;
+            height: 40px;
+            cursor: pointer;
+
+
+            input{
+                opacity: 0;
                 width: 100%;
-                object-fit: cover;
                 height: 100%;
+                cursor: pointer;
+            }
 
+
+            span {
+                font-size: 15px;
+              
+                color: #fff;
+                text-transform: capitalize;
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                cursor: pointer;
             }
         }
+
+    }
+
+        
+
 
 
         .account_info {

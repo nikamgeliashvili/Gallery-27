@@ -1,15 +1,24 @@
-@font-face {
+/*@font-face {
   font-family: 'Conv_FiraGO-LightItalic';
   src: url('../fonts/FiraGO-LightItalic.eot');
   src: local('☺'), url('../fonts/FiraGO-LightItalic.woff') format('woff'), url('../fonts/FiraGO-LightItalic.ttf') format('truetype'), url('../fonts/FiraGO-LightItalic.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+*/
+
+@font-face {
+    font-family: 'Conv_FiraGO-Regular';
+    src: url('fonts/FiraGO-Regular.eot');
+    src: local('☺'), url('fonts/FiraGO-Regular.woff') format('woff'), url('fonts/FiraGO-Regular.ttf') format('truetype'), url('fonts/FiraGO-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 .about_container {
 
-    font-family: 'Conv_FiraGO-LightItalic';
+    font-family: 'Conv_FiraGO-Regular';
     min-height: calc(100vh - 280px);
     margin:50px auto;
 
