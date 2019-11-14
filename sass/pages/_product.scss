@@ -110,14 +110,24 @@
           }
 
 
+
+
+
             svg {
                 margin: 10px;
                 width: 40px;
                 cursor: pointer;
                 transition: 1s;
 
-
             }
+
+
+            .active{
+                    .st0 {
+                        fill: #FFBC00;
+                         transition: 1s;
+                      }
+                  }
 
             svg:hover{
               transition: .7s;

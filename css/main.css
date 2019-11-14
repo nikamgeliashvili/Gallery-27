@@ -548,6 +548,9 @@ header {
         width: 40px;
         cursor: pointer;
         transition: 1s; }
+      .product_container .product_img .product_icon .active .st0 {
+        fill: #FFBC00;
+        transition: 1s; }
       .product_container .product_img .product_icon svg:hover {
         transition: .7s; }
         .product_container .product_img .product_icon svg:hover .st1 {
