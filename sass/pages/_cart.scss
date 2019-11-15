@@ -8,15 +8,78 @@
         font-size: 23px;
         text-transform: uppercase;
         color: #3e9578;
-        margin: 70px 0 30px;
+        margin: 30px 0 70px;
     }
+
+
+    .cart_product_info{
+        
+        color: $main-color;
+        font-size: 18px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-around;
+
+            .cart_product_section{
+
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                .cart_product_name{
+                max-width: 200px;
+                width: 100%;
+                text-align: center;
+
+
+                .cart_product_name{
+                    max-width: 200px;
+                    width: 200px;
+                    text-align: center;
+                }
+
+
+                .cart_producy_price{
+                    min-width: 100px;
+                    text-align: center;
+                }
+
+                .cart_quantity{
+                    width: 100px;
+                    text-align: center;
+                }
+
+                .remove_button{
+                    width: 70px;
+                }
+            }
+
+            span{
+                padding: 0 15px;
+            }
+
+            .remove_button{
+                width:90px;
+            }
+        }
+
+        .cart_product_img{
+            width: 90px;
+           
+        }
+
+
+    }
+
 
     .cart_product {
         display: flex;
-        margin: 35px 0;
+        margin: 10px 0;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
 
         .cart_product_img {
-            max-width: 170px;
+            max-width:70px;
             height: 100%;
             width: 100%;
 
@@ -27,10 +90,11 @@
         }
 
         .product_info {
-            margin-left: 30px;
+            margin-left: 10px;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            align-items:center;
+            width: 100%;
+            justify-content: space-around;
 
             input[type=number]::-webkit-inner-spin-button,
             input[type=number]::-webkit-outer-spin-button {
@@ -38,19 +102,42 @@
 
             }
 
-            h3 {
-                color: #3e9578;
-                text-transform: uppercase;
-                font-size: 18px;
+            .product_price{
+                min-width: 90px;
+                text-align: center;
+            }
+
+
+           /* .product_price{
+                max-width: 120px;
+                width: 100%
+            }*/
+
+            .product_info_title {
+               
+                max-width:200px;
+                width: 100%;
+                word-break: break-word;
+
+
+                h3{
+                     color: #3e9578;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    text-align: center;
+                }
             }
 
             span {
-                letter-spacing: 2px;
+                
                 color: #3e9578;
 
             }
 
-            input {
+            .product_quantity{
+                padding:0 25px;
+
+                       input {
                 border: 1px solid #3e9578;
                 padding: 5px;
                 width: 50px;
@@ -60,6 +147,10 @@
                 text-align: center;
             }
 
+            }
+
+     
+
             button {
                 padding: 2px 10px;
                 color: #3e9578;
@@ -68,16 +159,28 @@
                 letter-spacing: 2px;
                 outline: none;
                 cursor: pointer;
+                transition: .5s;
+            }
+
+            button:hover{
+                background: $yellow;
+                border: 1px solid transparent;
             }
 
         }
     }
+
+
+
 
     .pay_container {
 
         margin: 35px 0;
         padding: 30px;
         border: 1px solid #3e9578;
+
+        width: 50%;
+        margin: 100px auto;
 
         .pay_title {
 
@@ -210,12 +313,18 @@
                 background-color: white;
                 color: #3e9578;
                 border: 1px solid #3e9578;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
                 padding: 12px 10px 15px;
                 font-weight: bold;
                 text-transform: uppercase;
                 outline: none;
                 cursor: pointer;
+                transition:.5s;
+            }
+
+            button:hover{
+                background: $yellow;
+                border: 1px solid transparent;
             }
         }
 
