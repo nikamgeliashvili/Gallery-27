@@ -1069,9 +1069,9 @@ input[type=number]::-webkit-outer-spin-button {
       width: 100%;
       justify-content: space-around;
       /* .product_price{
-           max-width: 120px;
-           width: 100%
-       }*/ }
+          max-width: 120px;
+          width: 100%
+      }*/ }
       .cart_fluid .cart_product .product_info input[type=number]::-webkit-inner-spin-button,
       .cart_fluid .cart_product .product_info input[type=number]::-webkit-outer-spin-button {
         -webkit-appearance: none; }
@@ -1138,7 +1138,6 @@ input[type=number]::-webkit-outer-spin-button {
         padding-left: 35px;
         margin-bottom: 12px;
         cursor: pointer;
-        font-size: 22px;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -1744,7 +1743,7 @@ footer {
   margin: 70px auto;
   max-width: 630px;
   color: #3e9578;
-  min-height: calc(100vh - 321px);
+  min-height: calc(100vh - 320px);
   font-family: 'Conv_FiraGO-Regular'; }
   .registration_container .pay_container {
     margin: 35px 0;
@@ -1773,7 +1772,6 @@ footer {
         padding-left: 35px;
         margin-bottom: 12px;
         cursor: pointer;
-        font-size: 22px;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -1861,7 +1859,6 @@ footer {
       padding-left: 35px;
       margin-bottom: 12px;
       cursor: pointer;
-      font-size: 22px;
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
@@ -1898,7 +1895,8 @@ footer {
       margin-right: 30px; }
     .registration_container .payment img {
       width: 50px;
-      margin-right: 15px; }
+      margin-right: 15px;
+      margin-top: -6px; }
   .registration_container h1 {
     text-align: center;
     color: #3e9578;
@@ -1949,10 +1947,13 @@ footer {
     .registration_container .registration_button button:hover {
       color: #3e9578;
       background: #f5c745; }
-  .registration_container .gender, .registration_container .shipping {
+  .registration_container .gender,
+  .registration_container .shipping {
     display: flex;
-    align-items: center; }
-    .registration_container .gender .payment, .registration_container .shipping .payment {
+    align-items: center;
+    margin-left: 20px; }
+    .registration_container .gender .payment,
+    .registration_container .shipping .payment {
       display: flex;
       align-items: center;
       padding-right: 30px;
@@ -1963,9 +1964,11 @@ footer {
       /* Create the indicator (the dot/circle - hidden when not checked) */
       /* Show the indicator (dot/circle) when checked */
       /* Style the indicator (dot/circle) */ }
-      .registration_container .gender .payment span, .registration_container .shipping .payment span {
+      .registration_container .gender .payment span,
+      .registration_container .shipping .payment span {
         color: #3e9578; }
-      .registration_container .gender .payment .cart_button, .registration_container .shipping .payment .cart_button {
+      .registration_container .gender .payment .cart_button,
+      .registration_container .shipping .payment .cart_button {
         display: block;
         position: relative;
         padding-left: 25px;
@@ -1975,33 +1978,40 @@ footer {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none; }
-      .registration_container .gender .payment .cart_button input, .registration_container .shipping .payment .cart_button input {
+      .registration_container .gender .payment .cart_button input,
+      .registration_container .shipping .payment .cart_button input {
         position: absolute;
         opacity: 0;
         cursor: pointer; }
-      .registration_container .gender .payment .checkmark, .registration_container .shipping .payment .checkmark {
+      .registration_container .gender .payment .checkmark,
+      .registration_container .shipping .payment .checkmark {
         position: absolute;
         top: 2px;
         left: 0;
         height: 16px;
         width: 16px;
-        background-color: #eee;
+        background-color: #d1d1cf;
         border-radius: 50%; }
-      .registration_container .gender .payment .cart_button:hover input ~ .checkmark, .registration_container .shipping .payment .cart_button:hover input ~ .checkmark {
+      .registration_container .gender .payment .cart_button:hover input ~ .checkmark,
+      .registration_container .shipping .payment .cart_button:hover input ~ .checkmark {
         background-color: #ccc; }
-      .registration_container .gender .payment .cart_button input:checked ~ .checkmark, .registration_container .shipping .payment .cart_button input:checked ~ .checkmark {
+      .registration_container .gender .payment .cart_button input:checked ~ .checkmark,
+      .registration_container .shipping .payment .cart_button input:checked ~ .checkmark {
         background-color: #3e9578;
         border: 1px solid #3e9578;
         padding: 2px;
         padding: 1px;
         background-clip: content-box; }
-      .registration_container .gender .payment .checkmark:after, .registration_container .shipping .payment .checkmark:after {
+      .registration_container .gender .payment .checkmark:after,
+      .registration_container .shipping .payment .checkmark:after {
         content: "";
         position: absolute;
         display: none; }
-      .registration_container .gender .payment .cart_button input:checked ~ .checkmark:after, .registration_container .shipping .payment .cart_button input:checked ~ .checkmark:after {
+      .registration_container .gender .payment .cart_button input:checked ~ .checkmark:after,
+      .registration_container .shipping .payment .cart_button input:checked ~ .checkmark:after {
         display: block; }
-      .registration_container .gender .payment input, .registration_container .shipping .payment input {
+      .registration_container .gender .payment input,
+      .registration_container .shipping .payment input {
         width: 20px;
         height: 20px;
         margin-right: 30px; }
@@ -2045,7 +2055,8 @@ footer {
     color: #3e9578; }
   .privacy_container .privacy_text p {
     color: #3e9578;
-    padding: 10px; }
+    padding: 10px;
+    word-break: break-word; }
 
 .blog_container {
   min-height: calc(100vh - 180px);
@@ -2064,5 +2075,49 @@ footer {
     text-align: justify;
     color: #3e9578 !important;
     word-wrap: break-word; }
+
+.checkout_container .cart_button {
+  margin-bottom: unset; }
+.checkout_container .cart_items {
+  min-height: unset; }
+  .checkout_container .cart_items h2 {
+    margin: 10px 0 50px; }
+  .checkout_container .cart_items .cart_container .product_list {
+    width: 100%; }
+
+.checkout_details .pay_container {
+  margin: 50px auto 0;
+  width: unset !important; }
+  .checkout_details .pay_container .checkout_button {
+    margin-top: 30px; }
+    .checkout_details .pay_container .checkout_button button {
+      width: 100px;
+      padding: 10px; }
+
+.success_payment {
+  min-height: calc(100vh - 260px);
+  text-align: center;
+  margin: 40px auto; }
+  .success_payment svg {
+    width: 100px;
+    height: 100px;
+    fill: #3e9578;
+    margin: 30px; }
+  .success_payment span {
+    font-size: 30px;
+    color: #3e9578;
+    text-transform: uppercase; }
+  .success_payment .main_page_link {
+    margin-top: 30px; }
+    .success_payment .main_page_link a {
+      color: white;
+      background: #3e9578;
+      padding: 15px;
+      border-radius: 10px;
+      transition: .5s;
+      text-transform: capitalize; }
+    .success_payment .main_page_link a:hover {
+      background: #f5c745;
+      color: #3e9578; }
 
 /*# sourceMappingURL=main.css.map */
