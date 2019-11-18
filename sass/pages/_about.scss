@@ -22,7 +22,7 @@
 
     font-family: 'Conv_FiraGO-Regular';
     min-height: calc(100vh - 280px);
-    margin:50px auto;
+    margin: 50px auto;
 
     .about_img {
         max-height: 450px;
@@ -52,7 +52,7 @@
         p {
             margin-top: 15px;
             color: $main-color;
-           
+
 
         }
 
@@ -73,8 +73,9 @@
 
     .team_members {
         color: #3e9578;
-         opacity: .7;
-         transition:.5s;
+        opacity: .7;
+        transition: .5s;
+        cursor: pointer;
 
         .member_img {
             margin: 0 auto;
@@ -85,9 +86,9 @@
                 width: 200px;
                 border-radius: 50%;
                 height: 200px;
-                object-fit:cover;
-               
-                
+                object-fit: cover;
+
+
             }
 
         }
@@ -100,10 +101,23 @@
         .member_info {
             text-align: center;
 
-            img{
+            svg {
                 cursor: pointer;
-                width: 30px;
+                width: 25px;
                 margin: 0 auto;
+                height: 25px;
+                fill: $main-color;
+                border-radius: 50%;
+                padding: background;
+                padding: 5px;
+                border: 1px solid $main-color;
+                transition: .5s;
+
+
+                &:hover {
+                    fill: white;
+                    background: $main-color;
+                }
             }
         }
 
@@ -122,8 +136,14 @@
 
     }
 
-    .team_members:hover{
-        opacity:1;
+    .team_members:hover {
+        opacity: 1;
+
+
+        svg {
+            fill: white;
+            background: $main-color;
+        }
     }
 
 

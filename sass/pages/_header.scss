@@ -5,11 +5,11 @@
 
 
 .sticky {
-    position: fixed;
-    top: -68px;
-    width: 100%;
-    z-index:3000;
-  }
+  position: fixed;
+  top: -68px;
+  width: 100%;
+  z-index: 3000;
+}
 
 body {
   background-color: white;
@@ -27,7 +27,7 @@ header {
   z-index: 5000;
   transition: all .4s;
   overflow: hidden;
- font-family: 'Conv_FiraGO-Regular';
+  font-family: 'Conv_FiraGO-Regular';
   height: 126px;
 
   .header_top {
@@ -37,21 +37,25 @@ header {
     padding: 8px 30px 10px 40px;
 
     .logo {
-     
-      svg{
+
+      svg {
         width: 100px;
         height: 50px;
         transition: .5s;
 
         .st0 {
-            opacity: 1;
-            fill: $main-color !important;
+          opacity: 1;
+          fill: $main-color !important;
+        }
+
+        .st1 {
+          fill: $main-color;
         }
 
 
       }
 
-      svg:hover{
+      svg:hover {
         opacity: 0.5;
       }
     }
@@ -78,8 +82,8 @@ header {
         }
       }
 
-      a:hover{
-          opacity: 0.8 !important;
+      a:hover {
+        opacity: 0.8 !important;
       }
     }
   }
@@ -94,6 +98,33 @@ header {
 
 
 
+    .cart_item_quantity {
+      span {
+        background-color: #f5c745;
+        line-height: 20px;
+        font-size: 11px;
+        border-radius: 50%;
+        text-align: center;
+        padding: 5px;
+        overflow: hidden;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        top: -35px;
+        left: 13px;
+        position: absolute;
+        color: $main-color;
+      }
+    }
+
+    .cart_box {
+      position: relative;
+
+      .cart_item_quantity {
+        position: absolute;
+      }
+    }
+
     ul {
       display: flex;
       justify-content: space-around;
@@ -101,14 +132,14 @@ header {
       flex-grow: 1;
       max-width: 1000px;
       width: 100%;
-      margin-right:40px;
-      font-weight:bold;
+      margin-right: 40px;
+      font-weight: bold;
 
-      li{
+      li {
 
-       .active{
-              color: $yellow;
-            }
+        .active {
+          color: $yellow;
+        }
       }
 
 
@@ -123,13 +154,20 @@ header {
       text-transform: uppercase;
       color: white;
       transition: all .4s;
-      letter-spacing:1px;
+      letter-spacing: 1px;
+      padding: 5px;
 
-      &:hover {
-        color: $yellow;
+      svg {
+        fill: white;
+        width: 30px;
+        transition: .5s;
+
+        &:hover {
+          fill: $yellow;
+        }
       }
 
-     
+
 
 
     }
@@ -139,12 +177,12 @@ header {
     img {
       width: 30px;
       opacity: .6;
-      transition:.5s;
+      transition: .5s;
     }
 
-        img:hover{
-        opacity:1;
-        }
+    img:hover {
+      opacity: 1;
+    }
   }
 
 
@@ -269,8 +307,7 @@ header {
 .hamburger-effect-3 {
   color: #e23141;
 
-  &:before,
-  &:after {}
+
 
   span {
     width: 50%;

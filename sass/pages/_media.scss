@@ -12,9 +12,9 @@
   }
 
 
-  .account_container .user_account .account_info h2{
-      padding:10px 0 ;
-      text-align: center;
+  .account_container .user_account .account_info h2 {
+    padding: 10px 0;
+    text-align: center;
   }
 
 
@@ -22,9 +22,9 @@
     margin-top: 20px;
     display: flex;
   }
-  
-  header{
-    height:110px;
+
+  header {
+    height: 110px;
   }
 
 
@@ -44,11 +44,11 @@
 
   header .header_navigation li {
     text-align: center;
-    
+
   }
 
-  header .header_navigation ul{
-    margin-right:unset;
+  header .header_navigation ul {
+    margin-right: unset;
   }
 
 
@@ -71,8 +71,8 @@
     display: flex;
   }
 
-  header .header_top{
-         padding: 8px 0px 10px 10px;
+  header .header_top {
+    padding: 8px 0px 10px 10px;
   }
 
 
@@ -240,15 +240,15 @@
     flex-direction: column;
     align-items: center;
 
-        .col-md-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 90%;
+    .col-md-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 100%;
     }
   }
 
-    .workshops_container .workshops_content {
-      margin-top: 110px;
+  .workshops_container .workshops_content {
+    margin-top: 110px;
   }
 
 
@@ -284,29 +284,29 @@
 
   .my_account {
     margin: 30px auto 60px;
-   
-}
+
+  }
 
 
   .past_workshops .row {
     margin-bottom: 50px;
-   
-}
+
+  }
 
 
   .past_workshops .row .past_workshops_content .right_arrow {
     margin: 0 auto;
-}
+  }
 
 
-   .workshops_container .workshops_content {
-      margin-top: unset;
+  .workshops_container .workshops_content {
+    margin-top: unset;
   }
 
 
 
-  .workshops_container .workshops_content p{
-    padding-right:unset;
+  .workshops_container .workshops_content p {
+    padding-right: unset;
   }
 
   .cart_fluid .cart_product .product_info {
@@ -330,7 +330,7 @@
   }
 
   .user_account .account_info h2 {
-  
+
     padding: 10px 0 20px;
     text-align: center;
   }
@@ -370,8 +370,8 @@
     max-width: 160px;
   }
 
-  .about_container .team_members .member_img img{
-    height:160px;
+  .about_container .team_members .member_img img {
+    height: 160px;
   }
 
   .about_container {
@@ -419,12 +419,12 @@
     margin-bottom: 8px;
   }
 
-  .past_workshops .row .past_workshops_img{
-    height:unset;
+  .past_workshops .row .past_workshops_img {
+    height: unset;
   }
 
-  .workshops_container .row{
-    padding:unset;
+  .workshops_container .row {
+    padding: unset;
   }
 
 
@@ -586,10 +586,10 @@
     font-size: 13px;
   }
 
-  
+
 
   .workshops_container .workshops_content {
-    padding: unset;
+    padding: 10px 0 50px;
   }
 
 

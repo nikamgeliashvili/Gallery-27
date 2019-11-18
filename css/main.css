@@ -166,6 +166,8 @@ header {
       header .header_top .logo svg .st0 {
         opacity: 1;
         fill: #3e9578 !important; }
+      header .header_top .logo svg .st1 {
+        fill: #3e9578; }
     header .header_top .logo svg:hover {
       opacity: 0.5; }
     header .header_top .lang {
@@ -185,6 +187,25 @@ header {
     display: flex;
     justify-content: center;
     padding: 10px; }
+    header .header_navigation .cart_item_quantity span {
+      background-color: #f5c745;
+      line-height: 20px;
+      font-size: 11px;
+      border-radius: 50%;
+      text-align: center;
+      padding: 5px;
+      overflow: hidden;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      top: -35px;
+      left: 13px;
+      position: absolute;
+      color: #3e9578; }
+    header .header_navigation .cart_box {
+      position: relative; }
+      header .header_navigation .cart_box .cart_item_quantity {
+        position: absolute; }
     header .header_navigation ul {
       display: flex;
       justify-content: space-around;
@@ -203,9 +224,14 @@ header {
       text-transform: uppercase;
       color: white;
       transition: all .4s;
-      letter-spacing: 1px; }
-      header .header_navigation a:hover {
-        color: #f5c745; }
+      letter-spacing: 1px;
+      padding: 5px; }
+      header .header_navigation a svg {
+        fill: white;
+        width: 30px;
+        transition: .5s; }
+        header .header_navigation a svg:hover {
+          fill: #f5c745; }
     header .header_navigation img {
       width: 30px;
       opacity: .6;
@@ -455,8 +481,9 @@ header {
 .product_container {
   max-width: 1200px;
   min-height: calc(100vh - 180px);
-  padding-bottom: 50px;
   font-family: 'Conv_FiraGO-Regular'; }
+  .product_container .row {
+    padding-bottom: 50px; }
   .product_container .product_img {
     position: relative;
     text-align: right;
@@ -500,7 +527,8 @@ header {
       color: #ccc;
       padding: 10px 0;
       height: 150px; }
-    .product_container .product_img .modal-content, .product_container .product_img #caption {
+    .product_container .product_img .modal-content,
+    .product_container .product_img #caption {
       -webkit-animation-name: zoom;
       -webkit-animation-duration: 0.6s;
       animation-name: zoom;
@@ -547,7 +575,7 @@ header {
         margin: 10px;
         width: 40px;
         cursor: pointer;
-        transition: 1s; }
+        transition: .4s; }
       .product_container .product_img .product_icon .active .st0 {
         fill: #FFBC00;
         transition: 1s; }
@@ -610,9 +638,22 @@ header {
           font-size: 20px;
           text-transform: uppercase;
           letter-spacing: 1px; }
-        .product_container .product_section .product_info .product_title img {
-          width: 30px;
-          height: 30px; }
+        .product_container .product_section .product_info .product_title svg {
+          cursor: pointer;
+          width: 25px;
+          margin: 0 auto;
+          height: 25px;
+          fill: #3e9578;
+          border-radius: 50%;
+          padding: background;
+          padding: 5px;
+          border: 1px solid #3e9578;
+          transition: .5s; }
+        .product_container .product_section .product_info .product_title:hover {
+          opacity: .7; }
+          .product_container .product_section .product_info .product_title:hover svg {
+            fill: white;
+            background: #3e9578; }
       .product_container .product_section .product_info p {
         letter-spacing: 1px;
         margin-bottom: 10px;
@@ -667,7 +708,8 @@ input[type=number]::-webkit-outer-spin-button {
   .about_container .team_members {
     color: #3e9578;
     opacity: .7;
-    transition: .5s; }
+    transition: .5s;
+    cursor: pointer; }
     .about_container .team_members .member_img {
       margin: 0 auto;
       max-width: 200px;
@@ -682,10 +724,20 @@ input[type=number]::-webkit-outer-spin-button {
       margin: 5px; }
     .about_container .team_members .member_info {
       text-align: center; }
-      .about_container .team_members .member_info img {
+      .about_container .team_members .member_info svg {
         cursor: pointer;
-        width: 30px;
-        margin: 0 auto; }
+        width: 25px;
+        margin: 0 auto;
+        height: 25px;
+        fill: #3e9578;
+        border-radius: 50%;
+        padding: background;
+        padding: 5px;
+        border: 1px solid #3e9578;
+        transition: .5s; }
+        .about_container .team_members .member_info svg:hover {
+          fill: white;
+          background: #3e9578; }
     .about_container .team_members .text_content {
       display: none; }
       .about_container .team_members .text_content p {
@@ -694,6 +746,9 @@ input[type=number]::-webkit-outer-spin-button {
         color: #3e9578; }
   .about_container .team_members:hover {
     opacity: 1; }
+    .about_container .team_members:hover svg {
+      fill: white;
+      background: #3e9578; }
 
 @font-face {
   font-family: 'Conv_FiraGO-Bold';
@@ -1408,7 +1463,7 @@ footer {
     .workshops_container .row .col-md-6 {
       -ms-flex: 0 0 50%;
       flex: 0 0 50%;
-      max-width: 90%; }
+      max-width: 100%; }
 
   .workshops_container .workshops_content {
     margin-top: 110px; } }
@@ -1640,7 +1695,7 @@ footer {
     font-size: 13px; }
 
   .workshops_container .workshops_content {
-    padding: unset; }
+    padding: 10px 0 50px; }
 
   .workshops_container .workshops_img {
     margin: 0 auto;
