@@ -232,6 +232,8 @@ header {
         transition: .5s; }
         header .header_navigation a svg:hover {
           fill: #f5c745; }
+      header .header_navigation a:hover svg {
+        fill: #f5c745; }
     header .header_navigation img {
       width: 30px;
       opacity: .6;
@@ -688,7 +690,6 @@ input[type=number]::-webkit-outer-spin-button {
       width: 100%;
       height: 100%; }
   .about_container .about_content {
-    text-align: center;
     color: #3e9578; }
     .about_container .about_content h2 {
       text-align: center;
@@ -699,6 +700,8 @@ input[type=number]::-webkit-outer-spin-button {
     .about_container .about_content p {
       margin-top: 15px;
       color: #3e9578; }
+    .about_container .about_content span {
+      margin-left: calc(50% - 36px); }
   .about_container .team_content h2 {
     text-align: center;
     color: #3e9578;
@@ -749,6 +752,33 @@ input[type=number]::-webkit-outer-spin-button {
     .about_container .team_members:hover svg {
       fill: white;
       background: #3e9578; }
+  .about_container .slider .owl-nav .owl-next span {
+    font-size: 60px;
+    position: absolute;
+    top: 15%;
+    right: -9px;
+    padding: 15px;
+    color: #3e9578;
+    transition: .4s; }
+    .about_container .slider .owl-nav .owl-next span:hover {
+      color: #f5c745;
+      transform: scale(1.3); }
+  .about_container .slider .owl-nav .owl-prev span {
+    font-size: 60px;
+    position: absolute;
+    top: 15%;
+    left: -9px;
+    padding: 15px;
+    color: #3e9578;
+    transition: .4s; }
+    .about_container .slider .owl-nav .owl-prev span:hover {
+      color: #f5c745;
+      transform: scale(1.3); }
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); }
 
 @font-face {
   font-family: 'Conv_FiraGO-Bold';
@@ -871,8 +901,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .contact_container {
   margin: 40px auto;
-  min-height: calc(100vh - 261px);
+  min-height: calc(100vh - 260px);
   font-family: 'Conv_FiraGO-Regular'; }
+  .contact_container .row {
+    width: 80%; }
   .contact_container .contact_map {
     width: 100%;
     border: 2px solid #3e9578; }
@@ -898,20 +930,19 @@ input[type=number]::-webkit-outer-spin-button {
       padding: 20px 0;
       font-size: 23px;
       color: #ffbc00;
-      text-transform: uppercase;
-      margin-top: 20px; }
+      text-transform: uppercase; }
     .contact_container .find_us .contact_number {
       padding: 5px; }
   .contact_container .social_links {
     display: flex;
     flex-wrap: wrap;
     width: 150px;
-    margin: 35px auto;
+    margin: 20px auto;
     justify-content: center; }
     .contact_container .social_links img {
       width: 35px;
       height: 35px;
-      margin: 20px;
+      margin: 15px;
       border-radius: 5px;
       object-fit: contain;
       transition: .5s; }
@@ -1145,7 +1176,9 @@ input[type=number]::-webkit-outer-spin-button {
       .cart_fluid .cart_product .product_info span {
         color: #3e9578; }
       .cart_fluid .cart_product .product_info .product_quantity {
-        padding: 0 25px; }
+        padding: 0 25px;
+        width: 110px;
+        text-align: center; }
         .cart_fluid .cart_product .product_info .product_quantity input {
           border: 1px solid #3e9578;
           padding: 5px;
@@ -1326,7 +1359,8 @@ footer {
     text-align: center; }
 
   header .header_navigation ul {
-    margin-right: unset; }
+    margin-right: unset;
+    padding-bottom: 20px; }
 
   footer ul {
     display: block;
@@ -1431,7 +1465,7 @@ footer {
     word-spacing: unset;
     letter-spacing: unset;
     margin-top: unset;
-    padding: unset; }
+    padding: 8px; }
 
   .right_arrow {
     margin-top: 20px; }
@@ -1475,6 +1509,38 @@ footer {
     .user_product h3 {
       padding: 5px 0;
       font-size: 15px; }
+
+  .product_container .product_img .product_icon {
+    top: 28px; }
+
+  .product_container .product_img .product_icon svg {
+    margin: 7px 10px 5px;
+    width: 25px;
+    cursor: pointer;
+    transition: .4s; }
+
+  .checkout_details {
+    padding: 0 20px;
+    margin: 30px auto 60px; }
+
+  .cart_container .cart_product_info {
+    display: none; }
+  .cart_container h2 {
+    text-align: center; }
+  .cart_container .cart_product {
+    flex-direction: column;
+    margin: 20px 0 40px; }
+  .cart_container .product_info {
+    flex-direction: column; }
+    .cart_container .product_info .product_quantity input {
+      height: 27px;
+      text-align: center;
+      margin-bottom: 5px; }
+    .cart_container .product_info button {
+      letter-spacing: unset; }
+  .cart_container .pay_container {
+    width: 90%;
+    margin: 0 auto; }
 
   .my_account {
     margin: 30px auto 60px; }
@@ -1554,7 +1620,8 @@ footer {
     margin-top: 35px; }
 
   .about_container .about_content p {
-    margin-top: 10px; }
+    margin-top: 10px;
+    text-align: left; }
 
   .workshops_container {
     padding-top: unset; }
@@ -1586,10 +1653,9 @@ footer {
   .cart_fluid .pay_container .checkout_button button {
     padding: unset;
     white-space: pre-wrap;
-    padding-right: 5px; }
+    padding: 7px; }
 
   .cart_fluid .pay_container {
-    margin: 35px 0 0;
     padding: 20px;
     border: 1px solid #3e9578;
     font-size: 14px; }
@@ -1951,7 +2017,7 @@ footer {
     .registration_container .payment img {
       width: 50px;
       margin-right: 15px;
-      margin-top: -6px; }
+      margin-top: -3px; }
   .registration_container h1 {
     text-align: center;
     color: #3e9578;
@@ -2005,8 +2071,7 @@ footer {
   .registration_container .gender,
   .registration_container .shipping {
     display: flex;
-    align-items: center;
-    margin-left: 20px; }
+    align-items: center; }
     .registration_container .gender .payment,
     .registration_container .shipping .payment {
       display: flex;
@@ -2032,7 +2097,8 @@ footer {
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
-        user-select: none; }
+        user-select: none;
+        margin-left: 20px; }
       .registration_container .gender .payment .cart_button input,
       .registration_container .shipping .payment .cart_button input {
         position: absolute;
@@ -2161,7 +2227,8 @@ footer {
   .success_payment span {
     font-size: 30px;
     color: #3e9578;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 5px; }
   .success_payment .main_page_link {
     margin-top: 30px; }
     .success_payment .main_page_link a {

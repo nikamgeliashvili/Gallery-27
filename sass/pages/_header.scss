@@ -167,6 +167,12 @@ header {
         }
       }
 
+      &:hover {
+        svg {
+          fill: $yellow;
+        }
+      }
+
 
 
 

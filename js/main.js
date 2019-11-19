@@ -1,58 +1,69 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
 
 
-    
 
 
-    $(window).on("load resize",function(){
+
+  $(window).on("load resize", function () {
     var imgWidth = $('.img_box').width();
     var imgBox = $('.img_box')
-        imgBox.height(imgWidth)
-    });
+    imgBox.height(imgWidth)
+  });
 
-    // $('.member_info img').on('click',function(){
-    //    $(this).parent().next($('.text_content')).slideToggle()
-    // })
-
-  
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-          
-          margin: 10,
-          nav: false,
-          dots:false,
-          loop: false,
-          responsive: {
-            0: {
-              items: 1
-            },
-            600: {
-              items: 3
-            },
-            1000: {
-              items: 3
-            }
-          }
-        })
-      
-        $('[data-ui="open"]').on('click', function(){
-          $(this).toggleClass('active');
-          $(".header_navigation ul").slideToggle()
-        });
+  // $('.member_info img').on('click',function(){
+  //    $(this).parent().next($('.text_content')).slideToggle()
+  // })
 
 
-        $(".back_icon").click(function(){
-          window.history.back();
-    })
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
 
-    $('.team_members').on('click',function(){
-      $(this).find($('.text_content')).slideToggle()
-   })
+    margin: 10,
+    nav: false,
+    dots: true,
+    loop: false,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      767: {
+        items: 3
+      },
+      1000: {
+        items: 3
+      }
+    }
+  })
 
-   $('.container .product_section .product_info .product_title ').on('click',function(){
+  $('[data-ui="open"]').on('click', function () {
+    $(this).toggleClass('active');
+    $(".header_navigation ul").slideToggle()
+  });
+
+
+  $(".back_icon").click(function () {
+    window.history.back();
+  })
+
+  $('.team_members').on('click', function () {
+    $(this).find($('.text_content')).slideToggle()
+  })
+
+  $('.team_members').on('click', function () {
+    $(this).find($('svg')).toggleClass('rotate')
+  })
+
+  $('.container .product_section .product_info .product_title ').on('click', function () {
     $(this).next($('.text_content')).slideToggle()
- })
+  })
+
+
+  $('.container .product_section .product_info .product_title ').on('click', function () {
+    $(this).find($('svg')).toggleClass('rotate')
+  })
+
 
 
 
@@ -61,8 +72,11 @@ $(document).ready(function(){
 
 
 
+
+
+
 // window.onscroll = function() {myFunction()};
-    
+
 // var navbar = document.getElementById("nav");
 // var sticky = navbar.offsetTop;
 
@@ -76,26 +90,26 @@ $(document).ready(function(){
 
 
 var $headerCont = $("header");
-  var $subHeader = $(".sub-header");
-  var prevScrollpos = window.pageYOffset;
+var $subHeader = $(".sub-header");
+var prevScrollpos = window.pageYOffset;
 
-  window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
 
-    if (prevScrollpos > currentScrollPos) {
-      $headerCont.removeClass('sticky');
-    } else {
-      $headerCont.addClass('sticky');
-    }
+  if (prevScrollpos > currentScrollPos) {
+    $headerCont.removeClass('sticky');
+  } else {
+    $headerCont.addClass('sticky');
+  }
 
-    prevScrollpos = currentScrollPos;
-  };
+  prevScrollpos = currentScrollPos;
+};
 
 
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $(".account_img_change_box span").click(function () {
+  $(".account_img_change_box span").click(function () {
     $(".account_img_change_box input").click();
   });
   $(function () {
@@ -127,7 +141,7 @@ var modal = document.getElementById("myModal");
 var img = document.getElementById("img_zoom");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
+img.onclick = function () {
   modal.style.display = "block";
   modalImg.src = document.getElementById("myImg").src;
   captionText.innerHTML = this.alt;
@@ -137,15 +151,6 @@ img.onclick = function(){
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
+span.onclick = function () {
   modal.style.display = "none";
 }
-
-
-
-
-
-
-
-
-

@@ -37,7 +37,7 @@
 
     .about_content {
 
-        text-align: center;
+
         color: #3e9578;
 
 
@@ -52,8 +52,10 @@
         p {
             margin-top: 15px;
             color: $main-color;
+        }
 
-
+        span {
+            margin-left: calc(50% - 36px);
         }
 
 
@@ -68,6 +70,9 @@
             margin: 60px 0 20px;
             text-transform: uppercase;
         }
+
+
+
     }
 
 
@@ -147,4 +152,59 @@
     }
 
 
+
+    .slider {
+
+
+
+        .owl-nav {
+            .owl-next {
+                span {
+                    font-size: 60px;
+                    position: absolute;
+                    top: 15%;
+                    right: -9px;
+                    padding: 15px;
+                    color: $main-color;
+                    transition: .4s;
+
+                    &:hover {
+                        color: $yellow;
+                        transform: scale(1.3);
+                    }
+
+
+                }
+            }
+
+            .owl-prev {
+                span {
+                    font-size: 60px;
+                    position: absolute;
+                    top: 15%;
+                    left: -9px;
+                    padding: 15px;
+                    color: $main-color;
+                    transition: .4s;
+
+                    &:hover {
+                        color: $yellow;
+                        transform: scale(1.3);
+                    }
+
+
+                }
+            }
+        }
+    }
+
+
+
+}
+
+
+.rotate {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }

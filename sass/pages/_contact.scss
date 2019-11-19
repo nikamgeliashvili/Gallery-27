@@ -1,7 +1,12 @@
 .contact_container {
     margin: 40px auto;
-    min-height: calc(100vh - 261px);
+    min-height: calc(100vh - 260px);
     font-family: 'Conv_FiraGO-Regular';
+
+
+    .row {
+        width: 80%;
+    }
 
     .contact_map {
         width: 100%;
@@ -45,7 +50,7 @@
             font-size: 23px;
             color: #ffbc00;
             text-transform: uppercase;
-            margin-top: 20px;
+
 
         }
 
@@ -59,20 +64,20 @@
         display: flex;
         flex-wrap: wrap;
         width: 150px;
-        margin: 35px auto;
+        margin: 20px auto;
         justify-content: center;
 
         img {
             width: 35px;
             height: 35px;
-            margin: 20px;
+            margin: 15px;
             border-radius: 5px;
             object-fit: contain;
-            transition:.5s;
+            transition: .5s;
         }
 
-        img:hover{
-        transform: scale(1.2);
+        img:hover {
+            transform: scale(1.2);
         }
 
         .share_link {
