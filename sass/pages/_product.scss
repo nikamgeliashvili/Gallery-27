@@ -20,7 +20,7 @@
       /* Stay in place */
       z-index: 5000;
       /* Sit on top */
-      padding-top: 60px;
+      padding-top: 20px;
       /* Location of the box */
       left: 0;
       top: 0;
@@ -40,7 +40,8 @@
     .modal-content {
       margin: auto;
       display: block;
-      width: 40%;
+      height: 96%;
+      width: 66%;
 
     }
 
@@ -140,6 +141,17 @@
         width: 40px;
         cursor: pointer;
         transition: .4s;
+
+        .st0 {
+          opacity: 0.8;
+          /* fill: #FFFFFF; */
+          fill:$main-color;
+      }
+
+      .st1 {
+        fill:$main-color;
+        opacity: 0.8;
+    }
 
       }
 
@@ -273,6 +285,19 @@
           transition: .5s;
 
 
+          .st0 {
+            opacity: 0.5;
+            fill:$main-color;
+          }
+          
+          .st1 {
+            fill: #3D9679;
+          }
+
+            .st1 {
+              fill: $main-color;
+          }
+
         }
 
 
@@ -313,3 +338,4 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+

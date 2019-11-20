@@ -128,11 +128,13 @@
 
         .text_content {
             display: none;
+            text-align: center;
 
             p {
                 max-width: 250px;
                 margin: 20px auto;
                 color: $main-color;
+                text-align: center;
 
             }
         }
@@ -162,7 +164,7 @@
                 span {
                     font-size: 60px;
                     position: absolute;
-                    top: 15%;
+                    top: 40px;
                     right: -9px;
                     padding: 15px;
                     color: $main-color;
@@ -181,7 +183,7 @@
                 span {
                     font-size: 60px;
                     position: absolute;
-                    top: 15%;
+                    top: 40px;
                     left: -9px;
                     padding: 15px;
                     color: $main-color;

@@ -65,8 +65,8 @@ $(document).ready(function () {
       0: {
         items: 1
       },
-      767: {
-        items: 3
+      991: {
+        items: 1
       },
       1000: {
         items: 3
@@ -194,3 +194,19 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
   modal.style.display = "none";
 }
+
+
+// $('#myModal').click(function(e) {
+//   if (!$(e.target).closest('.modal').length){
+//       $(".modal").fadeOut(300);
+//   }
+// });
+
+
+$('#myModal').on('click', function(event) {
+  modal.style.display = "none" 
+});
+
+// $('#myModal').on('click', function(event) {
+//    event.stopPropagation();
+// });
