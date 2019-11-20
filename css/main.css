@@ -226,6 +226,8 @@ header {
       transition: all .4s;
       letter-spacing: 1px;
       padding: 5px; }
+      header .header_navigation a:hover {
+        color: #f5c745; }
       header .header_navigation a svg {
         fill: white;
         width: 30px;
@@ -1018,10 +1020,118 @@ input[type=number]::-webkit-outer-spin-button {
   .account_container .user_product {
     padding: 25px 0;
     margin: 30px 0; }
+    .account_container .user_product .my_info {
+      margin-top: 30px; }
+      .account_container .user_product .my_info .adress_section {
+        margin: 16px 0; }
+        .account_container .user_product .my_info .adress_section button {
+          padding: 6px;
+          background-color: #3e9578;
+          color: white;
+          outline: none;
+          margin: 25px 0;
+          transition: .5s;
+          text-transform: capitalize;
+          min-width: 100px; }
+          .account_container .user_product .my_info .adress_section button:hover {
+            color: #3e9578;
+            background: #f5c745; }
+        .account_container .user_product .my_info .adress_section span {
+          color: #3e9578;
+          text-transform: uppercase;
+          font-size: 18px; }
+        .account_container .user_product .my_info .adress_section .my_adress {
+          /* Hide the browser's default radio button */
+          /* Create a custom radio button */
+          /* On mouse-over, add a grey background color */
+          /* When the radio button is checked, add a blue background */
+          /* Create the indicator (the dot/circle - hidden when not checked) */
+          /* Show the indicator (dot/circle) when checked */ }
+          .account_container .user_product .my_info .adress_section .my_adress .main_adress {
+            display: flex;
+            color: #3e9578;
+            margin: 20px 0; }
+            .account_container .user_product .my_info .adress_section .my_adress .main_adress button {
+              margin: 0 0 0 30px; }
+          .account_container .user_product .my_info .adress_section .my_adress .cart_button {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin-left: 20px;
+            display: flex; }
+            .account_container .user_product .my_info .adress_section .my_adress .cart_button p {
+              color: #3e9578;
+              margin-top: 6px; }
+          .account_container .user_product .my_info .adress_section .my_adress .cart_button input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer; }
+          .account_container .user_product .my_info .adress_section .my_adress .checkmark {
+            position: absolute;
+            top: 7px;
+            left: 0;
+            height: 22px;
+            width: 22px;
+            background-color: #eee;
+            border-radius: 50%; }
+          .account_container .user_product .my_info .adress_section .my_adress .cart_button:hover input ~ .checkmark {
+            background-color: #ccc; }
+          .account_container .user_product .my_info .adress_section .my_adress .cart_button input:checked ~ .checkmark {
+            background-color: #3e9578;
+            border: 1px solid #3e9578;
+            padding: 2px;
+            padding: 1px;
+            background-clip: content-box; }
+          .account_container .user_product .my_info .adress_section .my_adress .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none; }
+          .account_container .user_product .my_info .adress_section .my_adress .cart_button input:checked ~ .checkmark:after {
+            display: block; }
+      .account_container .user_product .my_info .registration_name {
+        display: flex; }
+        .account_container .user_product .my_info .registration_name .name_box {
+          margin-right: 15px;
+          display: flex;
+          flex-direction: column; }
+          .account_container .user_product .my_info .registration_name .name_box .new_adress_input {
+            width: 615px; }
+        .account_container .user_product .my_info .registration_name span {
+          margin-left: 10px;
+          color: #3e9578;
+          text-transform: uppercase; }
+        .account_container .user_product .my_info .registration_name input {
+          width: 300px;
+          border: 1px solid #3e9578;
+          margin: 2px 0 15px;
+          padding: 8px;
+          color: #3e9578; }
+        .account_container .user_product .my_info .registration_name select {
+          width: 300px;
+          color: #3e9578;
+          border: 1px solid #3e9578; }
+        .account_container .user_product .my_info .registration_name button {
+          width: 70px;
+          padding: 6px;
+          background-color: #3e9578;
+          color: white;
+          outline: none;
+          margin: 25px 5px 0;
+          transition: .5s; }
+          .account_container .user_product .my_info .registration_name button:hover {
+            color: #3e9578;
+            background: #f5c745; }
     .account_container .user_product .nav-tabs {
       border-bottom: 1px solid #3e9578;
       flex-wrap: nowrap !important; }
-    .account_container .user_product .nav-tabs .nav-link.active, .account_container .user_product .nav-tabs .nav-item.show .nav-link {
+    .account_container .user_product .nav-tabs .nav-link.active,
+    .account_container .user_product .nav-tabs .nav-item.show .nav-link {
       color: #495057;
       background-color: #fff;
       border-color: #3e9578 #3e9578 #fff; }
@@ -1093,6 +1203,120 @@ input[type=number]::-webkit-outer-spin-button {
       .account_container .cup_box .cup_info button:hover {
         background-color: #ffda74;
         transition: 1s; }
+
+.my_info {
+  margin-top: 30px; }
+  .my_info .adress_section {
+    margin: 16px 0; }
+    .my_info .adress_section .shipping_adress_info {
+      margin: 15px 0; }
+    .my_info .adress_section button {
+      padding: 6px;
+      background-color: #3e9578;
+      color: white;
+      outline: none;
+      margin: 25px 0;
+      transition: .5s;
+      text-transform: capitalize;
+      min-width: 100px; }
+      .my_info .adress_section button:hover {
+        color: #3e9578;
+        background: #f5c745; }
+    .my_info .adress_section span {
+      color: #3e9578;
+      text-transform: uppercase;
+      font-size: 18px; }
+    .my_info .adress_section .my_adress {
+      /* Hide the browser's default radio button */
+      /* Create a custom radio button */
+      /* On mouse-over, add a grey background color */
+      /* When the radio button is checked, add a blue background */
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      /* Show the indicator (dot/circle) when checked */ }
+      .my_info .adress_section .my_adress .checkmark {
+        background-color: #bab9b5; }
+      .my_info .adress_section .my_adress .main_adress {
+        display: flex;
+        color: #3e9578;
+        margin: 20px 0; }
+        .my_info .adress_section .my_adress .main_adress button {
+          margin: 0 0 0 30px; }
+      .my_info .adress_section .my_adress .cart_button {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin-left: 20px;
+        display: flex; }
+        .my_info .adress_section .my_adress .cart_button p {
+          color: #3e9578; }
+      .my_info .adress_section .my_adress .cart_button input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer; }
+      .my_info .adress_section .my_adress .checkmark {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: #eee;
+        border-radius: 50%; }
+      .my_info .adress_section .my_adress .cart_button:hover input ~ .checkmark {
+        background-color: #ccc; }
+      .my_info .adress_section .my_adress .cart_button input:checked ~ .checkmark {
+        background-color: #3e9578;
+        border: 1px solid #3e9578;
+        padding: 2px;
+        padding: 1px;
+        background-clip: content-box; }
+      .my_info .adress_section .my_adress .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none; }
+      .my_info .adress_section .my_adress .cart_button input:checked ~ .checkmark:after {
+        display: block; }
+  .my_info .registration_name {
+    display: flex; }
+    .my_info .registration_name .name_box {
+      margin-right: 15px;
+      display: flex;
+      flex-direction: column; }
+      .my_info .registration_name .name_box .new_adress_input {
+        width: 615px; }
+    .my_info .registration_name span {
+      margin-left: 10px;
+      color: #3e9578;
+      text-transform: uppercase; }
+    .my_info .registration_name input {
+      width: 300px;
+      border: 1px solid #3e9578;
+      margin: 2px 0 15px;
+      padding: 8px;
+      color: #3e9578; }
+    .my_info .registration_name select {
+      width: 300px;
+      color: #3e9578;
+      border: 1px solid #3e9578; }
+    .my_info .registration_name button {
+      width: 70px;
+      padding: 6px;
+      background-color: #3e9578;
+      color: white;
+      outline: none;
+      margin: 25px 5px 0;
+      transition: .5s; }
+      .my_info .registration_name button:hover {
+        color: #3e9578;
+        background: #f5c745; }
+
+#new_adress {
+  display: none; }
 
 .cart_fluid {
   margin: 50px;
@@ -1866,6 +2090,12 @@ footer {
   color: #3e9578;
   min-height: calc(100vh - 320px);
   font-family: 'Conv_FiraGO-Regular'; }
+  .registration_container .my_account {
+    margin: 0 auto; }
+  .registration_container .shipping_info {
+    margin: 0 20px 30px; }
+    .registration_container .shipping_info p {
+      color: #3e9578; }
   .registration_container .pay_container {
     margin: 35px 0;
     padding: 30px;

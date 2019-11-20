@@ -157,6 +157,11 @@ header {
       letter-spacing: 1px;
       padding: 5px;
 
+
+      &:hover {
+        color: $yellow;
+      }
+
       svg {
         fill: white;
         width: 30px;

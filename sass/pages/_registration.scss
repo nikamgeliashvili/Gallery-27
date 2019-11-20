@@ -6,7 +6,18 @@
     min-height: calc(100vh - 320px);
     font-family: 'Conv_FiraGO-Regular';
 
+    .my_account {
+        margin: 0 auto;
+    }
 
+    .shipping_info {
+        margin: 0 20px 30px;
+
+        p {
+            color: $main-color;
+
+        }
+    }
 
 
 
@@ -367,7 +378,7 @@
                 -moz-user-select: none;
                 -ms-user-select: none;
                 user-select: none;
-                margin-left:20px;
+                margin-left: 20px;
             }
 
             /* Hide the browser's default radio button */

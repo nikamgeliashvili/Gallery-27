@@ -1,4 +1,41 @@
+function myFunction() {
+  var checkBox = document.getElementById("new_adress_button");
+  var adressform = document.getElementById("new_adress");
+
+  if (checkBox.click) {
+    adressform.style.display = "block";
+  }
+
+}
+
+
+
+
+// function hidefunction() {
+//   var checkBox = document.getElementById("new_adress_button");
+//   var adressform = document.getElementById("new_adress");
+
+//   if (checkBox.checked == false) {
+//     adressform.style.display = "none";
+//   }
+
+// }
+
+
+
 $(document).ready(function () {
+
+
+  // var checkBox = document.getElementById("checked_radio");
+  // var adressform = document.getElementById("new_adress")
+
+  // if (checkBox.checked == true) {
+  //   adressform.style.display = "block";
+  // } else {
+  //   adressform.style.display = "none";
+  // }
+
+
 
 
 
@@ -69,6 +106,9 @@ $(document).ready(function () {
 
 
 })
+
+
+
 
 
 
