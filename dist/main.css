@@ -45,7 +45,8 @@ body {
         height: 100%;
         perspective: 200px; }
         .home_category_container .row .col-12 .category_box .category_title {
-          transform: translateY(-10px); }
+          transform: translateY(-10px);
+          z-index: 100; }
         .home_category_container .row .col-12 .category_box:hover .category_title a {
           color: #f5c745; }
         .home_category_container .row .col-12 .category_box .category_img {
@@ -244,8 +245,7 @@ header {
       opacity: 1; }
   @media only screen and (max-width: 992px) {
     header .header_navigation ul {
-      flex-direction: column;
-      display: none; } }
+      flex-direction: column; } }
 
 .hamburger {
   position: relative;
@@ -350,7 +350,7 @@ header {
   display: flex;
   justify-content: center;
   min-height: calc(100vh - 180px);
-   /* .row {
+    /* .row {
     margin: 0 auto;
      max-width: 62.5rem; 
     width: 96%;
@@ -406,13 +406,17 @@ header {
 .back_icon {
   text-align: right;
   margin-bottom: 20px;
-  width: 30px; }
+  width: 30px;
+  transition: .5s; }
+  .back_icon:hover {
+    transform: scale(1.2);
+    opacity: .6; }
 
 .cups_container {
   font-family: 'Conv_FiraGO-Regular';
   min-height: calc(100vh - 200px); }
   .cups_container .cups_title {
-    color: orange;
+    color: #FFBC00;
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 20px; }
@@ -462,7 +466,8 @@ header {
         display: flex; }
         .cups_container .cup_box .cup_info .cup_price .price {
           text-decoration: line-through;
-          padding-left: 4px; }
+          padding-left: 4px;
+          opacity: .6; }
       .cups_container .cup_box .cup_info span {
         display: block;
         color: #3e9578;
@@ -480,7 +485,21 @@ header {
   .cups_container .pagination {
     justify-content: center; }
     .cups_container .pagination a {
-      padding: 0 3px; }
+      padding: 0 7px;
+      color: white;
+      font-size: 18px;
+      background: #3e9578;
+      transition: .5s;
+      margin: 3px;
+      border-radius: 3px; }
+      .cups_container .pagination a:hover {
+        background: #FFBC00;
+        color: #3e9578; }
+    .cups_container .pagination .pagination li {
+      display: block;
+      float: left;
+      color: #3e9578;
+      font-size: 18px; }
 
 .product_container {
   max-width: 1200px;
@@ -491,6 +510,7 @@ header {
   .product_container .product_img {
     position: relative;
     text-align: right;
+    max-height: 500px;
     /* The Modal (background) */
     /* Modal Content (image) */
     /* Caption of Modal Image */
@@ -522,7 +542,7 @@ header {
       margin: auto;
       display: block;
       height: 96%;
-      width: 66%; }
+      width: 50%; }
     .product_container .product_img #caption {
       margin: auto;
       display: block;
@@ -567,7 +587,8 @@ header {
         width: 100%; } }
     .product_container .product_img img {
       width: 95%;
-      margin-top: 50px; }
+      margin-top: 50px;
+      height: 95%; }
     .product_container .product_img .product_icon {
       transition: 1s;
       position: absolute;
@@ -1599,7 +1620,10 @@ footer {
     align-items: flex-end;
     justify-content: flex-end;
     position: inherit;
-    width: 100%; }
+    width: 100%;
+    height: 47px;
+    transition: .5s;
+    overflow: hidden; }
 
   .dropdown_menu {
     width: 100%;
@@ -1610,7 +1634,8 @@ footer {
 
   header .header_navigation ul {
     margin-right: unset;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    margin-top: 5px; }
 
   footer ul {
     display: block;
@@ -1722,6 +1747,9 @@ footer {
     .right_arrow img {
       width: 30px; }
 
+  .cups_container {
+    padding: unset; }
+
   .cups_container .cup_box .cup_info {
     display: block; }
 
@@ -1763,6 +1791,12 @@ footer {
     .user_product h3 {
       padding: 5px 0;
       font-size: 15px; }
+
+  .past_workshops .col-md-6 {
+    padding: unset !important; }
+
+  .cart_fluid .cart_product .product_info .product_price {
+    text-align: unset; }
 
   .product_container .product_img .product_icon {
     top: 28px; }
@@ -2096,7 +2130,8 @@ footer {
       margin: 7px 0; }
 
   .account_container .user_product .my_info .registration_name {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
 
   .account_container .user_product .my_info .registration_name .name_box .new_adress_input {
     width: 300px; }

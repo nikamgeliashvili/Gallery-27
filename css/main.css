@@ -2130,7 +2130,8 @@ footer {
       margin: 7px 0; }
 
   .account_container .user_product .my_info .registration_name {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
 
   .account_container .user_product .my_info .registration_name .name_box .new_adress_input {
     width: 300px; }
