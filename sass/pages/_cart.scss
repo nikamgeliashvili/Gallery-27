@@ -148,26 +148,27 @@
                     outline: none;
                     height: 30px;
                     text-align: center;
+                    border-radius: 5px;
                 }
 
             }
 
 
 
-            button {
+             button {
                 padding: 2px 10px;
-                color: #3e9578;
-                background-color: white;
-                border: 1px solid #3e9578;
-                letter-spacing: 2px;
+                color: white;
+                background-color:$main-color;
                 outline: none;
                 cursor: pointer;
                 transition: .5s;
+                border-radius: 5px;
             }
 
             button:hover {
                 background: $yellow;
-                border: 1px solid transparent;
+                color: $main-color;
+
             }
 
         }
@@ -312,21 +313,21 @@
 
             button {
 
-                background-color: white;
-                color: #3e9578;
-                border: 1px solid #3e9578;
-                letter-spacing: 1px;
+                color: white;
                 padding: 12px 10px 15px;
                 font-weight: bold;
                 text-transform: uppercase;
                 outline: none;
                 cursor: pointer;
                 transition: .5s;
+                letter-spacing: 1px;
+                background: green;
+                border-radius: 4px;
             }
 
             button:hover {
                 background: $yellow;
-                border: 1px solid transparent;
+                color: $main-color;
             }
         }
 

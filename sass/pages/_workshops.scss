@@ -87,6 +87,7 @@
             input,
             textarea {
                 border: 1px solid #3e9578;
+                border-radius: 5px;
             }
 
             .form_content_2 {
@@ -115,6 +116,11 @@
                         img {
                             width: 100%;
                             height: 100%;
+
+                            &:hover{
+                                transform: scale(1.2);
+                                opacity: .5;
+                            }
                         }
 
                     }
@@ -202,7 +208,7 @@
             .right_arrow:hover {
                 background: $yellow;
                 border-radius: 100%;
-                transform: scale(1.05);
+                transform: scale(1.2);
 
             }
 

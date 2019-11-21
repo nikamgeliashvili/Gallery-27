@@ -8,7 +8,7 @@
 @media only screen and (max-width: 992px) {
   header .header_navigation {
 
-    padding: 10px 15px 10px 30px;
+    padding: 10px 15px 10px 10px;
   }
 
   .cup_hover {
@@ -289,7 +289,7 @@
       -webkit-box-flex: 0;
       flex: 0 0 50%;
       max-width: 100%;
-      padding: unset;
+      
     }
   }
 
@@ -301,9 +301,7 @@
     padding: unset;
   }
 
-  .col-md-6 {
-    padding: unset;
-  }
+  
 
 
 
@@ -336,11 +334,7 @@
     }
   }
 
-  .past_workshops {
-    .col-md-6 {
-      padding: unset !important;
-    }
-  }
+
 
 
 
@@ -546,6 +540,7 @@
 
   .workshops_container {
     padding-top: unset;
+    padding: unset;
 
     h3 {
       margin-top: 10px;

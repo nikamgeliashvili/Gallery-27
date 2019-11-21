@@ -77,20 +77,24 @@
             }
 
             .user_profile {
-                border: 1px solid #3e9578;
+                
                 padding: 5px;
                 text-align: center;
                 transition: .5s;
+                background: $main-color;
 
                 a {
-                    color: #3e9578;
+                    color: white;
                     padding: 10px 30px;
                 }
             }
 
             .user_profile:hover {
                 background: $yellow;
-                border: 1px solid transparent;
+                
+                a{
+                    color:$main-color;
+                }
             }
         }
     }
@@ -120,6 +124,7 @@
                     transition: .5s;
                     text-transform: capitalize;
                     min-width: 100px;
+                    border-radius: 5px;
 
                     &:hover {
                         color: $main-color;
@@ -140,9 +145,12 @@
                         display: flex;
                         color: $main-color;
                         margin: 20px 0;
+                        justify-content: space-between;
+                        max-width: 620px;
 
                         button {
                             margin: 0 0 0 30px;
+                            border-radius: 5px;;
 
                         }
                     }
@@ -247,6 +255,7 @@
                     margin: 2px 0 15px;
                     padding: 8px;
                     color: $main-color;
+                    border-radius: 5px;
 
                 }
 
@@ -255,6 +264,7 @@
                     width: 300px;
                     color: $main-color;
                     border: 1px solid $main-color;
+                    border-radius: 5px;
                 }
 
                 button {
@@ -265,6 +275,7 @@
                     outline: none;
                     margin: 25px 5px 0;
                     transition: .5s;
+                    border-radius: 5px;
 
                     &:hover {
                         color: $main-color;

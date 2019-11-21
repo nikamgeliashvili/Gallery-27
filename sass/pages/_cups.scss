@@ -115,7 +115,8 @@
                 background-color: #FFBC00;
                 padding: 5px;
                 outline: none;
-                cursor: pointer
+                cursor: pointer;
+                border-radius:5px;
             }
 
             button:hover {
@@ -147,10 +148,19 @@
         }
 
         .pagination li {
-            display: block;
-            float: left;
-            color: $main-color;
+            padding: 0px 7px;
+            color: white;
             font-size: 18px;
+            background: #3e9578;
+            transition: .5s;
+            margin: 3px;
+            border-radius: 3px;
+            height: 27px;
+
+            &:hover {
+                background: #FFBC00;
+                color: $main-color;
+            }
         }
 
 

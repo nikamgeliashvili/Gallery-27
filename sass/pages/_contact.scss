@@ -73,7 +73,7 @@
             margin: 15px;
             border-radius: 5px;
             object-fit: contain;
-            transition: .5s;
+            transition: .3s;
         }
 
         img:hover {
@@ -84,6 +84,13 @@
             color: #3e9578;
             text-align: center;
             margin-top: 40px;
+            transition: .2s;
+
+            img:hover{
+                transform: scale(1.2);
+                background: $yellow;
+                border-radius: 50%;
+            }
         }
     }
 
