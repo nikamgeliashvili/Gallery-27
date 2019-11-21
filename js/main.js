@@ -9,6 +9,14 @@ function myFunction() {
 }
 
 
+var userAgent = window.navigator.userAgent;
+
+if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+  $("#nav").css("top", "0px")
+
+}
+
+
 
 
 // function hidefunction() {
@@ -114,12 +122,6 @@ $(document).ready(function () {
 })
 
 
-var userAgent = window.navigator.userAgent;
-
-if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
-  $("#nav").css("top", "0px")
-}
-
 
 
 
@@ -186,24 +188,28 @@ $(document).ready(function () {
 
 
 // Get the modal
-var modal = document.getElementById("myModal");
+if (document.getElementById("img_zoom") !== null) {
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("img_zoom");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function () {
-  modal.style.display = "block";
-  modalImg.src = document.getElementById("myImg").src;
-  captionText.innerHTML = this.alt;
-}
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+  var modal = document.getElementById("myModal");
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
+
+  var img = document.getElementById("img_zoom");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = document.getElementById("myImg").src;
+    captionText.innerHTML = this.alt;
+  }
+
+
+  var span = document.getElementsByClassName("close")[0];
+
+
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
 }
 
 
