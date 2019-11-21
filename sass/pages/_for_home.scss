@@ -1,13 +1,13 @@
 .category_for_home {
 
-  font-family: 'Conv_FiraGO-Regular';
+    font-family: 'Conv_FiraGO-Regular';
 
     display: flex;
     justify-content: center;
     min-height: calc(100vh - 180px);
 
 
-   /* .row {
+    /* .row {
     margin: 0 auto;
      max-width: 62.5rem; 
     width: 96%;
@@ -16,7 +16,7 @@
     .for_home {
         position: relative;
         height: 80%;
-        margin-top:5px;
+        margin-top: 5px;
 
         .for_home_img {
             width: 100%;
@@ -118,4 +118,10 @@
     text-align: right;
     margin-bottom: 20px;
     width: 30px;
+    transition: .5s;
+
+    &:hover {
+        transform: scale(1.2);
+        opacity: .6;
+    }
 }

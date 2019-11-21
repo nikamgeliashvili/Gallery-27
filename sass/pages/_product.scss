@@ -10,6 +10,7 @@
   .product_img {
     position: relative;
     text-align: right;
+    max-height: 500px;
 
 
     /* The Modal (background) */
@@ -41,7 +42,7 @@
       margin: auto;
       display: block;
       height: 96%;
-      width: 66%;
+      width: 50%;
 
     }
 
@@ -116,7 +117,7 @@
     img {
       width: 95%;
       margin-top: 50px;
-
+      height: 95%
     }
 
     .product_icon {
@@ -145,13 +146,13 @@
         .st0 {
           opacity: 0.8;
           /* fill: #FFFFFF; */
-          fill:$main-color;
-      }
+          fill: $main-color;
+        }
 
-      .st1 {
-        fill:$main-color;
-        opacity: 0.8;
-    }
+        .st1 {
+          fill: $main-color;
+          opacity: 0.8;
+        }
 
       }
 
@@ -287,15 +288,15 @@
 
           .st0 {
             opacity: 0.5;
-            fill:$main-color;
+            fill: $main-color;
           }
-          
+
           .st1 {
             fill: #3D9679;
           }
 
-            .st1 {
-              fill: $main-color;
+          .st1 {
+            fill: $main-color;
           }
 
         }
@@ -338,4 +339,3 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-

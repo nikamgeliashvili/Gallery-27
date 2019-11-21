@@ -8,24 +8,24 @@
 
 .workshops_container {
 
-        
+
     font-family: 'Conv_FiraGO-Regular';
     min-height: calc(100vh - 180px);
 
     .workshops_img {
-       width: 100%;
-    max-height: 500px;
-    height: 100%;
+        width: 100%;
+        max-height: 500px;
+        height: 100%;
 
-        img{
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
 
-    .row{
-    padding:50px 0;
+    .row {
+        padding: 50px 0;
     }
 
 
@@ -136,6 +136,7 @@
     padding-top: 20px;
     font-family: 'Conv_FiraGO-Regular';
 
+
     .past_workshops_title {
         text-align: center;
         color: #ffbc00;
@@ -150,17 +151,17 @@
 
     .row {
         margin-bottom: 100px;
-        transition:.5s;
+        transition: .5s;
 
-       
+
 
         .past_workshops_img {
             width: 100%;
-            height:320px;
+            height: 320px;
 
             img {
-              width: 100%;
-              height: 100%;
+                width: 100%;
+                height: 100%;
 
             }
         }
@@ -199,7 +200,7 @@
             .right_arrow:hover {
                 background: $yellow;
                 border-radius: 100%;
-                 transform: scale(1.05);
+                transform: scale(1.05);
 
             }
 

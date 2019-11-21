@@ -1,10 +1,10 @@
 .cups_container {
-font-family: 'Conv_FiraGO-Regular';
-min-height: calc(100vh - 200px);
+    font-family: 'Conv_FiraGO-Regular';
+    min-height: calc(100vh - 200px);
 
 
     .cups_title {
-        color: orange;
+        color: #FFBC00;
         font-size: 16px;
         text-transform: uppercase;
         margin-top: 20px;
@@ -51,7 +51,7 @@ min-height: calc(100vh - 200px);
 
                     a {
                         color: white;
-                        padding:10px;
+                        padding: 10px;
                     }
                 }
 
@@ -85,28 +85,29 @@ min-height: calc(100vh - 200px);
 
 
         .cup_info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .cup_price {
                 display: flex;
-                align-items: center;
-                justify-content: space-between;
 
-                .cup_price{
-                    display:flex;
-
-                    .price{
-                        text-decoration: line-through;
-                        padding-left:4px;
-                    }
-
-                    
-
+                .price {
+                    text-decoration: line-through;
+                    padding-left: 4px;
+                    opacity: .6;
                 }
+
+
+
+            }
 
 
             span {
                 display: block;
                 color: #3e9578;
                 padding-right: 4px;
-                display:flex;
+                display: flex;
             }
 
             button {
@@ -128,7 +129,30 @@ min-height: calc(100vh - 200px);
         justify-content: center;
 
         a {
-            padding: 0 3px;
+            padding: 0 7px;
+            color: white;
+            font-size: 18px;
+            background: $main-color;
+            transition: .5s;
+            margin: 3px;
+            border-radius: 3px;
+
+            &:hover {
+                background: #FFBC00;
+                color: $main-color;
+            }
+
+
+
         }
+
+        .pagination li {
+            display: block;
+            float: left;
+            color: $main-color;
+            font-size: 18px;
+        }
+
+
     }
 }
