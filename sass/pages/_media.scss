@@ -11,6 +11,11 @@
     padding: 10px 15px 10px 10px;
   }
 
+
+  #nav {
+    top: 0 !important;
+  }
+
   .cup_hover {
 
     position: absolute;
@@ -78,6 +83,7 @@
     margin-right: unset;
     padding-bottom: 20px;
     margin-top: 5px;
+    display: none;
   }
 
 
@@ -289,7 +295,7 @@
       -webkit-box-flex: 0;
       flex: 0 0 50%;
       max-width: 100%;
-      
+
     }
   }
 
@@ -301,7 +307,7 @@
     padding: unset;
   }
 
-  
+
 
 
 

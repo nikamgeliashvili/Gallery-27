@@ -83,15 +83,16 @@ $(document).ready(function () {
   })
   var ind = true;
   $('[data-ui="open"]').on('click', function () {
-    $(this).toggleClass('active');
-    if (ind) {
-      $(".header_navigation").css("height", "190px")
-      ind = !ind
-    } else {
-      $(".header_navigation").css("height", "47px")
-      ind = !ind
-    }
+    $('.responsive_navigation').css('display', 'block');
+
   });
+
+  $('.close_navigation').on('click', function () {
+    $('.responsive_navigation').css('display', 'none');
+
+  });
+
+
 
 
   $(".back_icon").click(function () {
