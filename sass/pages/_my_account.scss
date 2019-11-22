@@ -59,7 +59,7 @@
         color: white;
         outline: none;
         margin: 15px 0;
-        transition:.5s;
+        transition: .5s;
         border-radius: 5px;
     }
 
@@ -69,17 +69,18 @@
 
         a {
             color: #3e9578;
-            transition:.5s;
+            transition: .5s;
         }
 
-        a:hover{
-            opacity:.5;
+        a:hover {
+            opacity: .5;
         }
     }
 
 
-    button:hover{
+    button:hover {
         background: $yellow;
+        color: $main-color;
     }
 
 

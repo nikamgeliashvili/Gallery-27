@@ -79,7 +79,7 @@
     .team_members {
         color: #3e9578;
         opacity: .7;
-        transition: .5s;
+        transition: .4s;
         cursor: pointer;
 
         .member_img {
@@ -92,8 +92,6 @@
                 border-radius: 50%;
                 height: 200px;
                 object-fit: cover;
-
-
             }
 
         }
@@ -111,17 +109,17 @@
                 width: 25px;
                 margin: 0 auto;
                 height: 25px;
-                fill: $main-color;
+                fill: white;
                 border-radius: 50%;
                 padding: background;
                 padding: 5px;
-                border: 1px solid $main-color;
                 transition: .5s;
+                background: $main-color;
 
 
                 &:hover {
-                    fill: white;
-                    background: $main-color;
+                    fill: $main-color;
+                    background: $yellow;
                 }
             }
         }
@@ -148,8 +146,8 @@
 
 
         svg {
-            fill: white;
-            background: $main-color;
+            fill: $main-color;
+            background: $yellow;
         }
     }
 

@@ -85,6 +85,7 @@ header {
         -webkit-transition: all 1s;
         -o-transition: all 1s;
         transition: all 1s;
+        border-radius: 3px;
 
 
 
@@ -104,13 +105,9 @@ header {
 
   .header_navigation {
     background-color: #3e9578;
-
     display: -webkit-box;
-
     display: -ms-flexbox;
 
-    display: flex;
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     padding: 10px;
@@ -133,7 +130,11 @@ header {
         left: 13px;
         position: absolute;
         color: $main-color;
+        transition: .5s;
+
       }
+
+
     }
 
     .cart_box {
@@ -205,6 +206,10 @@ header {
       &:hover {
         svg {
           fill: $yellow;
+        }
+
+        span {
+          opacity: .6;
         }
       }
 

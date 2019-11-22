@@ -155,10 +155,10 @@
 
 
 
-             button {
+            button {
                 padding: 2px 10px;
                 color: white;
-                background-color:$main-color;
+                background-color: $main-color;
                 outline: none;
                 cursor: pointer;
                 transition: .5s;
@@ -182,9 +182,9 @@
         margin: 35px 0;
         padding: 30px;
         border: 1px solid #3e9578;
-
         width: 50%;
         margin: 100px auto;
+        border-radius: 5px;
 
         .pay_title {
 
@@ -321,7 +321,7 @@
                 cursor: pointer;
                 transition: .5s;
                 letter-spacing: 1px;
-                background: green;
+                background: $main-color;
                 border-radius: 4px;
             }
 

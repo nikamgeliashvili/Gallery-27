@@ -39,6 +39,7 @@
                 width: 100%;
                 height: 100%;
                 opacity: 0;
+                transition: .3s;
 
                 .see_more {
                     padding: 20px;
@@ -116,7 +117,7 @@
                 padding: 5px;
                 outline: none;
                 cursor: pointer;
-                border-radius:5px;
+                border-radius: 5px;
             }
 
             button:hover {
@@ -128,15 +129,10 @@
 
     .pagination {
         justify-content: center;
+        display: flex;
 
         a {
-            padding: 0 7px;
             color: white;
-            font-size: 18px;
-            background: $main-color;
-            transition: .5s;
-            margin: 3px;
-            border-radius: 3px;
 
             &:hover {
                 background: #FFBC00;
@@ -148,7 +144,6 @@
         }
 
         .pagination li {
-            padding: 0px 7px;
             color: white;
             font-size: 18px;
             background: #3e9578;
@@ -157,10 +152,17 @@
             border-radius: 3px;
             height: 27px;
 
+            span {
+                padding: 9px;
+            }
+
             &:hover {
                 background: #FFBC00;
                 color: $main-color;
             }
+
+
+
         }
 
 

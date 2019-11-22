@@ -233,7 +233,8 @@ header {
         padding: 7px 15px;
         -webkit-transition: all 1s;
         -o-transition: all 1s;
-        transition: all 1s; }
+        transition: all 1s;
+        border-radius: 3px; }
         header .header_top .lang a.active {
           background-color: #f5c745; }
       header .header_top .lang a:hover {
@@ -242,8 +243,6 @@ header {
     background-color: #3e9578;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     padding: 10px; }
@@ -261,7 +260,8 @@ header {
       top: -35px;
       left: 13px;
       position: absolute;
-      color: #3e9578; }
+      color: #3e9578;
+      transition: .5s; }
     header .header_navigation .cart_box {
       position: relative; }
       header .header_navigation .cart_box .cart_item_quantity {
@@ -307,6 +307,8 @@ header {
           fill: #f5c745; }
       header .header_navigation a:hover svg {
         fill: #f5c745; }
+      header .header_navigation a:hover span {
+        opacity: .6; }
     header .header_navigation img {
       width: 30px;
       opacity: .6;
@@ -532,7 +534,8 @@ header {
       background-color: rgba(204, 204, 204, 0.5);
       width: 100%;
       height: 100%;
-      opacity: 0; }
+      opacity: 0;
+      transition: .3s; }
       .cups_container .cup_box .img_box .cup_hover .see_more {
         padding: 20px;
         background-color: #FFBC00;
@@ -580,20 +583,14 @@ header {
         background-color: #ffda74;
         transition: 1s; }
   .cups_container .pagination {
-    justify-content: center; }
+    justify-content: center;
+    display: flex; }
     .cups_container .pagination a {
-      padding: 0 7px;
-      color: white;
-      font-size: 18px;
-      background: #3e9578;
-      transition: .5s;
-      margin: 3px;
-      border-radius: 3px; }
+      color: white; }
       .cups_container .pagination a:hover {
         background: #FFBC00;
         color: #3e9578; }
     .cups_container .pagination .pagination li {
-      padding: 0px 7px;
       color: white;
       font-size: 18px;
       background: #3e9578;
@@ -601,6 +598,8 @@ header {
       margin: 3px;
       border-radius: 3px;
       height: 27px; }
+      .cups_container .pagination .pagination li span {
+        padding: 9px; }
       .cups_container .pagination .pagination li:hover {
         background: #FFBC00;
         color: #3e9578; }
@@ -692,7 +691,8 @@ header {
     .product_container .product_img img {
       width: 95%;
       margin-top: 50px;
-      height: 95%; }
+      height: 95%;
+      object-fit: contain; }
     .product_container .product_img .product_icon {
       transition: 1s;
       position: absolute;
@@ -705,14 +705,14 @@ header {
         margin: 10px;
         width: 40px;
         cursor: pointer;
-        transition: .2s; }
+        transition: .3s; }
         .product_container .product_img .product_icon svg .st0 {
           opacity: 1;
           /* fill: #FFFFFF; */
           fill: #3e9578; }
         .product_container .product_img .product_icon svg .st1 {
           fill: #3e9578;
-          opacity: 1; }
+          transition: .3s; }
       .product_container .product_img .product_icon .active .st0 {
         fill: #FFBC00;
         transition: 1s; }
@@ -853,7 +853,7 @@ input[type=number]::-webkit-outer-spin-button {
   .about_container .team_members {
     color: #3e9578;
     opacity: .7;
-    transition: .5s;
+    transition: .4s;
     cursor: pointer; }
     .about_container .team_members .member_img {
       margin: 0 auto;
@@ -874,15 +874,15 @@ input[type=number]::-webkit-outer-spin-button {
         width: 25px;
         margin: 0 auto;
         height: 25px;
-        fill: #3e9578;
+        fill: white;
         border-radius: 50%;
         padding: background;
         padding: 5px;
-        border: 1px solid #3e9578;
-        transition: .5s; }
+        transition: .5s;
+        background: #3e9578; }
         .about_container .team_members .member_info svg:hover {
-          fill: white;
-          background: #3e9578; }
+          fill: #3e9578;
+          background: #f5c745; }
     .about_container .team_members .text_content {
       display: none;
       text-align: center; }
@@ -894,8 +894,8 @@ input[type=number]::-webkit-outer-spin-button {
   .about_container .team_members:hover {
     opacity: 1; }
     .about_container .team_members:hover svg {
-      fill: white;
-      background: #3e9578; }
+      fill: #3e9578;
+      background: #f5c745; }
   .about_container .slider .owl-nav .owl-next span {
     font-size: 60px;
     position: absolute;
@@ -1161,7 +1161,8 @@ input[type=number]::-webkit-outer-spin-button {
         padding: 5px;
         text-align: center;
         transition: .5s;
-        background: #3e9578; }
+        background: #3e9578;
+        border-radius: 5px; }
         .account_container .user_account .account_info .user_profile a {
           color: white;
           padding: 10px 30px; }
@@ -1206,6 +1207,8 @@ input[type=number]::-webkit-outer-spin-button {
             margin: 20px 0;
             justify-content: space-between;
             max-width: 620px; }
+            .account_container .user_product .my_info .adress_section .my_adress .main_adress div {
+              width: 350px; }
             .account_container .user_product .my_info .adress_section .my_adress .main_adress button {
               margin: 0 0 0 30px;
               border-radius: 5px; }
@@ -1377,7 +1380,8 @@ input[type=number]::-webkit-outer-spin-button {
       margin: 25px 0;
       transition: .5s;
       text-transform: capitalize;
-      min-width: 100px; }
+      min-width: 100px;
+      border-radius: 5px; }
       .my_info .adress_section button:hover {
         color: #3e9578;
         background: #f5c745; }
@@ -1397,7 +1401,7 @@ input[type=number]::-webkit-outer-spin-button {
       .my_info .adress_section .my_adress .main_adress {
         display: flex;
         color: #3e9578;
-        margin: 20px 0; }
+        margin: 10px 0; }
         .my_info .adress_section .my_adress .main_adress button {
           margin: 0 0 0 30px; }
       .my_info .adress_section .my_adress .cart_button {
@@ -1413,7 +1417,8 @@ input[type=number]::-webkit-outer-spin-button {
         margin-left: 20px;
         display: flex; }
         .my_info .adress_section .my_adress .cart_button p {
-          color: #3e9578; }
+          color: #3e9578;
+          margin-top: 7px; }
       .my_info .adress_section .my_adress .cart_button input {
         position: absolute;
         opacity: 0;
@@ -1587,7 +1592,8 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 30px;
     border: 1px solid #3e9578;
     width: 50%;
-    margin: 100px auto; }
+    margin: 100px auto;
+    border-radius: 5px; }
     .cart_fluid .pay_container .pay_title span {
       color: #3e9578;
       font-size: 18px;
@@ -1674,7 +1680,7 @@ input[type=number]::-webkit-outer-spin-button {
         cursor: pointer;
         transition: .5s;
         letter-spacing: 1px;
-        background: green;
+        background: #3e9578;
         border-radius: 4px; }
       .cart_fluid .pay_container .checkout_button button:hover {
         background: #f5c745;
@@ -1716,7 +1722,7 @@ footer {
   header .header_navigation {
     padding: 10px 15px 10px 10px; }
 
-  #nav {
+  header {
     top: 0 !important; }
 
   .cup_hover {
@@ -2270,7 +2276,7 @@ footer {
     margin-top: 20px; }
 
   .pagination {
-    margin-top: 20px; }
+    margin-top: 10px; }
 
   .workshops_container .workshops_content .workshops_date {
     text-align: center;
@@ -2334,7 +2340,10 @@ footer {
   .account_container .user_product a {
     padding: 5px;
     width: 100px;
-    font-size: 15px; }
+    font-size: 15px;
+    font-size: 14px;
+    text-align: center;
+    word-break: break-word; }
 
   .my_info .registration_name .name_box .new_adress_input {
     width: 300px; }
@@ -2404,7 +2413,8 @@ footer {
     .my_account span a:hover {
       opacity: .5; }
   .my_account button:hover {
-    background: #f5c745; }
+    background: #f5c745;
+    color: #3e9578; }
 
 .registration_container {
   margin: 70px auto;
@@ -2506,12 +2516,14 @@ footer {
         color: #3e9578;
         border: 1px solid #3e9578;
         letter-spacing: 1px;
-        padding: 12px 10px 15px;
+        padding: 5px 10px;
         font-weight: bold;
         text-transform: uppercase;
         outline: none;
         cursor: pointer;
-        transition: .5s; }
+        transition: .5s;
+        min-width: 90px;
+        border-radius: 5px; }
       .registration_container .pay_container .checkout_button button:hover {
         background: #f5c745;
         border: 1px solid transparent; }
@@ -2592,7 +2604,8 @@ footer {
     .registration_container .registration_name select {
       width: 300px;
       color: #3e9578;
-      border: 1px solid #3e9578; }
+      border: 1px solid #3e9578;
+      border-radius: 5px; }
   .registration_container .registration_mail {
     display: flex;
     flex-direction: column; }
@@ -2641,7 +2654,9 @@ footer {
       /* Style the indicator (dot/circle) */ }
       .registration_container .gender .payment span,
       .registration_container .shipping .payment span {
-        color: #3e9578; }
+        color: #3e9578;
+        font-size: 16px;
+        margin-left: 5px; }
       .registration_container .gender .payment .cart_button,
       .registration_container .shipping .payment .cart_button {
         display: block;
@@ -2664,8 +2679,8 @@ footer {
         position: absolute;
         top: 2px;
         left: 0;
-        height: 16px;
-        width: 16px;
+        height: 22px;
+        width: 22px;
         background-color: #d1d1cf;
         border-radius: 50%; }
       .registration_container .gender .payment .cart_button:hover input ~ .checkmark,
@@ -2691,6 +2706,13 @@ footer {
         width: 20px;
         height: 20px;
         margin-right: 30px; }
+
+.registration_container .payment .cart_button {
+  margin-left: 25px !important; }
+
+.registration_container .pay_container {
+  border-radius: 5px;
+  margin: 60px auto; }
 
 .new_password {
   max-width: 600px;
