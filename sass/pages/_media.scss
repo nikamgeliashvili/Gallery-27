@@ -4,6 +4,12 @@
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  
+}
+
+
+
 
 @media only screen and (max-width: 992px) {
   header .header_navigation {
@@ -586,6 +592,7 @@
 
   .cart_fluid .cart_product .product_info .product_quantity {
     padding: unset;
+    text-align: left;
   }
 
   .cart_fluid .cart_product .product_info {

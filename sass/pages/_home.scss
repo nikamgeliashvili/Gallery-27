@@ -15,6 +15,9 @@
 			.category_box {
 				height: 100%;
 				perspective: 200px;
+				width: 242px;
+				margin: 0 auto;
+				overflow: hidden;
 
 
 
@@ -61,7 +64,9 @@
 						align-items: center;
 
 						img {
-							height: 90%;
+							height: calc(100% + 28px);
+							object-fit: cover;
+							width: 100%;
 
 						}
 					}
