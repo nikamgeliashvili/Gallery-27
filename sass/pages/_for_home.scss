@@ -15,8 +15,10 @@
 */
     .for_home {
         position: relative;
-        height: 80%;
+        height: 95%;
         margin-top: 5px;
+        max-width: 350px;
+        margin: 0 auto;
 
         .for_home_img {
             width: 100%;

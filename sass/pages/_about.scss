@@ -45,7 +45,6 @@
             text-align: center;
             color: #3e9578;
             font-size: 23px;
-            margin: 40px 0 5px;
             text-transform: uppercase;
         }
 
@@ -109,17 +108,18 @@
                 width: 25px;
                 margin: 0 auto;
                 height: 25px;
-                fill: white;
+                fill: $main-color;
                 border-radius: 50%;
-                padding: background;
                 padding: 5px;
                 transition: .5s;
-                background: $main-color;
+                background: white;
+                border: 1px solid $main-color;
+                border-radius: 50px;
 
 
                 &:hover {
-                    fill: $main-color;
-                    background: $yellow;
+                    fill: white;
+                    background: $main-color;
                 }
             }
         }
@@ -146,8 +146,8 @@
 
 
         svg {
-            fill: $main-color;
-            background: $yellow;
+            fill: white;
+            background: $main-color;
         }
     }
 

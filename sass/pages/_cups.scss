@@ -53,6 +53,7 @@
                     a {
                         color: white;
                         padding: 10px;
+
                     }
                 }
 
@@ -63,14 +64,15 @@
 
                 width: 100%;
                 height: 100%;
+                display: flex;
+                align-items: center;
             }
 
 
             img {
                 width: 100%;
-                height: 100%;
-
-                object-fit: cover
+                max-height: 76%;
+                object-fit: contain;
             }
 
 
@@ -79,7 +81,7 @@
         .img_box:hover {
             .cup_hover {
                 opacity: 1;
-                transition: 1s;
+                transition: .5s;
 
             }
         }
@@ -89,6 +91,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin-top: 10px;
 
             .cup_price {
                 display: flex;
@@ -118,6 +121,7 @@
                 outline: none;
                 cursor: pointer;
                 border-radius: 5px;
+                min-width: 85px;
             }
 
             button:hover {

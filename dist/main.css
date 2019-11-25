@@ -43,7 +43,8 @@ body {
       height: 50%; }
       .home_category_container .row .col-12 .category_box {
         height: 100%;
-        perspective: 200px; }
+        perspective: 200px;
+        text-align: center; }
         .home_category_container .row .col-12 .category_box .category_title {
           transform: translateY(-10px);
           z-index: 100; }
@@ -208,10 +209,10 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 8px 30px 10px 40px; }
+    padding: 5px 30px 5px 40px; }
     header .header_top .logo svg {
       width: 100px;
-      height: 50px;
+      height: 58px;
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s; }
@@ -456,8 +457,10 @@ header {
 */ }
   .category_for_home .for_home {
     position: relative;
-    height: 80%;
-    margin-top: 5px; }
+    height: 95%;
+    margin-top: 5px;
+    max-width: 350px;
+    margin: 0 auto; }
     .category_for_home .for_home .for_home_img {
       width: 100%;
       height: 100%; }
@@ -549,18 +552,21 @@ header {
           padding: 10px; }
     .cups_container .cup_box .img_box a {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      display: flex;
+      align-items: center; }
     .cups_container .cup_box .img_box img {
       width: 100%;
-      height: 100%;
-      object-fit: cover; }
+      max-height: 76%;
+      object-fit: contain; }
     .cups_container .cup_box .img_box:hover .cup_hover {
       opacity: 1;
-      transition: 1s; }
+      transition: .5s; }
     .cups_container .cup_box .cup_info {
       display: flex;
       align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin-top: 10px; }
       .cups_container .cup_box .cup_info .cup_price {
         display: flex; }
         .cups_container .cup_box .cup_info .cup_price .price {
@@ -578,7 +584,8 @@ header {
         padding: 5px;
         outline: none;
         cursor: pointer;
-        border-radius: 5px; }
+        border-radius: 5px;
+        min-width: 85px; }
       .cups_container .cup_box .cup_info button:hover {
         background-color: #ffda74;
         transition: 1s; }
@@ -689,9 +696,9 @@ header {
       .product_container .product_img .modal-content {
         width: 100%; } }
     .product_container .product_img img {
-      width: 95%;
+      width: 100%;
       margin-top: 50px;
-      height: 95%;
+      height: 100%;
       object-fit: contain; }
     .product_container .product_img .product_icon {
       transition: 1s;
@@ -837,7 +844,6 @@ input[type=number]::-webkit-outer-spin-button {
       text-align: center;
       color: #3e9578;
       font-size: 23px;
-      margin: 40px 0 5px;
       text-transform: uppercase; }
     .about_container .about_content p {
       margin-top: 15px;
@@ -874,15 +880,16 @@ input[type=number]::-webkit-outer-spin-button {
         width: 25px;
         margin: 0 auto;
         height: 25px;
-        fill: white;
+        fill: #3e9578;
         border-radius: 50%;
-        padding: background;
         padding: 5px;
         transition: .5s;
-        background: #3e9578; }
+        background: white;
+        border: 1px solid #3e9578;
+        border-radius: 50px; }
         .about_container .team_members .member_info svg:hover {
-          fill: #3e9578;
-          background: #f5c745; }
+          fill: white;
+          background: #3e9578; }
     .about_container .team_members .text_content {
       display: none;
       text-align: center; }
@@ -894,8 +901,8 @@ input[type=number]::-webkit-outer-spin-button {
   .about_container .team_members:hover {
     opacity: 1; }
     .about_container .team_members:hover svg {
-      fill: #3e9578;
-      background: #f5c745; }
+      fill: white;
+      background: #3e9578; }
   .about_container .slider .owl-nav .owl-next span {
     font-size: 60px;
     position: absolute;
@@ -940,7 +947,7 @@ input[type=number]::-webkit-outer-spin-button {
     .workshops_container .workshops_img img {
       width: 100%;
       height: 100%;
-      object-fit: cover; }
+      object-fit: contain; }
   .workshops_container .row {
     padding: 50px 0; }
   .workshops_container .workshops_content {
@@ -954,7 +961,6 @@ input[type=number]::-webkit-outer-spin-button {
       text-align: center;
       color: #3e9578;
       font-size: 23px;
-      margin-top: 15px;
       text-transform: uppercase; }
     .workshops_container .workshops_content .workshops_date {
       text-align: center;
@@ -998,7 +1004,9 @@ input[type=number]::-webkit-outer-spin-button {
           background: white; }
           .workshops_container .workshops_content form .form_content_2 .form_textarea button img {
             width: 100%;
-            height: 100%; }
+            height: 100%;
+            transition: .5s;
+            border-radius: 6px; }
             .workshops_container .workshops_content form .form_content_2 .form_textarea button img:hover {
               transform: scale(1.2);
               opacity: .5; }
@@ -1022,12 +1030,13 @@ input[type=number]::-webkit-outer-spin-button {
       height: 320px; }
       .past_workshops .row .past_workshops_img img {
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        object-fit: contain; }
     .past_workshops .row .past_workshops_content h3 {
       color: #3e9578;
       font-size: 20px;
       text-align: center;
-      margin: 15px; }
+      margin-bottom: 15px; }
     .past_workshops .row .past_workshops_content .workshops_date {
       text-align: center;
       color: #3e9578;
@@ -1039,13 +1048,23 @@ input[type=number]::-webkit-outer-spin-button {
       word-wrap: break-word; }
     .past_workshops .row .past_workshops_content .right_arrow {
       text-align: center;
-      width: 32px;
-      margin: 15px auto;
-      transition: .5s; }
-    .past_workshops .row .past_workshops_content .right_arrow:hover {
-      background: #f5c745;
-      border-radius: 100%;
-      transform: scale(1.2); }
+      margin-top: 17px; }
+      .past_workshops .row .past_workshops_content .right_arrow svg {
+        cursor: pointer;
+        width: 25px;
+        margin: 0 auto;
+        height: 25px;
+        fill: #3e9578;
+        border-radius: 50%;
+        padding: 5px;
+        transition: .5s;
+        background: white;
+        border: 1px solid #3e9578;
+        border-radius: 50px;
+        transform: rotate(-90deg); }
+        .past_workshops .row .past_workshops_content .right_arrow svg:hover {
+          fill: white;
+          background: #3e9578; }
 
 .contact_container {
   margin: 40px auto;
@@ -1075,7 +1094,7 @@ input[type=number]::-webkit-outer-spin-button {
     .contact_container .find_us span {
       color: #3e9578; }
     .contact_container .find_us h2 {
-      padding: 20px 0;
+      padding-bottom: 20px;
       font-size: 23px;
       color: #ffbc00;
       text-transform: uppercase; }
@@ -1101,10 +1120,22 @@ input[type=number]::-webkit-outer-spin-button {
       text-align: center;
       margin-top: 40px;
       transition: .2s; }
-      .contact_container .social_links .share_link img:hover {
-        transform: scale(1.2);
-        background: #f5c745;
-        border-radius: 50%; }
+      .contact_container .social_links .share_link svg {
+        cursor: pointer;
+        width: 25px;
+        margin: 15px auto;
+        height: 25px;
+        fill: #3e9578;
+        border-radius: 50%;
+        padding: 5px;
+        transition: .5s;
+        background: white;
+        border: 1px solid #3e9578;
+        border-radius: 50px;
+        transform: rotate(-90deg); }
+        .contact_container .social_links .share_link svg:hover {
+          fill: white;
+          background: #3e9578; }
 
 .account_container {
   padding-bottom: 40px;
@@ -1176,7 +1207,7 @@ input[type=number]::-webkit-outer-spin-button {
     .account_container .user_product .my_info {
       margin-top: 30px; }
       .account_container .user_product .my_info .adress_section {
-        margin: 16px 0; }
+        margin: 16px; }
         .account_container .user_product .my_info .adress_section button {
           padding: 6px;
           background-color: #3e9578;
@@ -2094,7 +2125,7 @@ footer {
     padding: unset; }
 
   .cart_fluid .cart_product .cart_product_img {
-    max-width: 100px;
+    max-width: 110px;
     height: 100%;
     width: 100%; }
 
@@ -2422,6 +2453,8 @@ footer {
   color: #3e9578;
   min-height: calc(100vh - 320px);
   font-family: 'Conv_FiraGO-Regular'; }
+  .registration_container .shipping_section {
+    margin: 0 16px; }
   .registration_container .my_account {
     margin: 0 auto; }
   .registration_container .shipping_info {
@@ -2432,7 +2465,7 @@ footer {
     margin: 35px 0;
     padding: 30px;
     border: 1px solid #3e9578;
-    width: 50%;
+    width: 90%;
     margin: 100px auto; }
     .registration_container .pay_container .pay_title span {
       color: #3e9578;
@@ -2644,7 +2677,7 @@ footer {
     .registration_container .shipping .payment {
       display: flex;
       align-items: center;
-      padding-right: 30px;
+      padding-right: 15px;
       /* Hide the browser's default radio button */
       /* Create a custom radio button */
       /* On mouse-over, add a grey background color */
