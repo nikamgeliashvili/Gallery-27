@@ -74,6 +74,8 @@ header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      border-radius: 3px;
+      overflow: hidden;
 
 
       a {
@@ -85,7 +87,6 @@ header {
         -webkit-transition: all 1s;
         -o-transition: all 1s;
         transition: all 1s;
-        border-radius: 3px;
 
 
 
