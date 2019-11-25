@@ -43,8 +43,7 @@ body {
       height: 50%; }
       .home_category_container .row .col-12 .category_box {
         height: 100%;
-        perspective: 200px;
-        text-align: center; }
+        perspective: 200px; }
         .home_category_container .row .col-12 .category_box .category_title {
           transform: translateY(-10px);
           z-index: 100; }
@@ -135,6 +134,7 @@ body {
 .responsive_navigation {
   transition: .5s;
   background-color: #3e9578;
+  font-family: 'Conv_FiraGO-Regular';
   display: -ms-flexbox;
   display: flex;
   width: 100%;
@@ -446,6 +446,7 @@ header {
 
 .category_for_home {
   font-family: 'Conv_FiraGO-Regular';
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   min-height: calc(100vh - 180px);
@@ -1186,7 +1187,7 @@ input[type=number]::-webkit-outer-spin-button {
       color: #3e9578; }
       .account_container .user_account .account_info h2 {
         font-size: 25px;
-        text-transform: uppercase;
+        text-transform: capitalize;
         padding: 10px 0 20px; }
       .account_container .user_account .account_info .user_profile {
         padding: 5px;
@@ -1512,6 +1513,24 @@ input[type=number]::-webkit-outer-spin-button {
 
 #new_adress {
   display: none; }
+
+.responsiv-uploader-fileupload.style-image-single .upload-button {
+  border: 1px solid #3e9578 !important;
+  margin-left: 12px !important; }
+
+.responsiv-uploader-fileupload.style-image-single .upload-button .upload-button-icon:before {
+  color: #3e9578 !important; }
+
+.responsiv-uploader-fileupload .upload-object h4 {
+  color: #3e9578 !important; }
+
+.responsiv-uploader-fileupload .upload-object .info h4 a,
+.responsiv-uploader-fileupload .upload-object .meta a.upload-remove-button {
+  color: #3e9578 !important; }
+
+.responsiv-uploader-fileupload .upload-object p.size,
+.responsiv-uploader-fileupload .upload-object p.error {
+  color: #3e9578 !important; }
 
 .cart_fluid {
   margin: 50px;
@@ -1979,6 +1998,9 @@ footer {
     .user_product h3 {
       padding: 5px 0;
       font-size: 15px; }
+
+  .cups_container .cup_box .img_box .cup_hover {
+    display: none; }
 
   .cart_fluid .cart_product .product_info .product_price {
     text-align: unset; }
@@ -2463,7 +2485,7 @@ footer {
       color: #3e9578; }
   .registration_container .pay_container {
     margin: 35px 0;
-    padding: 30px;
+    padding: 20px;
     border: 1px solid #3e9578;
     width: 90%;
     margin: 100px auto; }

@@ -72,7 +72,7 @@
 
             h2 {
                 font-size: 25px;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 padding: 10px 0 20px;
             }
 
@@ -627,4 +627,28 @@
 
 #new_adress {
     display: none;
+}
+
+.responsiv-uploader-fileupload.style-image-single .upload-button {
+    border: 1px solid $main-color !important;
+    margin-left: 12px !important;
+}
+
+.responsiv-uploader-fileupload.style-image-single .upload-button .upload-button-icon:before {
+    color: $main-color !important;
+}
+
+.responsiv-uploader-fileupload .upload-object h4 {
+    color: $main-color !important;
+}
+
+.responsiv-uploader-fileupload .upload-object .info h4 a,
+.responsiv-uploader-fileupload .upload-object .meta a.upload-remove-button {
+    color: $main-color !important;
+}
+
+.responsiv-uploader-fileupload .upload-object p.size,
+.responsiv-uploader-fileupload .upload-object p.error {
+    color: $main-color !important;
+
 }
