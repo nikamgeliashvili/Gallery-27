@@ -44,25 +44,25 @@ body {
       .home_category_container .row .col-12 .category_box {
         height: 100%;
         perspective: 200px;
-        width: 242px;
+        width: 219px;
         margin: 0 auto;
         overflow: hidden; }
         .home_category_container .row .col-12 .category_box .category_title {
-          transform: translateY(-10px);
           z-index: 100; }
         .home_category_container .row .col-12 .category_box:hover .category_title a {
           color: #f5c745; }
         .home_category_container .row .col-12 .category_box .category_img {
-          height: calc(100% - 12px);
           transition: all .4s;
-          position: relative; }
+          position: relative;
+          height: 99%;
+          width: 98%; }
           .home_category_container .row .col-12 .category_box .category_img .background_img {
             position: absolute;
             top: 8px;
             /* background: red; */
             left: 0;
             width: 102%;
-            height: 100%;
+            height: 101%;
             z-index: 10; }
             .home_category_container .row .col-12 .category_box .category_img .background_img a {
               display: unset; }
@@ -71,9 +71,9 @@ body {
             display: flex;
             align-items: center; }
             .home_category_container .row .col-12 .category_box .category_img a img {
-              height: calc(100% + 28px);
               object-fit: cover;
-              width: 100%; }
+              width: 100%;
+              height: 92%; }
 
 .category_box {
   display: flex;
@@ -1252,7 +1252,8 @@ input[type=number]::-webkit-outer-spin-button {
               width: 350px; }
             .account_container .user_product .my_info .adress_section .my_adress .main_adress button {
               margin: 0 0 0 30px;
-              border-radius: 5px; }
+              border-radius: 5px;
+              float: right; }
           .account_container .user_product .my_info .adress_section .my_adress .cart_button {
             display: block;
             position: relative;
@@ -1781,6 +1782,9 @@ footer {
   header .header_navigation {
     padding: 10px 15px 10px 10px; }
 
+  .home_category_container .row .col-12 .category_box {
+    height: 250px; }
+
   header {
     top: 0 !important; }
 
@@ -2010,6 +2014,9 @@ footer {
 
   .cups_container .cup_box .img_box .cup_hover {
     display: none; }
+
+  .home_category_container .row .col-12 .category_box {
+    height: 250px; }
 
   .cart_fluid .cart_product .product_info .product_price {
     text-align: unset; }
