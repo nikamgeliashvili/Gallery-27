@@ -33,11 +33,17 @@
         }
     }
 
+    .row {
+        .about_img:nth-child(2) {
+            order: -1;
+        }
+    }
+
 
 
     .about_content {
 
-
+        margin-bottom: 35px;
         color: #3e9578;
 
 
@@ -49,7 +55,7 @@
         }
 
         p {
-            margin-top: 15px;
+            padding-bottom: 15px;
             color: $main-color;
         }
 

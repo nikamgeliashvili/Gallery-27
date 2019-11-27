@@ -42,7 +42,7 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 5px 30px 5px 40px;
+    padding: 5px 30px;
 
     .logo {
 
@@ -153,7 +153,7 @@ header {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;
-      justify-content: space-around;
+      justify-content: space-between;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
@@ -162,7 +162,7 @@ header {
       flex-grow: 1;
       max-width: 1000px;
       width: 100%;
-      margin-right: 40px;
+      // margin-right: 40px;
       font-weight: bold;
 
       li {
@@ -176,7 +176,7 @@ header {
     }
 
     li {
-      padding: 7px 15px
+      padding: 7px 0;
     }
 
     a {
@@ -436,4 +436,5 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: 50px;
 }

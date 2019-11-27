@@ -117,7 +117,9 @@ $(document).ready(function () {
   })
 
 
-
+  $('.past_workshops .row .reg_button').on('click', function () {
+    $('.past_workshops .registration_container').slideToggle()
+  })
 
 
 })
