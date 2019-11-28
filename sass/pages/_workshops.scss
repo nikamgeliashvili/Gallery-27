@@ -17,7 +17,7 @@
     .owl-item,
     .active {
         padding: 0 15px !important;
-       
+
     }
 
 
@@ -211,12 +211,51 @@
 
         .member_img {
             margin: 0 auto;
+            position: relative;
+
+            .cup_hover {
+
+                position: absolute;
+                top: 0;
+                color: white;
+                text-transform: uppercase;
+                background-color: rgba(204, 204, 204, 0.5);
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: .3s;
+
+                .see_more {
+                    padding: 20px;
+                    background-color: #FFBC00;
+                    width: fit-content;
+                    margin: 40% auto;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    padding: 8px 2px;
+
+                    a {
+                        color: white;
+                        padding: 10px;
+
+                    }
+                }
+
+            }
 
 
             img {
                 width: 100%;
                 height: 260px;
                 object-fit: cover;
+            }
+
+            &:hover {
+                .cup_hover {
+                    opacity: 1;
+                    transition: .5s;
+
+                }
             }
 
         }
@@ -558,4 +597,55 @@
 
 .past_workshops_slider {
     min-height: unset !important;
+
+    .member_img {
+        margin: 0 auto;
+        position: relative;
+
+        .cup_hover {
+
+            position: absolute;
+            top: 0;
+            color: white;
+            text-transform: uppercase;
+            background-color: rgba(204, 204, 204, 0.5);
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: .3s;
+
+            .see_more {
+                padding: 20px;
+                background-color: #FFBC00;
+                width: fit-content;
+                margin: 40% auto;
+                cursor: pointer;
+                border-radius: 4px;
+                padding: 8px 2px;
+
+                a {
+                    color: white;
+                    padding: 10px;
+
+                }
+            }
+
+        }
+
+
+        img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        &:hover {
+            .cup_hover {
+                opacity: 1;
+                transition: .5s;
+
+            }
+        }
+
+    }
 }
