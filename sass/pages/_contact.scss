@@ -73,11 +73,13 @@
             margin: 15px;
             border-radius: 5px;
             object-fit: contain;
-            transition: .3s;
+            transition: .2s;
         }
 
         img:hover {
-            transform: scale(1.2);
+            transform: scale(1.5);
+            background: $yellow;
+            padding: 4px;
         }
 
         .share_link {

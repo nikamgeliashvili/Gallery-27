@@ -1348,7 +1348,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .workshops_container {
   font-family: 'Conv_FiraGO-Regular';
-  min-height: calc(100vh - 180px);
+  min-height: calc(100vh - 240px);
 }
 
 .workshops_container .owl-item,
@@ -1556,6 +1556,7 @@ input[type=number]::-webkit-outer-spin-button {
 .past_workshops {
   padding-top: 20px;
   font-family: 'Conv_FiraGO-Regular';
+  min-height: calc(100vh - 180px);
 }
 
 .past_workshops .registration_container {
@@ -1825,11 +1826,13 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 15px;
   border-radius: 5px;
   object-fit: contain;
-  transition: .3s;
+  transition: .2s;
 }
 
 .contact_container .social_links img:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
+  background: #f5c745;
+  padding: 4px;
 }
 
 .contact_container .social_links .share_link {
@@ -4518,3 +4521,5 @@ footer ul a:hover {
   background: #f5c745;
   color: #3e9578;
 }
+
+/*# sourceMappingURL=main.css.map */
