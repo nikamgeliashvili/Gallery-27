@@ -31,6 +31,7 @@ header {
   overflow: hidden;
   font-family: 'Conv_FiraGO-Regular';
   height: 126px;
+  background: $main-color;
 
   .header_top {
     display: -webkit-box;
@@ -43,6 +44,7 @@ header {
     -ms-flex-align: center;
     align-items: center;
     padding: 5px 30px;
+    background: white !important;
 
     .logo {
 
@@ -114,6 +116,8 @@ header {
     display: flex;
     height: 58px;
     z-index: 1000;
+    width: 80%;
+    margin: 0 auto;
 
 
 
@@ -165,7 +169,6 @@ header {
       // margin-right: 40px;
       font-weight: bold;
 
-      padding-right: 50px;
 
       li {
 
@@ -434,9 +437,7 @@ header {
 .dropdown_menu {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  margin-left: 50px;
+  margin-left: 8%;
 }

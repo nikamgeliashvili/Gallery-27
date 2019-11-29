@@ -100,6 +100,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    padding-left: 5px;
   }
 
   header .header_navigation li {
@@ -138,7 +139,7 @@
   }
 
   header .header_top {
-    padding: 8px 10px;
+    padding: 8px 10px 0 5px;
   }
 
 

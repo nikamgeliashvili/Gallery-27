@@ -42,13 +42,13 @@
                 transition: .3s;
 
                 .see_more {
-                    padding: 20px;
                     background-color: #FFBC00;
                     width: fit-content;
                     margin: 40% auto;
                     cursor: pointer;
-                    border-radius: 4px;
-                    padding: 8px 2px;
+                    border-radius: 5px;
+                    padding: 5px 7px;
+                    text-transform: capitalize;
 
                     a {
                         color: white;

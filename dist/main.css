@@ -276,6 +276,7 @@ header {
   overflow: hidden;
   font-family: 'Conv_FiraGO-Regular';
   height: 126px;
+  background: #3e9578;
 }
 
 header .header_top {
@@ -289,6 +290,7 @@ header .header_top {
   -ms-flex-align: center;
   align-items: center;
   padding: 5px 30px;
+  background: white !important;
 }
 
 header .header_top .logo svg {
@@ -348,6 +350,8 @@ header .header_navigation {
   display: flex;
   height: 58px;
   z-index: 1000;
+  width: 80%;
+  margin: 0 auto;
 }
 
 header .header_navigation .cart_item_quantity span {
@@ -391,7 +395,6 @@ header .header_navigation ul {
   max-width: 1000px;
   width: 100%;
   font-weight: bold;
-  padding-right: 50px;
 }
 
 header .header_navigation ul li .active {
@@ -617,11 +620,9 @@ header .header_navigation img:hover {
 .dropdown_menu {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  margin-left: 50px;
+  margin-left: 8%;
 }
 
 .category_for_home {
@@ -766,13 +767,13 @@ header .header_navigation img:hover {
 }
 
 .cups_container .cup_box .img_box .cup_hover .see_more {
-  padding: 20px;
   background-color: #FFBC00;
   width: fit-content;
   margin: 40% auto;
   cursor: pointer;
-  border-radius: 4px;
-  padding: 8px 2px;
+  border-radius: 5px;
+  padding: 5px 7px;
+  text-transform: capitalize;
 }
 
 .cups_container .cup_box .img_box .cup_hover .see_more a {
@@ -1330,6 +1331,11 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+  display: block !important;
 }
 
 @font-face {
@@ -2837,6 +2843,7 @@ footer ul a:hover {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    padding-left: 5px;
   }
 
   header .header_navigation li {
@@ -2868,7 +2875,7 @@ footer ul a:hover {
   }
 
   header .header_top {
-    padding: 8px 10px;
+    padding: 8px 10px 0 5px;
   }
 
   header .header_top .lang a {
@@ -3748,7 +3755,7 @@ footer ul a:hover {
 }
 
 .my_account span a:hover {
-  opacity: .5;
+  color: #f5c745;
 }
 
 .my_account button:hover {
@@ -3896,12 +3903,10 @@ footer ul a:hover {
 }
 
 .registration_container .pay_container .checkout_button button {
-  background-color: white;
-  color: #3e9578;
-  border: 1px solid #3e9578;
+  background-color: #3e9578;
+  color: white;
   letter-spacing: 1px;
   padding: 5px 10px;
-  font-weight: bold;
   text-transform: uppercase;
   outline: none;
   cursor: pointer;
@@ -3912,7 +3917,7 @@ footer ul a:hover {
 
 .registration_container .pay_container .checkout_button button:hover {
   background: #f5c745;
-  border: 1px solid transparent;
+  color: #3e9578;
 }
 
 .registration_container .payment {
@@ -4513,5 +4518,3 @@ footer ul a:hover {
   background: #f5c745;
   color: #3e9578;
 }
-
-/*# sourceMappingURL=main.css.map */

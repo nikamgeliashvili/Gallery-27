@@ -162,12 +162,10 @@
 
             button {
 
-                background-color: white;
-                color: #3e9578;
-                border: 1px solid #3e9578;
+                background-color: $main-color;
+                color: white;
                 letter-spacing: 1px;
                 padding: 5px 10px;
-                font-weight: bold;
                 text-transform: uppercase;
                 outline: none;
                 cursor: pointer;
@@ -179,7 +177,7 @@
 
             button:hover {
                 background: $yellow;
-                border: 1px solid transparent;
+                color:$main-color;
             }
         }
 
