@@ -2,11 +2,11 @@
     padding-bottom: 40px;
     min-height: calc(100vh - 180px);
     font-family: 'Conv_FiraGO-Regular';
+    margin-top: 100px;
 
 
 
     .user_account {
-        margin-top: 50px;
         display: flex;
         align-items: center;
 
@@ -148,7 +148,7 @@
                         color: $main-color;
                         margin: 20px 0;
                         justify-content: space-between;
-                        max-width: 700px;
+
 
 
                         button {
@@ -161,7 +161,7 @@
                     }
 
                     .main_adress div:first-child {
-                        width: 400px;
+                        width: 70%;
                     }
 
                     .cart_button {

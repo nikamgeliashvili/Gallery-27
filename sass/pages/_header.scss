@@ -112,11 +112,11 @@ header {
     display: -ms-flexbox;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 55px;
     display: flex;
     height: 58px;
     z-index: 1000;
-    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 
 

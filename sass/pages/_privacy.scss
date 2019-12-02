@@ -1,9 +1,10 @@
 .privacy_container {
 
     min-height: calc(100vh - 281px);
-    width: 80%;
+    max-width: 1200px;
     margin: 50px auto;
     font-family: 'Conv_FiraGO-Regular';
+    padding: 0 50px;
 
     .privacy_title {
         margin: 10px;

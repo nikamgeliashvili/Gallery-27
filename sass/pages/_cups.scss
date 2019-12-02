@@ -1,6 +1,7 @@
 .cups_container {
     font-family: 'Conv_FiraGO-Regular';
     min-height: calc(100vh - 200px);
+    margin-top: 100px;
 
 
     .cups_title {
@@ -121,11 +122,12 @@
                 cursor: pointer;
                 border-radius: 5px;
                 min-width: 85px;
+                transition: .4s;
             }
 
             button:hover {
                 background-color: rgb(255, 218, 116);
-                transition: 1s;
+
             }
         }
     }
@@ -133,6 +135,7 @@
     .pagination {
         justify-content: center;
         display: flex;
+        margin: 20px 0;
 
         a {
             color: white;

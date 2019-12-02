@@ -19,7 +19,7 @@
         margin-top: 5px;
         max-width: 320px;
         margin: 0 auto;
-        max-height:320px;
+        max-height: 320px;
 
         .for_home_img {
             width: 100%;
@@ -122,6 +122,8 @@
     margin-bottom: 20px;
     width: 30px;
     transition: .5s;
+    display: flex;
+    align-items: center;
 
     &:hover {
         transform: scale(1.2);
