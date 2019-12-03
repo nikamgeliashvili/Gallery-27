@@ -89,7 +89,6 @@
 
         .cup_info {
             display: flex;
-            align-items: center;
             justify-content: space-between;
             margin-top: 10px;
 
@@ -141,8 +140,8 @@
             color: white;
 
             &:hover {
-                background: #FFBC00;
-                color: $main-color;
+                background: #ffda74;
+                color: white;
             }
 
 
