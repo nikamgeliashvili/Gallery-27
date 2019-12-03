@@ -104,6 +104,12 @@
 
     .user_product {
 
+
+        .tab-content>.active {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
         .my_info {
 
             margin-top: 30px;

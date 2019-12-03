@@ -125,9 +125,22 @@
                 border-radius: 50px;
 
 
-                &:hover {
-                    fill: white;
-                    background: $main-color;
+                // &:hover {
+                //     fill: white;
+                //     background: $main-color;
+                // }
+            }
+
+            &:hover {
+                background-image: url(../images/arrowdown.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 25px;
+                height: 25px;
+                margin: 0 auto;
+
+                svg {
+                    opacity: 0;
                 }
             }
         }
@@ -153,9 +166,23 @@
         opacity: 1;
 
 
+        .member_info {
+            background-image: url(../images/arrowdown.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 25px;
+            height: 25px;
+            margin: 0 auto;
+
+            svg {
+                opacity: 0;
+            }
+        }
+
+
+
         svg {
-            fill: white;
-            background: $main-color;
+            opacity: 0;
         }
     }
 

@@ -100,7 +100,7 @@ $(document).ready(function () {
 
   $(".team_members").on("click", function () {
     $(this)
-      .find($("svg"))
+      .find($(".member_info"))
       .toggleClass("rotate");
   });
 
