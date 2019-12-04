@@ -325,7 +325,7 @@ header .header_top .lang {
 }
 
 header .header_top .lang a {
-  background-color: #ffe9aa;
+  background-color: #f5c745;
   color: white;
   font-size: 12px;
   padding: 7px 15px;
@@ -336,10 +336,11 @@ header .header_top .lang a {
 
 header .header_top .lang a.active {
   background-color: #f5c745;
+  background-image: url("../images/cover-01.png");
 }
 
 header .header_top .lang a:hover {
-  opacity: 0.8 !important;
+  opacity: 0.6 !important;
 }
 
 header .header_navigation {
@@ -743,6 +744,10 @@ header .header_navigation img:hover {
   opacity: 0;
 }
 
+#st-2 {
+  z-index: 1020 !important;
+}
+
 .cups_container {
   font-family: 'Conv_FiraGO-Regular';
   min-height: calc(100vh - 200px);
@@ -835,6 +840,7 @@ header .header_navigation img:hover {
   color: #3e9578;
   padding-right: 4px;
   display: flex;
+  word-break: break-word;
 }
 
 .cups_container .cup_box .cup_info button {
@@ -2344,7 +2350,6 @@ input[type=number]::-webkit-outer-spin-button {
 .account_container .user_product a {
   text-transform: uppercase;
   color: #3e9578;
-  opacity: .5;
 }
 
 .account_container .user_product a.active {
@@ -2417,8 +2422,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .account_container .cup_box .cup_info {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .account_container .cup_box .cup_info span {
@@ -2434,11 +2439,12 @@ input[type=number]::-webkit-outer-spin-button {
   outline: none;
   cursor: pointer;
   border-radius: 4px;
+  transition: .3s;
+  width: 85px;
 }
 
 .account_container .cup_box .cup_info button:hover {
   background-color: #ffda74;
-  transition: 1s;
 }
 
 .my_info {
@@ -2740,7 +2746,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cart_fluid .cart_product .product_info .product_info_title {
-  max-width: 230px;
+  max-width: 260px;
   width: 100%;
   word-break: break-word;
 }

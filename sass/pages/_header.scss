@@ -80,9 +80,11 @@ header {
       overflow: hidden;
 
 
+
       a {
 
-        background-color: #ffe9aa;
+        background-color: #f5c745;
+
         color: white;
         font-size: 12px;
         padding: 7px 15px;
@@ -93,14 +95,16 @@ header {
 
 
 
+
         &.active {
           background-color: #f5c745;
+          background-image: url('../images/cover-01.png');
 
         }
       }
 
       a:hover {
-        opacity: 0.8 !important;
+        opacity: 0.6 !important;
       }
     }
   }
