@@ -90,6 +90,7 @@ $(document).ready(function () {
     dots: true,
     loop: false,
     nav: true,
+
     responsive: {
       0: {
         items: 1
@@ -103,6 +104,12 @@ $(document).ready(function () {
     }
   });
   var ind = true;
+  console.log($('.owl-item').length)
+  if ($('.owl-item').length < 3) {
+    $('.owl-nav').addClass("owl_nav_hide")
+
+  }
+
   $('[data-ui="open"]').on("click", function () {
     $(".responsive_navigation").css("display", "block");
   });

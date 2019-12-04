@@ -25,6 +25,9 @@
     padding: 10px 15px 10px 10px;
   }
 
+  .owl_nav_hide {
+    visibility: unset;
+  }
 
 
   .home_category_container .row .col-12 .category_box {
@@ -1069,6 +1072,14 @@
   .workshops_container .team_members .member_img img {
     height: 250px;
 
+  }
+
+  .past_workshops_slider .slick-slider .slick-prev {
+    left: -35px;
+  }
+
+  .past_workshops_slider .slick-slider .slick-next {
+    right: -35px;
   }
 
   .account_container .user_product .my_info .registration_name .name_box {
