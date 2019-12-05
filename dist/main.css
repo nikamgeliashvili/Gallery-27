@@ -436,10 +436,6 @@ header .header_navigation a:hover svg {
   fill: #f5c745;
 }
 
-header .header_navigation a:hover span {
-  opacity: .6;
-}
-
 header .header_navigation img {
   width: 30px;
   opacity: .6;
@@ -868,6 +864,10 @@ header .header_navigation img:hover {
 .cups_container .pagination a:hover {
   background: #FFBC00;
   color: white;
+}
+
+.cups_container .pagination .active {
+  background: #FFBC00;
 }
 
 .cups_container .pagination .pagination li {
@@ -1823,6 +1823,10 @@ input[type=number]::-webkit-outer-spin-button {
   transform: rotate(-90deg);
 }
 
+.past_workshops_slider {
+  min-height: unset;
+}
+
 .past_workshops_slider .past_workshops_title {
   text-align: center;
   color: #3e9578;
@@ -1856,6 +1860,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   object-fit: cover;
   transition: .3s;
+  border-radius: 15px;
 }
 
 .past_workshops_slider .slick-slider img:hover {
@@ -3377,6 +3382,11 @@ footer ul a:hover {
     text-align: center;
   }
 
+  .blog_img img {
+    width: 100%;
+    object-fit: contain;
+  }
+
   .cups_container .cup_box .img_box .cup_hover {
     display: none;
   }
@@ -4536,14 +4546,14 @@ footer ul a:hover {
 .blog_container {
   min-height: calc(100vh - 180px);
   font-family: 'Conv_FiraGO-Regular';
-  width: 80%;
   margin: 100px auto;
   text-align: center;
   max-width: 1100px;
 }
 
-.blog_container .blog_image {
-  width: 500px;
+.blog_container .blog_img img {
+  width: 50%;
+  object-fit: contain;
 }
 
 .blog_container .workshop_content {

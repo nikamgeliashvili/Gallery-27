@@ -543,6 +543,8 @@
 
 .past_workshops_slider {
 
+    min-height: unset;
+
 
     .past_workshops_title {
         text-align: center;
@@ -577,6 +579,7 @@
             width: 100%;
             object-fit: cover;
             transition: .3s;
+            border-radius:15px;
 
             &:hover {
                 opacity: .6;
@@ -641,5 +644,5 @@
 
 .owl_nav_hide {
     visibility: hidden;
-    
+
 }
