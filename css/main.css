@@ -1256,7 +1256,8 @@ input[type=number]::-webkit-outer-spin-button {
       padding-bottom: 20px; }
     .past_workshops .row .past_workshops_content .right_arrow {
       text-align: center;
-      margin-top: 17px; }
+      margin-top: 17px;
+      height: 26px; }
       .past_workshops .row .past_workshops_content .right_arrow svg {
         cursor: pointer;
         width: 25px;
@@ -1584,7 +1585,7 @@ input[type=number]::-webkit-outer-spin-button {
               border-radius: 5px;
               float: right; }
           .account_container .user_product .my_info .adress_section .my_adress .main_adress div:first-child {
-            width: 70%; }
+            width: 65%; }
           .account_container .user_product .my_info .adress_section .my_adress .cart_button {
             display: block;
             position: relative;
@@ -1901,11 +1902,11 @@ input[type=number]::-webkit-outer-spin-button {
           max-width: 200px;
           width: 200px;
           text-align: center; }
-        .cart_fluid .cart_product_info .cart_product_section .cart_product_name .cart_producy_price {
+        .cart_fluid .cart_product_info .cart_product_section .cart_product_name .cart_product_price {
           min-width: 100px;
           text-align: center; }
         .cart_fluid .cart_product_info .cart_product_section .cart_product_name .cart_quantity {
-          width: 100px;
+          min-width: 140px;
           text-align: center; }
         .cart_fluid .cart_product_info .cart_product_section .cart_product_name .remove_button {
           width: 70px; }
@@ -1956,8 +1957,8 @@ input[type=number]::-webkit-outer-spin-button {
       .cart_fluid .cart_product .product_info span {
         color: #3e9578; }
       .cart_fluid .cart_product .product_info .product_quantity {
-        padding: 0 25px;
-        width: 110px;
+        padding: 0 40px;
+        min-width: 140px;
         text-align: center; }
         .cart_fluid .cart_product .product_info .product_quantity input {
           border: 1px solid #3e9578;

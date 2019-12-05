@@ -39,13 +39,13 @@
                 }
 
 
-                .cart_producy_price {
+                .cart_product_price {
                     min-width: 100px;
                     text-align: center;
                 }
 
                 .cart_quantity {
-                    width: 100px;
+                    min-width: 140px;
                     text-align: center;
                 }
 
@@ -136,8 +136,8 @@
             }
 
             .product_quantity {
-                padding: 0 25px;
-                width: 110px;
+                padding: 0 40px;
+                min-width: 140px;
                 text-align: center;
 
                 input {

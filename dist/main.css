@@ -1790,6 +1790,7 @@ input[type=number]::-webkit-outer-spin-button {
 .past_workshops .row .past_workshops_content .right_arrow {
   text-align: center;
   margin-top: 17px;
+  height: 26px;
 }
 
 .past_workshops .row .past_workshops_content .right_arrow svg {
@@ -2245,7 +2246,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .account_container .user_product .my_info .adress_section .my_adress .main_adress div:first-child {
-  width: 70%;
+  width: 65%;
 }
 
 .account_container .user_product .my_info .adress_section .my_adress .cart_button {
@@ -2700,13 +2701,13 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
 }
 
-.cart_fluid .cart_product_info .cart_product_section .cart_product_name .cart_producy_price {
+.cart_fluid .cart_product_info .cart_product_section .cart_product_name .cart_product_price {
   min-width: 100px;
   text-align: center;
 }
 
 .cart_fluid .cart_product_info .cart_product_section .cart_product_name .cart_quantity {
-  width: 100px;
+  min-width: 140px;
   text-align: center;
 }
 
@@ -2785,8 +2786,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cart_fluid .cart_product .product_info .product_quantity {
-  padding: 0 25px;
-  width: 110px;
+  padding: 0 40px;
+  min-width: 140px;
   text-align: center;
 }
 

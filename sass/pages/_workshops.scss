@@ -485,6 +485,7 @@
 
                 text-align: center;
                 margin-top: 17px;
+                height: 26px;
 
                 svg {
                     cursor: pointer;
@@ -579,7 +580,7 @@
             width: 100%;
             object-fit: cover;
             transition: .3s;
-            border-radius:15px;
+            border-radius: 15px;
 
             &:hover {
                 opacity: .6;
