@@ -20,39 +20,39 @@
         display: flex;
         justify-content: space-around;
 
+        .cart_product_img {
+            min-width: 70px;
+
+        }
+
         .cart_product_section {
 
             width: 100%;
             display: flex;
             justify-content: space-around;
 
+
             .cart_product_name {
                 max-width: 260px;
                 width: 100%;
                 text-align: center;
-
-
-                .cart_product_name {
-                    max-width: 200px;
-                    width: 200px;
-                    text-align: center;
-                }
-
-
-                .cart_product_price {
-                    min-width: 100px;
-                    text-align: center;
-                }
-
-                .cart_quantity {
-                    min-width: 140px;
-                    text-align: center;
-                }
-
-                .remove_button {
-                    width: 70px;
-                }
             }
+
+
+            .cart_product_price {
+                width: 100px;
+                text-align: center;
+            }
+
+            .cart_quantity {
+                min-width: 140px;
+                text-align: center;
+            }
+
+            .remove_button {
+                width: 90px;
+            }
+
 
             span {
                 padding: 0 15px;
@@ -63,10 +63,7 @@
             }
         }
 
-        .cart_product_img {
-            width: 90px;
 
-        }
 
 
     }
@@ -91,7 +88,7 @@
         }
 
         .product_info {
-            margin-left: 10px;
+
             display: flex;
             align-items: center;
             width: 100%;
@@ -104,7 +101,7 @@
             }
 
             .product_price {
-                min-width: 90px;
+                min-width: 100px;
                 text-align: center;
             }
 
@@ -130,9 +127,7 @@
             }
 
             span {
-
                 color: #3e9578;
-
             }
 
             .product_quantity {
@@ -163,6 +158,8 @@
                 cursor: pointer;
                 transition: .5s;
                 border-radius: 5px;
+                width: 90px;
+                text-align: center;
             }
 
             button:hover {
