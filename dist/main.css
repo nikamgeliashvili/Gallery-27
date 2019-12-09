@@ -2400,6 +2400,11 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
+.account_container .user_product .purchase_history .cart_product .product_info .down_arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
 .account_container .user_product .purchase_history .cart_product .product_info .product_price {
   min-width: 100px;
   text-align: center;
@@ -2988,14 +2993,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cart_fluid .cart_product .cart_product_img {
-  max-width: 70px;
-  height: 100%;
-  width: 100%;
+  width: 70px;
+  height: 70px;
 }
 
 .cart_fluid .cart_product .cart_product_img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .cart_fluid .cart_product .product_info {
