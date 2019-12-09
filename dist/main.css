@@ -370,6 +370,7 @@ header .header_navigation .cart_item_quantity span {
   position: absolute;
   color: #3e9578;
   transition: .5s;
+  padding-left: 2px;
 }
 
 header .header_navigation .cart_box {
@@ -900,6 +901,34 @@ header .header_navigation img:hover {
   margin-top: 30px;
 }
 
+.product_container .breadcrumb {
+  padding: unset;
+  max-width: 1090px;
+  margin: 0 auto;
+  background: white;
+}
+
+.product_container .breadcrumb li+li:before {
+  padding: 8px;
+  color: #3e9578;
+  content: "/\00a0";
+}
+
+.product_container .breadcrumb li {
+  color: #f5c745;
+  text-transform: capitalize;
+}
+
+.product_container .breadcrumb a {
+  color: #3e9578;
+  transition: .3s;
+  padding: 5px;
+}
+
+.product_container .breadcrumb a:hover {
+  color: #f5c745;
+}
+
 .product_container .row {
   padding-bottom: 50px;
 }
@@ -1014,6 +1043,7 @@ header .header_navigation img:hover {
   margin-top: 50px;
   height: 100%;
   object-fit: contain;
+  border-radius: 5px;
 }
 
 .product_container .product_img .product_icon {
@@ -1195,6 +1225,107 @@ header .header_navigation img:hover {
   letter-spacing: 1px;
   margin-bottom: 10px;
   color: #3e9578;
+}
+
+.product_container .similar_items h2 {
+  font-size: 23px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #3e9578;
+  text-align: center;
+}
+
+.product_container .similar_items .cup_box {
+  margin: 20px auto;
+}
+
+.product_container .similar_items .cup_box .img_box {
+  width: 100%;
+  height: 240px;
+  position: relative;
+}
+
+.product_container .similar_items .cup_box .img_box .cup_hover {
+  position: absolute;
+  top: 0;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgba(204, 204, 204, 0.5);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .3s;
+}
+
+.product_container .similar_items .cup_box .img_box .cup_hover .see_more {
+  background-color: #FFBC00;
+  width: fit-content;
+  margin: 40% auto;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 7px;
+  text-transform: capitalize;
+}
+
+.product_container .similar_items .cup_box .img_box .cup_hover .see_more a {
+  color: white;
+}
+
+.product_container .similar_items .cup_box .img_box a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.product_container .similar_items .cup_box .img_box img {
+  width: 100%;
+  max-height: 76%;
+  object-fit: contain;
+}
+
+.product_container .similar_items .cup_box .img_box:hover .cup_hover {
+  opacity: 1;
+  transition: .5s;
+}
+
+.product_container .similar_items .cup_box .cup_info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.product_container .similar_items .cup_box .cup_info .cup_price {
+  display: flex;
+}
+
+.product_container .similar_items .cup_box .cup_info .cup_price .price {
+  text-decoration: line-through;
+  padding-left: 4px;
+  opacity: .6;
+}
+
+.product_container .similar_items .cup_box .cup_info span {
+  display: block;
+  color: #3e9578;
+  padding-right: 4px;
+  display: flex;
+  word-break: break-word;
+}
+
+.product_container .similar_items .cup_box .cup_info button {
+  color: white;
+  background-color: #FFBC00;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 85px;
+  transition: .4s;
+}
+
+.product_container .similar_items .cup_box .cup_info button:hover {
+  background-color: #ffda74;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -1494,7 +1625,8 @@ input[type=number]::-webkit-outer-spin-button {
 .workshops_container .team_members .member_img img {
   width: 100%;
   height: 260px;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .workshops_container .team_members .member_img:hover .cup_hover {
@@ -2387,7 +2519,6 @@ input[type=number]::-webkit-outer-spin-button {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-left: 20px;
   display: flex;
 }
 
@@ -2667,7 +2798,6 @@ input[type=number]::-webkit-outer-spin-button {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-left: 20px;
   display: flex;
 }
 
@@ -3119,6 +3249,10 @@ footer ul a:hover {
   transition: .5s;
 }
 
+footer ul a:focus {
+  color: white;
+}
+
 @media only screen and (min-width: 992px) {
   .hamburger {
     display: none;
@@ -3142,6 +3276,10 @@ footer ul a:hover {
 
   .owl_nav_hide {
     visibility: unset;
+  }
+
+  .product_container .similar_items .cup_box .cup_info {
+    flex-direction: column;
   }
 
   .home_category_container .row .col-12 .category_box {
@@ -4523,21 +4661,19 @@ footer ul a:hover {
 .registration_container .shipping .payment span {
   color: #3e9578;
   font-size: 16px;
-  margin-left: 5px;
 }
 
 .registration_container .gender .payment .cart_button,
 .registration_container .shipping .payment .cart_button {
   display: block;
   position: relative;
-  padding-left: 25px;
+  padding-left: 30px;
   margin-bottom: 12px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-left: 20px;
 }
 
 .registration_container .gender .payment .cart_button input,
@@ -4589,10 +4725,6 @@ footer ul a:hover {
   width: 20px;
   height: 20px;
   margin-right: 30px;
-}
-
-.registration_container .payment .cart_button {
-  margin-left: 25px !important;
 }
 
 .registration_container .pay_container {

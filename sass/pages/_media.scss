@@ -29,6 +29,10 @@
     visibility: unset;
   }
 
+  .product_container .similar_items .cup_box .cup_info {
+    flex-direction: column;
+  }
+
 
   .home_category_container .row .col-12 .category_box {
     height: 251px;

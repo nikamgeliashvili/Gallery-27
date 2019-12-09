@@ -374,7 +374,7 @@
             span {
                 color: #3e9578;
                 font-size: 16px;
-                margin-left: 5px;
+
             }
 
 
@@ -382,7 +382,7 @@
             .cart_button {
                 display: block;
                 position: relative;
-                padding-left: 25px;
+                padding-left: 30px;
                 margin-bottom: 12px;
                 cursor: pointer;
 
@@ -390,7 +390,7 @@
                 -moz-user-select: none;
                 -ms-user-select: none;
                 user-select: none;
-                margin-left: 20px;
+
             }
 
             /* Hide the browser's default radio button */
@@ -459,9 +459,7 @@
 
 }
 
-.registration_container .payment .cart_button {
-    margin-left: 25px !important;
-}
+
 
 .registration_container .pay_container {
     border-radius: 5px;
