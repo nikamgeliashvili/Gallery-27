@@ -235,6 +235,60 @@
     }
 
 
+    .review {
+        max-width: 1100px;
+        margin: 40px auto;
+
+        h3 {
+            color: $main-color;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .review_section {
+            border: 1px solid $main-color;
+            padding: 25px 15px;
+            margin: 30px 0;
+
+            .costumer_name {
+                display: flex;
+                // align-items: center;
+                border-bottom: 1px solid $main-color;
+
+
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: contain;
+                    margin-right: 10px;
+                }
+
+                span {
+                    color: $main-color;
+                    text-transform: capitalize;
+                }
+            }
+
+            svg {
+                width: 30px;
+                height: 30px;
+                margin: 5px 0 25px;
+            }
+
+            .review_text {
+                margin-top: 15px;
+
+                p {
+                    color: $main-color;
+                }
+            }
+        }
+
+    }
+
+
 
 }
 
