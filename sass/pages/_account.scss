@@ -109,6 +109,10 @@
             width: 100%;
             margin: 50px auto;
 
+            .cart_product_box {
+                display: none;
+            }
+
             .cart_product_info {
 
                 color: $main-color;
@@ -116,6 +120,15 @@
                 text-transform: uppercase;
                 display: flex;
                 justify-content: space-around;
+
+
+
+                .cart_product_box {
+                    .cart_product {
+                        cursor: default;
+                    }
+                }
+
 
                 .cart_product_img {
                     min-width: 70px;
@@ -157,25 +170,34 @@
                         padding: 0 15px;
                     }
 
+                    .cart_down_arrow {
+                        width: 20px;
+                        height: 20px;
+                    }
+
 
                 }
 
+            }
 
-
-
+            .cart_product_box {
+                .cart_product {
+                    cursor: default;
+                }
             }
 
 
             .cart_product {
                 display: flex;
-                margin: 10px 0;
+                padding: 10px 0;
                 align-items: center;
                 width: 100%;
                 justify-content: space-between;
+                cursor: pointer;
 
                 .cart_product_img {
                     max-width: 70px;
-                    height: 100%;
+                    height: 70px;
                     width: 100%;
 
                     img {
@@ -190,6 +212,7 @@
                     align-items: center;
                     width: 100%;
                     justify-content: space-around;
+
 
                     input[type=number]::-webkit-inner-spin-button,
                     input[type=number]::-webkit-outer-spin-button {
@@ -258,8 +281,54 @@
                         text-align: center;
                     }
 
+                    .down_arrow {
+                        width: 20px;
+                        height: 20px;
+                        text-align: center;
+                        transition: .5s;
+
+                        svg {
+                            cursor: pointer;
+                            width: 20px;
+                            margin: 0 auto;
+                            height: 20px;
+                            fill: $main-color;
+                            border-radius: 50%;
+                            padding: 5px;
+                            background: white;
+                            border: 1px solid $main-color;
+                            border-radius: 50px;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                    }
+
+                    .down_arrow1 {
+                        width: 20px;
+                        height: 20px;
+                    }
 
 
+
+
+                }
+
+                &:hover {
+
+                    .down_arrow {
+
+                        background-image: url(../images/arrowdown.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 20px;
+                        height: 20px;
+
+
+                        svg {
+                            opacity: 0;
+                        }
+                    }
                 }
             }
 

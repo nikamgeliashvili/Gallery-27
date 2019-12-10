@@ -134,6 +134,15 @@ $(document).ready(function () {
       .toggleClass("rotate");
   });
 
+
+  $(".account_container .user_product .purchase_history .cart_product").on("click", function () {
+
+    $(".account_container .user_product .purchase_history .cart_product .product_info .down_arrow")
+      .toggleClass("rotate");
+  });
+
+
+
   $(".container .product_section .product_info .product_title ").on(
     "click",
     function () {
@@ -142,6 +151,13 @@ $(document).ready(function () {
         .slideToggle();
     }
   );
+
+  $(".account_container .user_product .purchase_history .cart_product").on(
+    "click",
+    function () {
+      $(".account_container .user_product .purchase_history .cart_product_box").slideToggle();
+    });
+
 
   $(".container .product_section .product_info .product_title ").on(
     "click",

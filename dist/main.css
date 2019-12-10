@@ -745,14 +745,22 @@ header .header_navigation img:hover {
 .cups_container {
   font-family: 'Conv_FiraGO-Regular';
   min-height: calc(100vh - 200px);
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .cups_container .cups_title {
   color: #FFBC00;
   font-size: 16px;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin: 20px 0 30px;
+}
+
+.cups_container .cups_title h3 {
+  font-size: 16px;
+}
+
+.cups_container .cups_title span {
+  font-size: 16px;
 }
 
 .cups_container .img_box {
@@ -1423,6 +1431,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .about_container .team_members .member_info {
   text-align: center;
+  transition: .5s;
 }
 
 .about_container .team_members .member_info svg {
@@ -2322,12 +2331,20 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 50px auto;
 }
 
+.account_container .user_product .purchase_history .cart_product_box {
+  display: none;
+}
+
 .account_container .user_product .purchase_history .cart_product_info {
   color: #3e9578;
   font-size: 18px;
   text-transform: uppercase;
   display: flex;
   justify-content: space-around;
+}
+
+.account_container .user_product .purchase_history .cart_product_info .cart_product_box .cart_product {
+  cursor: default;
 }
 
 .account_container .user_product .purchase_history .cart_product_info .cart_product_img {
@@ -2365,17 +2382,27 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0 15px;
 }
 
+.account_container .user_product .purchase_history .cart_product_info .cart_product_section .cart_down_arrow {
+  width: 20px;
+  height: 20px;
+}
+
+.account_container .user_product .purchase_history .cart_product_box .cart_product {
+  cursor: default;
+}
+
 .account_container .user_product .purchase_history .cart_product {
   display: flex;
-  margin: 10px 0;
+  padding: 10px 0;
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .account_container .user_product .purchase_history .cart_product .cart_product_img {
   max-width: 70px;
-  height: 100%;
+  height: 70px;
   width: 100%;
 }
 
@@ -2448,6 +2475,45 @@ input[type=number]::-webkit-outer-spin-button {
 .account_container .user_product .purchase_history .cart_product .product_info .date {
   width: 90px;
   text-align: center;
+}
+
+.account_container .user_product .purchase_history .cart_product .product_info .down_arrow {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  transition: .5s;
+}
+
+.account_container .user_product .purchase_history .cart_product .product_info .down_arrow svg {
+  cursor: pointer;
+  width: 20px;
+  margin: 0 auto;
+  height: 20px;
+  fill: #3e9578;
+  border-radius: 50%;
+  padding: 5px;
+  background: white;
+  border: 1px solid #3e9578;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.account_container .user_product .purchase_history .cart_product .product_info .down_arrow1 {
+  width: 20px;
+  height: 20px;
+}
+
+.account_container .user_product .purchase_history .cart_product:hover .down_arrow {
+  background-image: url(../images/arrowdown.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+.account_container .user_product .purchase_history .cart_product:hover .down_arrow svg {
+  opacity: 0;
 }
 
 .account_container .user_product .tab-content>.active {
@@ -3331,6 +3397,7 @@ footer ul a:focus {
 
   .account_container {
     margin-top: 30px;
+    max-width: 900px;
   }
 
   .account_container .user_account .account_info h2 {
@@ -3649,6 +3716,29 @@ footer ul a:focus {
     text-align: center;
   }
 
+  .account_container .user_product .purchase_history .cart_product_info {
+    display: none;
+  }
+
+  .account_container .user_product .purchase_history .cart_product .product_info .product_info_title h3 {
+    text-align: unset;
+  }
+
+  .account_container .user_product .purchase_history .cart_product .product_info {
+    flex-direction: column;
+    align-items: unset;
+    margin-left: 15px;
+  }
+
+  .account_container .user_product .purchase_history .cart_product .product_info .product_price {
+    text-align: unset;
+  }
+
+  .account_container .user_product .purchase_history .cart_product .product_info .product_quantity {
+    padding: unset;
+    text-align: unset;
+  }
+
   .blog_img img {
     width: 100%;
     object-fit: contain;
@@ -3876,10 +3966,19 @@ footer ul a:focus {
     text-align: left;
   }
 
+  .account_container .user_product .purchase_history .cart_product .product_info .down_arrow1 {
+    display: none;
+  }
+
+  .account_container .user_product .my_info .adress_section .my_adress .main_adress div:first-child {
+    width: unset;
+  }
+
   .cart_fluid .cart_product .product_info {
     -webkit-box-align: unset;
     -ms-flex-align: unset;
     align-items: unset;
+    margin-left: 15px;
   }
 
   .cart_fluid .cart_product .product_info .product_info_title h3 {
@@ -4167,18 +4266,52 @@ footer ul a:focus {
 
   .account_container .user_product a {
     padding: 5px;
-    width: 100px;
+    min-width: 102px;
     font-size: 15px;
     font-size: 14px;
     text-align: center;
     word-break: break-word;
   }
 
+  .account_container .user_product .purchase_history .cart_product .product_info .product_info_title a {
+    padding: unset;
+    text-align: left;
+  }
+
+  .account_container .user_product .purchase_history .cart_product .product_info .date {
+    text-align: unset;
+  }
+
   .my_info .registration_name .name_box .new_adress_input {
     width: 300px;
   }
 
-  .product_container .product_img .modal-content {
+  .account_container .user_product .purchase_history .cart_product:hover .down_arrow svg {
+    opacity: 1 !important;
+  }
+
+  .account_container .user_product .purchase_history .cart_product:hover .down_arrow {
+    background-image: unset;
+  }
+
+  .account_container .user_product .purchase_history .cart_product {
+    position: relative;
+  }
+
+  .account_container .user_product .purchase_history .cart_product .product_info .down_arrow {
+    position: absolute;
+    left: 25px;
+    top: 45px;
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .account_container .user_product .purchase_history .cart_product .product_info .down_arrow svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .account_container .user_product .purchase_history .cart_product .product_info .down_arrow .product_container .product_img .modal-content {
     width: 96%;
     height: 352px;
     margin-top: 58px;
