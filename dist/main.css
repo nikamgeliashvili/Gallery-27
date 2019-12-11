@@ -1531,6 +1531,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 23px;
   margin: 60px 0 20px;
   text-transform: uppercase;
+  background: white;
 }
 
 .about_container .review_container .review_slider .owl-nav .owl-next span {
@@ -1549,6 +1550,7 @@ input[type=number]::-webkit-outer-spin-button {
   min-height: 250px;
   padding: 15px;
   border: 1px solid #3e9578;
+  border-radius: 5px;
 }
 
 .about_container .review_container .review_section .review_box {
@@ -1562,6 +1564,10 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 16px;
   color: #3e9578;
   text-transform: capitalize;
+}
+
+.about_container .review_container .review_section .review_box .costumer_info div:nth-child(2) {
+  font-size: 14px;
 }
 
 .about_container .review_container .review_section .review_box .costumer_review {
@@ -1595,6 +1601,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .about_container .review_container .review_section .review_box .costumer_review .review_stars .review_date span {
   color: #3e9578;
+  font-size: 14px;
 }
 
 .about_container .review_container .review_section .review_text {
@@ -2488,6 +2495,15 @@ a {
   margin: 50px auto;
 }
 
+.account_container .user_product .purchase_history .cart_product {
+  background: #E8E8EA;
+  border-radius: 5px;
+}
+
+.account_container .user_product .purchase_history .cart_product_box .cart_product {
+  background: white;
+}
+
 .account_container .user_product .purchase_history .cart_product_box {
   display: none;
 }
@@ -2498,6 +2514,7 @@ a {
   text-transform: uppercase;
   display: flex;
   justify-content: space-around;
+  padding-left: 15px;
 }
 
 .account_container .user_product .purchase_history .cart_product_info .cart_product_box .cart_product {
@@ -2555,6 +2572,7 @@ a {
   width: 100%;
   justify-content: space-between;
   cursor: pointer;
+  padding-left: 15px;
 }
 
 .account_container .user_product .purchase_history .cart_product .cart_product_img {
@@ -2665,7 +2683,6 @@ a {
   fill: #3e9578;
   border-radius: 50%;
   padding: 5px;
-  background: white;
   border: 1px solid #3e9578;
   border-radius: 50px;
   display: flex;
