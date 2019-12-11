@@ -4,6 +4,34 @@
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .review_container {
+    width: 90%;
+    margin: 0 auto;
+
+    .review_slider {
+
+      .owl-nav {
+        .owl-next {
+          span {
+            right: -55px !important;
+            top: 60px;
+          }
+        }
+
+        .owl-prev {
+          span {
+            top: 60px;
+            left: -55px !important;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
 @media only screen and (max-width: 1025px) {
   footer ul {
     padding-bottom: 50px !important;
@@ -25,6 +53,11 @@
     padding: 10px 15px 10px 10px;
   }
 
+
+  .about_container .slider .owl-nav .owl-next span:hover {
+    color: $main-color;
+    transform: unset;
+  }
 
 
 
@@ -449,6 +482,16 @@
       padding: 5px 0;
       font-size: 15px;
     }
+  }
+
+  .account_container .user_product .purchase_history .cart_product .product_info .invoice {
+    text-align: left;
+  }
+
+
+  .review_container {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .privacy_container {
@@ -1160,6 +1203,44 @@
 @media only screen and (max-width: 524px) {
   .workshops_container .team_members .member_img img {
     height: 250px;
+
+  }
+
+
+  .review_container {
+    width: 90%;
+    margin: 0 auto;
+
+    .review_stars {
+
+      margin-left: 10px !important;
+
+      span {
+        font-size: 14px;
+
+      }
+    }
+
+    .review_slider {
+
+      .owl-nav {
+        .owl-next {
+          span {
+            right: -30px !important;
+            top: 60px;
+            padding: unset;
+          }
+        }
+
+        .owl-prev {
+          span {
+            top: 60px;
+            left: -28px !important;
+            padding: unset;
+          }
+        }
+      }
+    }
 
   }
 

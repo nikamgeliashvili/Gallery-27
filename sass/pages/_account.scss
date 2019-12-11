@@ -4,6 +4,16 @@
     font-family: 'Conv_FiraGO-Regular';
     margin-top: 100px;
 
+    .invoice {
+        width: 100px;
+        height: 30px;
+        text-align: center;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
 
 
     .user_account {
@@ -280,6 +290,23 @@
                         width: 90px;
                         text-align: center;
                     }
+
+                    .invoice {
+                        width: 100px;
+                        height: 30px;
+                        text-align: center;
+
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            transition: .4s;
+
+                            &:hover {
+                                opacity: .7;
+                            }
+                        }
+                    }
+
 
                     .down_arrow {
                         width: 20px;

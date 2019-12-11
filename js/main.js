@@ -83,6 +83,28 @@ $(document).ready(function () {
   //    $(this).parent().next($('.text_content')).slideToggle()
   // })
 
+  var owl_2 = $(".review_slider");
+
+  owl_2.owlCarousel({
+    margin: 10,
+    dots: true,
+    loop: true,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      991: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      }
+    }
+
+  });
+
+
   var owl = $(".owl-carousel");
   owl.owlCarousel({
     margin: 10,
@@ -258,3 +280,8 @@ $("#myModal").on("click", function (event) {
 // $('#myModal').on('click', function(event) {
 //    event.stopPropagation();
 // });
+
+$(".rating").each(function (index) {
+  var starIndex = $(this).attr("data-id")
+  $(this).addClass("star" + starIndex + "");
+})

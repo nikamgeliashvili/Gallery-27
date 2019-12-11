@@ -234,47 +234,91 @@
         }
     }
 
-
-    .review {
-        max-width: 1100px;
-        margin: 40px auto;
-
-        h3 {
-            color: $main-color;
-            text-transform: uppercase;
+    .review_container {
+        .title {
             text-align: center;
-            margin: 30px 0;
+            color: #3e9578;
+            font-size: 23px;
+            margin: 60px 0 20px;
+            text-transform: uppercase;
+        }
+
+        .review_slider {
+            .owl-nav {
+                .owl-next {
+                    span {
+                        right: -10px;
+                        top: 60px;
+                    }
+                }
+
+                .owl-prev {
+                    span {
+                        top: 60px;
+                        left: -10px;
+                    }
+                }
+            }
         }
 
         .review_section {
+            margin: 0 auto;
+            max-width: 1000px;
+            min-height: 250px;
+            padding: 15px;
             border: 1px solid $main-color;
-            padding: 25px 15px;
-            margin: 30px 0;
 
-            .costumer_name {
+            .review_box {
                 display: flex;
-                // align-items: center;
+                justify-content: space-between;
                 border-bottom: 1px solid $main-color;
+                padding-bottom: 8px;
 
-
-
-                img {
-                    width: 40px;
-                    height: 40px;
-                    object-fit: contain;
-                    margin-right: 10px;
-                }
-
-                span {
+                .costumer_info {
+                    font-size: 16px;
                     color: $main-color;
                     text-transform: capitalize;
-                }
-            }
 
-            svg {
-                width: 30px;
-                height: 30px;
-                margin: 5px 0 25px;
+
+                }
+
+                .costumer_review {
+                    font-size: 16px;
+                    color: darkgrey;
+                    text-transform: capitalize;
+                    display: flex;
+
+                    .fb_logo {
+                        width: 25px;
+                        height: 25px;
+                        margin-top: 5px;
+
+                        svg {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+
+                    .review_stars {
+                        margin-left: 25px;
+                        text-align: center;
+                        min-width: 76px;
+
+                        .rating {
+                            a {
+                                font-size: 22px;
+                                color: darkgrey;
+                            }
+                        }
+
+                        .review_date {
+                            span {
+                                color: $main-color;
+                            }
+                        }
+                    }
+                }
+
             }
 
             .review_text {
@@ -282,16 +326,80 @@
 
                 p {
                     color: $main-color;
+                    font-size: 16px;
                 }
             }
         }
-
     }
 
 
 
 }
 
+a {
+    color: #000;
+}
+
+.rating.star5 span:nth-child(1) {
+    color: $yellow;
+}
+
+.rating.star5 span:nth-child(2) {
+    color: $yellow;
+}
+
+.rating.star5 span:nth-child(3) {
+    color: $yellow;
+}
+
+.rating.star5 span:nth-child(4) {
+    color: $yellow;
+}
+
+.rating.star5 span:nth-child(5) {
+    color: $yellow;
+}
+
+.rating.star4 span:nth-child(1) {
+    color: $yellow;
+}
+
+.rating.star4 span:nth-child(2) {
+    color: $yellow;
+}
+
+.rating.star4 span:nth-child(3) {
+    color: $yellow;
+}
+
+.rating.star4 span:nth-child(4) {
+    color: $yellow;
+}
+
+.rating.star3 span:nth-child(1) {
+    color: $yellow;
+}
+
+.rating.star3 span:nth-child(2) {
+    color: $yellow;
+}
+
+.rating.star3 span:nth-child(3) {
+    color: $yellow;
+}
+
+
+.rating.star2 span:nth-child(1) {
+    color: $yellow;
+}
+
+.rating.star2 span:nth-child(2) {
+    color: $yellow;
+}
+
+.rating.star1 span:nth-child(1) {
+    color: $yellow;
+}
 
 .rotate {
     -webkit-transform: rotate(180deg);
