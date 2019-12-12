@@ -177,7 +177,7 @@ $(document).ready(function () {
     }
   );
 
-  $(".account_container .user_product .purchase_history .cart_product").on(
+  $(".all_product>.cart_product").on(
     "click",
     function () {
       $(this)
