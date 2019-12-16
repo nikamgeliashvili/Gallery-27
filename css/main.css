@@ -601,9 +601,11 @@ header {
       .cups_container .cup_box .cup_info span {
         display: block;
         color: #3e9578;
-        padding-right: 4px;
+        padding-right: 3px;
         display: flex;
         word-break: break-word; }
+      .cups_container .cup_box .cup_info .hide {
+        display: none; }
       .cups_container .cup_box .cup_info button {
         color: white;
         background-color: #FFBC00;
@@ -615,6 +617,13 @@ header {
         transition: .4s; }
       .cups_container .cup_box .cup_info button:hover {
         background-color: #ffda74; }
+      .cups_container .cup_box .cup_info .out_of_stock {
+        width: 85px;
+        text-align: center;
+        text-transform: capitalize; }
+        .cups_container .cup_box .cup_info .out_of_stock span {
+          color: #CB2027;
+          padding-right: unset; }
   .cups_container .pagination {
     justify-content: center;
     display: flex;
@@ -928,7 +937,7 @@ header {
       .product_container .similar_items .cup_box .cup_info span {
         display: block;
         color: #3e9578;
-        padding-right: 4px;
+        padding-right: 3px;
         display: flex;
         word-break: break-word; }
       .product_container .similar_items .cup_box .cup_info button {
@@ -1500,7 +1509,7 @@ button[disabled],
           transform: rotate(-90deg); }
 
 .past_workshops_slider {
-  min-height: unset; }
+  min-height: unset !important; }
   .past_workshops_slider .past_workshops_title {
     text-align: center;
     color: #3e9578;
@@ -2508,6 +2517,9 @@ footer {
   .about_container .slider .owl-nav .owl-next span:hover {
     color: #3e9578;
     transform: unset; }
+
+  .cups_container .cup_box .cup_info .out_of_stock {
+    width: unset; }
 
   .owl_nav_hide {
     visibility: unset; }
