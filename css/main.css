@@ -1194,7 +1194,14 @@ a {
 
 .owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
-  display: block !important; }
+  display: block !important;
+  opacity: .3; }
+
+button.disabled,
+button[disabled],
+.button.disabled,
+.button[disabled] {
+  opacity: .3 !important; }
 
 @font-face {
   font-family: 'Conv_FiraGO-Bold';
@@ -1558,6 +1565,13 @@ a {
 
 .owl_nav_hide {
   visibility: hidden; }
+
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
+  border-color: #3e9578 !important; }
+
+.slick-disabled {
+  opacity: 0.3; }
 
 .contact_container {
   margin: 100px auto 40px;

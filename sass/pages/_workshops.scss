@@ -648,3 +648,12 @@
     visibility: hidden;
 
 }
+
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
+    border-color: $main-color !important;
+}
+
+.slick-disabled {
+    opacity: 0.3;
+}

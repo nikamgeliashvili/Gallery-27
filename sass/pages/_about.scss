@@ -424,4 +424,13 @@ a {
 .owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
     display: block !important;
+    opacity: .3;
+}
+
+button.disabled,
+button[disabled],
+.button.disabled,
+.button[disabled] {
+    opacity: .3 !important;
+
 }
