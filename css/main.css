@@ -618,12 +618,13 @@ header {
       .cups_container .cup_box .cup_info button:hover {
         background-color: #ffda74; }
       .cups_container .cup_box .cup_info .out_of_stock {
-        width: 85px;
+        min-width: 87px;
         text-align: center;
         text-transform: capitalize; }
         .cups_container .cup_box .cup_info .out_of_stock span {
           color: #CB2027;
-          padding-right: unset; }
+          padding-right: unset;
+          width: 88px; }
   .cups_container .pagination {
     justify-content: center;
     display: flex;
@@ -934,6 +935,14 @@ header {
           text-decoration: line-through;
           padding-left: 4px;
           opacity: .6; }
+      .product_container .similar_items .cup_box .cup_info .out_of_stock {
+        min-width: 87px;
+        text-align: center;
+        text-transform: capitalize; }
+        .product_container .similar_items .cup_box .cup_info .out_of_stock span {
+          color: #CB2027;
+          padding-right: unset;
+          width: 88px; }
       .product_container .similar_items .cup_box .cup_info span {
         display: block;
         color: #3e9578;

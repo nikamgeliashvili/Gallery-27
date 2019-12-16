@@ -141,13 +141,14 @@
             }
 
             .out_of_stock {
-                width: 85px;
+                min-width: 87px;
                 text-align: center;
                 text-transform: capitalize;
 
                 span {
                     color: #CB2027;
                     padding-right: unset;
+                    width: 88px;
                 }
             }
         }

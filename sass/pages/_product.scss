@@ -475,6 +475,19 @@
         }
 
 
+        .out_of_stock {
+          min-width: 87px;
+          text-align: center;
+          text-transform: capitalize;
+
+          span {
+            color: #CB2027;
+            padding-right: unset;
+            width: 88px;
+          }
+        }
+
+
         span {
           display: block;
           color: #3e9578;
