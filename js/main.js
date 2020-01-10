@@ -51,6 +51,15 @@ if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
   $("#nav").css("top", "0px");
 }
 
+var ua = navigator.userAgent.toLowerCase();
+if (ua.indexOf("safari") != -1) {
+  if (ua.indexOf("chrome") > -1) {
+    // Chrome
+  } else {
+    $("header").css("top", "0"); // Safari
+  }
+}
+
 // function hidefunction() {
 //   var checkBox = document.getElementById("new_adress_button");
 //   var adressform = document.getElementById("new_adress");

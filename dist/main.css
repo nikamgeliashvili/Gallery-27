@@ -329,6 +329,7 @@ header .header_top .lang a {
   color: white;
   font-size: 12px;
   padding: 7px 15px;
+  font-family: 'Conv_FiraGO-Regular';
 }
 
 header .header_top .lang a.active {
@@ -414,6 +415,7 @@ header .header_navigation a {
   transition: all .4s;
   letter-spacing: 1px;
   padding: 5px;
+  font-family: 'Conv_FiraGO-Regular';
 }
 
 header .header_navigation a:hover {
