@@ -220,6 +220,49 @@
     color: #3e9578;
     padding-left: 40px;
 
+    .similar_products {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+      width: 100%;
+      justify-content: space-between;
+
+
+      .product_box {
+        border: 1px solid #3e9578;
+        border-radius: 5px;
+        padding: 7px 4px;
+        margin: 4px;
+        width: 23%;
+        text-align: center;
+
+        .similar_products_img {
+          width: 80%;
+          margin: 0 auto;
+          height: calc(100% - 45px);
+
+          img {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+
+        .similar_products_title {
+          height: 45px;
+          overflow: hidden;
+
+          span {
+            color: #3e9578;
+            font-size: 14px;
+          }
+        }
+
+      }
+    }
+
 
     .product_name {
 
@@ -250,10 +293,10 @@
     }
 
     .quantity {
-      width: 40%;
+      width: 55%;
       margin: 20px 0;
       display: flex;
-      flex-direction: column;
+
 
       span {
         width: 100%;
@@ -262,7 +305,7 @@
 
       input {
         border: 1px solid #3e9578;
-        width: 32%;
+        width: 60px;
         padding: 8px;
         margin: 10px 0;
         text-align: center;
@@ -270,15 +313,17 @@
       }
 
       button {
-        padding: 15px;
         word-spacing: 3px;
         color: white;
         outline: none;
         text-transform: uppercase;
-        margin-top: 10px;
-        background: $main-color;
+        margin-top: 32px;
+        margin-left: 15px;
+        background: #3e9578;
         transition: .5s;
         border-radius: 5px;
+        min-width: 125px;
+        height: 37px;
       }
 
       button:hover {
@@ -379,6 +424,8 @@
   }
 
   .similar_items {
+
+    margin-top: 40px;
 
     h2 {
 
