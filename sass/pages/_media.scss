@@ -1305,3 +1305,9 @@
     margin: 0 auto;
   }
 }
+
+@media only screen and (min-height: 1100px) {
+  .home_category_container .row .col-12 {
+    height: 40%;
+  }
+}

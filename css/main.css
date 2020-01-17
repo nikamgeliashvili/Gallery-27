@@ -3403,6 +3403,9 @@ footer {
   .account_container .user_product .my_info .registration_name {
     width: 90%;
     margin: 0 auto; } }
+@media only screen and (min-height: 1100px) {
+  .home_category_container .row .col-12 {
+    height: 40%; } }
 .my_account {
   margin: 100px auto;
   max-width: 300px;
