@@ -817,14 +817,14 @@ header {
         .product_container .product_section .similar_products .product_box .similar_products_img {
           width: 80%;
           margin: 0 auto;
-          height: calc(100% - 45px); }
+          height: calc(100% - 65px); }
           .product_container .product_section .similar_products .product_box .similar_products_img img {
             border-radius: 5px;
             width: 100%;
             height: 100%;
             object-fit: cover; }
         .product_container .product_section .similar_products .product_box .similar_products_title {
-          height: 45px;
+          height: 70px;
           overflow: hidden;
           position: relative; }
           .product_container .product_section .similar_products .product_box .similar_products_title .out_of_stock {
@@ -844,7 +844,8 @@ header {
             position: absolute;
             top: 24px;
             background: white;
-            width: 100%; }
+            width: 100%;
+            padding-bottom: 20px; }
     .product_container .product_section .product_name h2 {
       font-size: 23px;
       text-transform: uppercase;
@@ -1203,6 +1204,8 @@ input[type=number]::-webkit-outer-spin-button {
             font-size: 30px;
             color: #3e9578; }
           .about_container .review_container .review_section .review_box .costumer_review .fb_logo .fa-facebook-square {
+            color: #475993; }
+          .about_container .review_container .review_section .review_box .costumer_review .fb_logo .fa-facebook {
             color: #475993; }
         .about_container .review_container .review_section .review_box .costumer_review .review_stars {
           margin-left: 25px;
