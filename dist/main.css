@@ -1140,7 +1140,7 @@ header .header_navigation img:hover {
 .product_container .product_section .similar_products .product_box {
   border: 1px solid #3e9578;
   border-radius: 5px;
-  padding: 7px 4px;
+  padding: 7px;
   margin: 4px;
   width: 23%;
   text-align: center;
@@ -1167,11 +1167,33 @@ header .header_navigation img:hover {
 .product_container .product_section .similar_products .product_box .similar_products_title {
   height: 45px;
   overflow: hidden;
+  position: relative;
+}
+
+.product_container .product_section .similar_products .product_box .similar_products_title .out_of_stock {
+  margin-top: 15px;
+  color: #CB2027 !important;
+  text-transform: capitalize;
+  position: absolute;
+  top: 7px;
+  width: 100%;
+  background: white;
+}
+
+.product_container .product_section .similar_products .product_box .similar_products_title .out_of_stock span {
+  color: #CB2027 !important;
 }
 
 .product_container .product_section .similar_products .product_box .similar_products_title span {
   color: #3e9578;
   font-size: 14px;
+}
+
+.product_container .product_section .similar_products .product_box .similar_products_title .cup_price {
+  position: absolute;
+  top: 24px;
+  background: white;
+  width: 100%;
 }
 
 .product_container .product_section .product_name h2 {
@@ -1201,12 +1223,16 @@ header .header_navigation img:hover {
   display: flex;
 }
 
-.product_container .product_section .quantity span {
+.product_container .product_section .quantity form {
+  position: relative;
+}
+
+.product_container .product_section .quantity form span {
   width: 100%;
   text-transform: capitalize;
 }
 
-.product_container .product_section .quantity input {
+.product_container .product_section .quantity form input {
   border: 1px solid #3e9578;
   width: 60px;
   padding: 8px;
@@ -1215,31 +1241,34 @@ header .header_navigation img:hover {
   border-radius: 5px;
 }
 
-.product_container .product_section .quantity button {
+.product_container .product_section .quantity form button {
   word-spacing: 3px;
   color: white;
   outline: none;
   text-transform: uppercase;
   margin-top: 32px;
-  margin-left: 15px;
   background: #3e9578;
   transition: .5s;
   border-radius: 5px;
-  min-width: 125px;
+  min-width: 200px;
   height: 37px;
+  padding: 0 12px;
+  position: absolute;
+  top: 0;
+  left: 75px;
 }
 
-.product_container .product_section .quantity button:hover {
+.product_container .product_section .quantity form button:hover {
   background: #f5c745;
   transform: scale(1.02);
   color: #3e9578;
 }
 
-.product_container .product_section .quantity button:disabled {
+.product_container .product_section .quantity form button:disabled {
   background: #7d7d7d;
 }
 
-.product_container .product_section .quantity button:disabled:hover {
+.product_container .product_section .quantity form button:disabled:hover {
   background: #7d7d7d;
   transform: unset;
   color: white;
@@ -1676,9 +1705,14 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 5px;
 }
 
-.about_container .review_container .review_section .review_box .costumer_review .fb_logo svg {
-  width: 25px;
-  height: 25px;
+.about_container .review_container .review_section .review_box .costumer_review .fb_logo .fab {
+  font-family: 'Font Awesome 5 Brands';
+  font-size: 30px;
+  color: #3e9578;
+}
+
+.about_container .review_container .review_section .review_box .costumer_review .fb_logo .fa-facebook-square {
+  color: #475993;
 }
 
 .about_container .review_container .review_section .review_box .costumer_review .review_stars {

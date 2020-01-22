@@ -240,7 +240,7 @@
       .product_box {
         border: 1px solid #3e9578;
         border-radius: 5px;
-        padding: 7px 4px;
+        padding: 7px;
         margin: 4px;
         width: 23%;
         text-align: center;
@@ -267,10 +267,32 @@
         .similar_products_title {
           height: 45px;
           overflow: hidden;
+          position: relative;
+
+          .out_of_stock {
+            margin-top: 15px;
+            color: #CB2027 !important;
+            text-transform: capitalize;
+            position: absolute;
+            top: 7px;
+            width: 100%;
+            background: white;
+
+            span {
+              color: #CB2027 !important;
+            }
+          }
 
           span {
             color: #3e9578;
             font-size: 14px;
+          }
+
+          .cup_price {
+            position: absolute;
+            top: 24px;
+            background: white;
+            width: 100%;
           }
         }
 
@@ -311,53 +333,61 @@
       margin: 20px 0;
       display: flex;
 
+      form {
 
-      span {
-        width: 100%;
-        text-transform: capitalize;
-      }
+        position: relative;
 
-      input {
-        border: 1px solid #3e9578;
-        width: 60px;
-        padding: 8px;
-        margin: 10px 0;
-        text-align: center;
-        border-radius: 5px;
-      }
+        span {
+          width: 100%;
+          text-transform: capitalize;
+        }
 
-      button {
-        word-spacing: 3px;
-        color: white;
-        outline: none;
-        text-transform: uppercase;
-        margin-top: 32px;
-        margin-left: 15px;
-        background: #3e9578;
-        transition: .5s;
-        border-radius: 5px;
-        min-width: 125px;
-        height: 37px;
-      }
+        input {
+          border: 1px solid #3e9578;
+          width: 60px;
+          padding: 8px;
+          margin: 10px 0;
+          text-align: center;
+          border-radius: 5px;
+        }
 
-      button:hover {
-        background: #f5c745;
-        transform: scale(1.02);
-        color: $main-color;
-
-
-      }
-
-      button:disabled {
-        background: #7d7d7d;
-
-        &:hover {
-          background: #7d7d7d;
-          transform: unset;
+        button {
+          word-spacing: 3px;
           color: white;
+          outline: none;
+          text-transform: uppercase;
+          margin-top: 32px;
+          background: #3e9578;
+          transition: .5s;
+          border-radius: 5px;
+          min-width: 200px;
+          height: 37px;
+          padding: 0 12px;
+          position: absolute;
+          top: 0;
+          left: 75px;
+        }
+
+        button:hover {
+          background: #f5c745;
+          transform: scale(1.02);
+          color: $main-color;
+
 
         }
+
+        button:disabled {
+          background: #7d7d7d;
+
+          &:hover {
+            background: #7d7d7d;
+            transform: unset;
+            color: white;
+
+          }
+        }
       }
+
 
     }
 

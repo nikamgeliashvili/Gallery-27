@@ -305,10 +305,18 @@
                         height: 25px;
                         margin-top: 5px;
 
-                        svg {
-                            width: 25px;
-                            height: 25px;
+                        .fab {
+                            font-family: 'Font Awesome 5 Brands';
+                            font-size: 30px;
+                            color: $main-color;
+
                         }
+
+
+                        .fa-facebook-square {
+                            color: #475993;
+                        }
+
                     }
 
                     .review_stars {
