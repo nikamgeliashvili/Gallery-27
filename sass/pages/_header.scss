@@ -72,6 +72,52 @@ header {
       }
     }
 
+    .search {
+      width: calc(100% - 210px);
+      padding: 0 10px;
+      display: flex;
+      justify-content: flex-end;
+
+      form {
+        display: flex;
+        align-items: center;
+        border: 1px solid $main-color;
+        border-radius: 5px;
+
+        input {
+          border: unset;
+          outline: none;
+          box-shadow: unset;
+          color: $main-color;
+          margin: 7px;
+          background: transparent;
+          width:100%;
+
+          &::placeholder {
+            color: $main-color;
+          }
+        }
+
+        button {
+          background: transparent;
+          outline: none;
+
+
+          i {
+            color: $main-color;
+            transition: .3s;
+            padding: 4px 6px;
+            font-size: 20px;
+
+            &:hover {
+              color: $yellow;
+            }
+          }
+        }
+
+      }
+    }
+
     .lang {
       display: -webkit-box;
       display: -ms-flexbox;

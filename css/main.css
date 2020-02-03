@@ -230,6 +230,36 @@ header {
         fill: #3e9578; }
     header .header_top .logo svg:hover {
       opacity: 0.5; }
+    header .header_top .search {
+      width: calc(100% - 210px);
+      padding: 0 10px;
+      display: flex;
+      justify-content: flex-end; }
+      header .header_top .search form {
+        display: flex;
+        align-items: center;
+        border: 1px solid #3e9578;
+        border-radius: 5px; }
+        header .header_top .search form input {
+          border: unset;
+          outline: none;
+          box-shadow: unset;
+          color: #3e9578;
+          margin: 7px;
+          background: transparent;
+          width: 100%; }
+          header .header_top .search form input::placeholder {
+            color: #3e9578; }
+        header .header_top .search form button {
+          background: transparent;
+          outline: none; }
+          header .header_top .search form button i {
+            color: #3e9578;
+            transition: .3s;
+            padding: 4px 6px;
+            font-size: 20px; }
+            header .header_top .search form button i:hover {
+              color: #f5c745; }
     header .header_top .lang {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -544,9 +574,26 @@ header {
     color: #FFBC00;
     font-size: 16px;
     text-transform: uppercase;
-    margin: 20px 0 30px; }
+    margin: 20px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    .cups_container .cups_title .sort select {
+      background: transparent;
+      color: #3e9578;
+      border: 1px solid #3e9578;
+      border-radius: 5px;
+      min-width: 150px;
+      height: 37px;
+      margin: 10px; }
+      .cups_container .cups_title .sort select option {
+        margin-top: 5px; }
+        .cups_container .cups_title .sort select option:hover {
+          background: #f5c745; }
     .cups_container .cups_title h3 {
-      font-size: 16px; }
+      font-size: 16px;
+      margin-left: 10px; }
     .cups_container .cups_title span {
       font-size: 16px; }
   .cups_container .img_box {
