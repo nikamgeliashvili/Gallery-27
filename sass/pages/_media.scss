@@ -53,6 +53,14 @@
     padding: 10px 15px 10px 10px;
   }
 
+  .product_container .product_section .similar_products .product_box {
+    width: 30%;
+  }
+
+  .product_container .product_section .similar_products .product_box .similar_products_img {
+    max-height: 150px;
+  }
+
 
   .about_container .slider .owl-nav .owl-next span:hover {
     color: $main-color;
@@ -1211,6 +1219,14 @@
 @media only screen and (max-width: 524px) {
   .workshops_container .team_members .member_img img {
     height: 250px;
+
+  }
+
+
+  .product_container .product_section .similar_products .product_box {
+
+    margin: 3px;
+    width: 47%;
 
   }
 
