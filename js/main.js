@@ -1,3 +1,5 @@
+$('body').on('change','select[name="sort"]',function(e){ $('#sortForm').submit(); });
+
 function myFunction() {
   var checkBox = document.getElementById("new_adress_button");
   var adressform = document.getElementById("new_adress");
