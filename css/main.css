@@ -712,6 +712,24 @@ header {
   min-height: calc(100vh - 180px);
   font-family: 'Conv_FiraGO-Regular';
   margin-top: 50px; }
+  .product_container .sort select {
+    background: transparent;
+    color: #3e9578;
+    border: 1px solid #3e9578;
+    border-radius: 5px;
+    min-width: 150px;
+    height: 37px;
+    margin: 10px;
+    background-image: url("../images/dropdown.png");
+    background-size: 14px;
+    background-position-x: 145px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    cursor: pointer; }
+    .product_container .sort select option {
+      margin-top: 5px; }
+      .product_container .sort select option:hover {
+        background: #f5c745; }
   .product_container .breadcrumb {
     padding: unset;
     max-width: 1090px;
@@ -911,6 +929,15 @@ header {
       .product_container .product_section .product_price .price {
         text-decoration: line-through;
         opacity: .5; }
+    .product_container .product_section .product-color, .product_container .product_section .product-size {
+      max-width: 170px; }
+      .product_container .product_section .product-color select, .product_container .product_section .product-size select {
+        margin: 5px 0;
+        text-transform: capitalize;
+        height: 35px; }
+      .product_container .product_section .product-color .disabled, .product_container .product_section .product-size .disabled {
+        pointer-events: none;
+        opacity: .4; }
     .product_container .product_section .out_of_stock {
       margin-top: 15px;
       color: #CB2027;

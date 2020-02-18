@@ -4,6 +4,37 @@
   font-family: 'Conv_FiraGO-Regular';
   margin-top: 50px;
 
+
+
+
+    .sort {
+        select {
+            background: transparent;
+            color: $main-color;
+            border: 1px solid $main-color;
+            border-radius: 5px;
+            min-width: 150px;
+            height: 37px;
+            margin: 10px;
+            background-image: url('../images/dropdown.png');
+            background-size: 14px;
+            background-position-x: 145px;
+            background-repeat: no-repeat;
+            background-position-y: center;
+            cursor: pointer;
+
+
+            option {
+                margin-top: 5px;
+
+                &:hover {
+                    background: $yellow;
+                }
+            }
+        }
+    }
+
+
   .breadcrumb {
 
     padding: unset;
@@ -322,6 +353,24 @@
         text-decoration: line-through;
         opacity: .5;
       }
+
+    }
+
+
+    .product-color, .product-size{
+      max-width:170px;
+
+      select{
+        margin:5px 0;
+        text-transform: capitalize;
+        height: 35px;
+      }
+
+      .disabled{
+        pointer-events: none;
+        opacity: .4;
+      }
+
 
     }
 
