@@ -950,7 +950,8 @@ header {
       .product_container .product_section form .quantity {
         margin: 20px 0;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        position: relative; }
         .product_container .product_section form .quantity span {
           width: 100%;
           text-transform: capitalize; }

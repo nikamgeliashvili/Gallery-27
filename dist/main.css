@@ -1344,6 +1344,7 @@ header .header_navigation img:hover {
   margin: 20px 0;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .product_container .product_section form .quantity span {
