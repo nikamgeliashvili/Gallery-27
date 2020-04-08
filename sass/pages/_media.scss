@@ -5,6 +5,18 @@
 }
 
 @media only screen and (max-width: 1200px) {
+
+
+  .blog_container .workshop_content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.blog_container .blog_content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
   .review_container {
     width: 90%;
     margin: 0 auto;
@@ -112,7 +124,7 @@
 
 
   .blog_container {
-    margin: 50px auto;
+    margin: 50px auto !important;
   }
 
 
@@ -1327,3 +1339,5 @@
     height: 40%;
   }
 }
+
+

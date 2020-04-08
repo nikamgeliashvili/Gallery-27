@@ -2658,6 +2658,14 @@ footer {
   .hamburger {
     display: none; } }
 @media only screen and (max-width: 1200px) {
+  .blog_container .workshop_content {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .blog_container .blog_content {
+    padding-left: 20px;
+    padding-right: 20px; }
+
   .review_container {
     width: 90%;
     margin: 0 auto; }
@@ -2715,7 +2723,7 @@ footer {
     margin-top: 50px; }
 
   .blog_container {
-    margin: 50px auto; }
+    margin: 50px auto !important; }
 
   header {
     top: 0 !important; }
@@ -3948,7 +3956,9 @@ footer {
     color: #3e9578;
     font-size: 23px;
     margin-top: 40px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-left: 15px;
+    padding-right: 15px; }
   .blog_container .blog_content p {
     margin-top: 15px;
     text-align: justify;
