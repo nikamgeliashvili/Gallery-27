@@ -740,8 +740,6 @@ header {
       content: "/\00a0"; }
     .product_container .breadcrumb li {
       color: #f5c745;
-      text-transform: capitalize; }
-    .product_container .breadcrumb li:nth-child(2) {
       text-transform: uppercase; }
     .product_container .breadcrumb a {
       color: #3e9578;
@@ -914,8 +912,7 @@ header {
               color: #cb2027 !important; }
           .product_container .product_section .similar_products .product_box .similar_products_title span {
             color: #3e9578;
-            font-size: 14px;
-            text-transform: uppercase; }
+            font-size: 14px; }
           .product_container .product_section .similar_products .product_box .similar_products_title span:first-child {
             text-transform: uppercase; }
           .product_container .product_section .similar_products .product_box .similar_products_title .cup_price {

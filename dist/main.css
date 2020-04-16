@@ -919,9 +919,6 @@ header .header_navigation img:hover {
 }
 .product_container .breadcrumb li {
   color: #f5c745;
-  text-transform: capitalize;
-}
-.product_container .breadcrumb li:nth-child(2) {
   text-transform: uppercase;
 }
 .product_container .breadcrumb a {
@@ -1163,7 +1160,6 @@ header .header_navigation img:hover {
   span {
   color: #3e9578;
   font-size: 14px;
-  text-transform: uppercase;
 }
 .product_container
   .product_section
